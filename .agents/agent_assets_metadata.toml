@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "fWK2vyhHh4ZdBEcT_GyK-"
+uri = "file://artifacts/skill-samurai/public/images/hero-coding.png"
+type = "image"
+title = "Kids coding with teacher"
+
+[[generated]]
+id = "MJgvbRxRJZ-w2yaBoR1Bh"
+uri = "file://artifacts/skill-samurai/public/images/roblox-project.png"
+type = "image"
+title = "Roblox game level"
+
+[[generated]]
+id = "20ldPJCSyhOUBSOZLGWud"
+uri = "file://artifacts/skill-samurai/public/images/kids-collaborating.png"
+type = "image"
+title = "Kids celebrating project"
+
+[[generated]]
+id = "vbkvyOFKfMhLtvTTq5_kl"
+uri = "file://artifacts/skill-samurai/public/images/learning-moment.png"
+type = "image"
+title = "Kid focused on screen"
