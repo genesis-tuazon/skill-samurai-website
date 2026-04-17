@@ -41,7 +41,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg lg:text-xl text-white/90 mb-10 leading-relaxed max-w-2xl font-medium drop-shadow">
-            Transform screen time into valuable skills that will shape your child's future.
+            Transform screen time into valuable skills that will shape your child’s future.
           </p>
 
           <a
