@@ -25,10 +25,10 @@ export default function ChildBenefits() {
       color: "bg-secondary"
     },
     {
-      icon: <Lightbulb className="h-8 w-8 text-secondary" />,
+      icon: <Lightbulb className="h-8 w-8 text-white" />,
       title: "Thinks critically",
       desc: "We don't do rigid copy-pasting. We teach computational thinking—how to break big problems into solvable pieces.",
-      color: "bg-green-400"
+      color: "bg-[#F59100]"
     }
   ];
 
