@@ -1,8 +1,8 @@
 import React from "react";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Code, Lightbulb, Rocket, Blocks } from "lucide-react";
-import classroomPhoto from "@assets/IG_WINNIPEG_POST_6_1776404931683.png";
-import classroomPhotoTwo from "@assets/IG_WINNIPEG_POST_1776405350952.png";
+import classroomPhoto from "@assets/IG_WINNIPEG_POST_1776405350952.png";
+import classroomPhotoTwo from "@assets/IG_WINNIPEG_POST_6_1776404931683.png";
 
 export default function ChildBenefits() {
   const benefits = [
