@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "wouter";
-import { Menu } from "lucide-react";
 import logoUrl from "@assets/SkillSamurai_Logo_Full_(1)_(1)_(1)_1776400767722.png";
 
 export default function Navbar() {
@@ -14,21 +13,7 @@ export default function Navbar() {
             className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
           />
         </Link>
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-secondary">
-          <Link href="/parents" className="hover:text-primary transition-colors">
-            Parents
-          </Link>
-          <Link href="/schedule" className="hover:text-primary transition-colors">
-            Schedule
-          </Link>
-          <Link href="/faq" className="hover:text-primary transition-colors">
-            FAQ
-          </Link>
-        </nav>
         <div className="flex items-center gap-4">
-          <button type="button" className="md:hidden h-11 w-11 rounded-full border border-border flex items-center justify-center text-secondary">
-            <Menu className="h-5 w-5" />
-          </button>
           <a
             href="https://skillsamurai.ca/book-a-free-trial"
             target="_blank"
