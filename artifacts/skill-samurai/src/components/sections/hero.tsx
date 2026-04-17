@@ -37,12 +37,12 @@ export default function Hero() {
         <div className="w-[500px] h-[500px] rounded-full bg-accent blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-32 pb-28 lg:pt-40 lg:pb-36 min-h-[640px] lg:min-h-[720px] flex items-center">
+      <div className="container mx-auto px-4 relative z-10 pt-32 pb-28 lg:pt-40 lg:pb-36 min-h-[640px] lg:min-h-[720px] flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="max-w-2xl"
+          className="max-w-3xl text-center mx-auto flex flex-col items-center"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border border-white/20 backdrop-blur-sm">
             <span className="relative flex h-2.5 w-2.5">
@@ -67,7 +67,7 @@ export default function Hero() {
             After-school coding, robotics &amp; STEM classes for ages 6–18 — small groups, real coaches, no long-term contracts.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mb-10">
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-center mb-10">
             <a
               href="https://skillsamurai.ca/book-a-free-trial"
               target="_blank"
@@ -82,7 +82,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm font-semibold text-white/80">
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs sm:text-sm font-semibold text-white/80">
             {[
               "Small groups",
               "Certified coaches",
