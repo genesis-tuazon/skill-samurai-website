@@ -39,20 +39,20 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
   const buttonId = `faq-btn-${reactId}`;
   const panelId = `faq-panel-${reactId}`;
   return (
-    <div className="border-b border-border last:border-b-0">
+    <div className="border-b border-white/10 last:border-b-0">
       <button
         type="button"
         id={buttonId}
         onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-start justify-between gap-6 text-left py-6 group"
+        className="w-full flex items-start justify-between gap-6 text-left py-7 group"
         aria-expanded={open}
         aria-controls={panelId}
       >
-        <span className="text-lg md:text-xl font-bold font-heading text-secondary group-hover:text-primary transition-colors">
+        <span className="text-lg md:text-xl font-bold font-heading text-white group-hover:text-accent transition-colors">
           {q}
         </span>
         <span
-          className={`flex-shrink-0 h-9 w-9 rounded-full bg-muted text-secondary flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-white ${
+          className={`flex-shrink-0 h-9 w-9 rounded-full bg-white/10 text-white flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:text-white ${
             open ? "rotate-45 bg-primary text-white" : ""
           }`}
         >
@@ -68,7 +68,7 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
         }`}
       >
         <div className="overflow-hidden">
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed pr-4 md:pr-12">{a}</p>
+          <p className="text-base md:text-lg text-white/75 leading-relaxed pr-4 md:pr-12">{a}</p>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@ export default function Faq() {
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div className="bg-white/10 rounded-3xl border border-white/10 shadow-xl shadow-black/20 px-7 md:px-10 py-2 backdrop-blur-sm">
+            <div className="bg-black/15 rounded-3xl border border-white/10 shadow-xl shadow-black/20 px-7 md:px-10 py-3 backdrop-blur-sm">
               {faqs.map((f, i) => (
                 <FaqItem key={i} q={f.q} a={f.a} defaultOpen={i === 0} />
               ))}
