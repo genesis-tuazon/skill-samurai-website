@@ -30,23 +30,22 @@ export default function Hero() {
               NOW ENROLLING IN WINNIPEG
             </div>
             
-            <h1 className="text-5xl lg:text-6xl xl:text-[5.5rem] font-black font-heading leading-[1] mb-6 uppercase tracking-tight">
-              <span className="text-white block">TURN SCREEN TIME</span>
-              <span className="text-white block">INTO SOMETHING THAT</span>
-              <span className="text-primary block">ACTUALLY HELPS</span>
-              <span className="text-accent block relative inline-block">
-                YOUR CHILD
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black font-heading leading-[1.05] mb-6 tracking-tight text-white">
+              Where screen time becomes a{" "}
+              <span className="relative inline-block text-accent">
+                real skill
                 <svg className="absolute -bottom-2 left-0 w-full h-4 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
                 </svg>
               </span>
+              .
             </h1>
             
             <p className="text-xl text-white/80 mb-10 leading-relaxed max-w-xl font-medium mt-4">
-              Instead of just playing games, your child will learn to build them — while developing confidence, focus, and real-world skills in a supportive, expert-guided environment.
+              After-school coding, robotics, and STEM classes in Winnipeg for ages 6–18 — taught by real coaches, in small groups, with no long-term contracts.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-8">
               <a
                 href="https://skillsamurai.ca/book-a-free-trial"
                 target="_blank"
@@ -56,19 +55,20 @@ export default function Hero() {
                 Book a Free Trial Class
                 <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </a>
-              <p className="text-sm font-bold text-white/70 sm:ml-4 bg-white/5 p-3 rounded-xl border border-white/10 backdrop-blur-sm">
-                Spots fill quickly.<br />No experience needed.
+              <p className="text-sm font-medium text-white/70 sm:ml-2">
+                Free 60-minute trial.<br />No experience needed.
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-4 sm:gap-8">
+            <div className="flex flex-wrap gap-x-6 gap-y-3 pt-2 border-t border-white/10 mt-2 pb-1">
               {[
-                "No commitment",
-                "Beginner-friendly",
-                "Ages 6–18"
+                "Loved by Winnipeg families",
+                "Small group classes",
+                "Certified coaches",
+                "Month-to-month, no contracts"
               ].map((badge, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm font-bold text-white/90 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-sm">
-                  <CheckCircle2 className="h-5 w-5 text-accent" />
+                <div key={i} className="flex items-center gap-2 text-sm font-medium text-white/80">
+                  <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" />
                   {badge}
                 </div>
               ))}

@@ -8,8 +8,10 @@ import ParentBenefits from "@/components/sections/parent-benefits";
 import BeforeAfter from "@/components/sections/before-after";
 import Proof from "@/components/sections/proof";
 import HowItWorks from "@/components/sections/how-it-works";
+import Schedule from "@/components/sections/schedule";
 import Results from "@/components/sections/results";
 import WhyDifferent from "@/components/sections/why-different";
+import Faq from "@/components/sections/faq";
 import FinalCta from "@/components/sections/final-cta";
 
 export default function Home() {
@@ -24,8 +26,10 @@ export default function Home() {
         <BeforeAfter />
         <Proof />
         <HowItWorks />
+        <Schedule />
         <Results />
         <WhyDifferent />
+        <Faq />
         <FinalCta />
       </main>
       <Footer />
