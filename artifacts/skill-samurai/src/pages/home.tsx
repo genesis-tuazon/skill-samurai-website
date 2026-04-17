@@ -23,16 +23,16 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <MediaBanner />
-        <StatsStrip />
         <Relatability />
         <ChildBenefits />
         <ParentBenefits />
         <BeforeAfter />
-        <Proof />
+        <WhyDifferent />
         <HowItWorks />
         <Schedule />
+        <StatsStrip />
         <Results />
-        <WhyDifferent />
+        <Proof />
         <Faq />
         <FinalCta />
       </main>
