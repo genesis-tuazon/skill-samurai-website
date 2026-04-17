@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
-import { Code2, Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
+import logoUrl from "@assets/Skill_Samurai_Logo_(Hoodies)_(T-Shirts)_(Hoodies)_1776400642747.png";
 
 export default function Footer() {
   return (
@@ -8,13 +9,12 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-6 group inline-flex">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm">
-                <Code2 className="h-6 w-6" />
-              </div>
-              <span className="font-heading font-bold text-2xl tracking-tight text-white">
-                Skill Samurai
-              </span>
+            <Link href="/" className="flex items-center mb-6 group" data-testid="link-footer-home">
+              <img
+                src={logoUrl}
+                alt="Skill Samurai — Coding, Robotics & STEM Academy"
+                className="h-20 w-auto"
+              />
             </Link>
             <p className="text-secondary-foreground/80 max-w-sm mb-8">
               Turning screen time into something parents feel great about. 

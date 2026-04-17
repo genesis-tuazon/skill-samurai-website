@@ -1,19 +1,17 @@
 import React from "react";
 import { Link } from "wouter";
-import { Code2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import logoUrl from "@assets/Skill_Samurai_Logo_(Hoodies)_(T-Shirts)_(Hoodies)_1776400642747.png";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-sm group-hover:scale-105 transition-transform duration-300">
-            <Code2 className="h-6 w-6" />
-          </div>
-          <span className="font-heading font-bold text-2xl tracking-tight text-secondary">
-            Skill Samurai
-          </span>
+      <div className="container mx-auto px-4 h-24 flex items-center justify-between">
+        <Link href="/" className="flex items-center group" data-testid="link-home">
+          <img
+            src={logoUrl}
+            alt="Skill Samurai — Coding, Robotics & STEM Academy"
+            className="h-20 w-auto group-hover:scale-105 transition-transform duration-300"
+          />
         </Link>
         <div className="flex items-center gap-4">
           <a
