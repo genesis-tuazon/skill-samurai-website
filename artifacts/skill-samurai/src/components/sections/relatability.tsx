@@ -64,7 +64,7 @@ export default function Relatability() {
               <span className="text-accent block">WE BUILT SKILL SAMURAI</span>
             </h3>
             <p className="text-lg md:text-2xl text-white/90 max-w-2xl mx-auto font-medium">
-              We replace the empty guilt of passive gaming with the profound pride of building something real. You'll finally feel good about their screen time.
+              Your child already loves being on screens. We turn that into something you can actually feel good about.
             </p>
           </div>
         </FadeIn>
