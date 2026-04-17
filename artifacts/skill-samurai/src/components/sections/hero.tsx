@@ -1,16 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import { WaveDivider } from "@/components/ui/wave-divider";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background pt-24 pb-32 lg:pt-32 lg:pb-40">
+    <section className="relative overflow-hidden bg-secondary pt-24 pb-32 lg:pt-32 lg:pb-40">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-20 pointer-events-none">
-        <div className="w-[800px] h-[800px] rounded-full bg-accent/30 blur-[120px]" />
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 4px 4px, rgba(255,255,255,0.4) 2px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+      <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-30 pointer-events-none">
+        <div className="w-[800px] h-[800px] rounded-full bg-primary blur-[120px]" />
       </div>
       <div className="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/3 opacity-20 pointer-events-none">
-        <div className="w-[600px] h-[600px] rounded-full bg-primary/20 blur-[100px]" />
+        <div className="w-[600px] h-[600px] rounded-full bg-accent blur-[100px]" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -21,24 +23,27 @@ export default function Hero() {
             transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="max-w-2xl"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white font-bold text-sm mb-6 border border-white/20 backdrop-blur-sm shadow-xl shadow-black/10">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
               </span>
-              Now enrolling in Winnipeg
+              NOW ENROLLING IN WINNIPEG
             </div>
             
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold font-heading text-secondary leading-[1.1] mb-6">
-              Turn Screen Time Into Something That <span className="text-primary relative inline-block">
-                Actually Helps
-                <svg className="absolute -bottom-2 left-0 w-full h-3 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
-                  <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+            <h1 className="text-5xl lg:text-6xl xl:text-[5.5rem] font-black font-heading leading-[1] mb-6 uppercase tracking-tight">
+              <span className="text-white block">TURN SCREEN TIME</span>
+              <span className="text-white block">INTO SOMETHING THAT</span>
+              <span className="text-primary block">ACTUALLY HELPS</span>
+              <span className="text-accent block relative inline-block">
+                YOUR CHILD
+                <svg className="absolute -bottom-2 left-0 w-full h-4 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
+                  <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
                 </svg>
-              </span> Your Child.
+              </span>
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-10 leading-relaxed max-w-xl">
+            <p className="text-xl text-white/80 mb-10 leading-relaxed max-w-xl font-medium mt-4">
               Instead of just playing games, your child will learn to build them — while developing confidence, focus, and real-world skills in a supportive, expert-guided environment.
             </p>
             
@@ -47,12 +52,12 @@ export default function Hero() {
                 href="https://skillsamurai.ca/book-a-free-trial"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-14 items-center justify-center rounded-full bg-primary px-8 text-lg font-bold text-primary-foreground shadow-xl shadow-primary/20 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 group w-full sm:w-auto"
+                className="inline-flex h-16 items-center justify-center rounded-full bg-primary px-10 text-xl font-black uppercase tracking-wide text-white shadow-2xl shadow-primary/40 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 group w-full sm:w-auto hover:shadow-primary/60 border-b-4 border-primary-foreground/20"
               >
                 Book a Free Trial Class
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
               </a>
-              <p className="text-sm text-muted-foreground sm:ml-4">
+              <p className="text-sm font-bold text-white/70 sm:ml-4 bg-white/5 p-3 rounded-xl border border-white/10 backdrop-blur-sm">
                 Spots fill quickly.<br />No experience needed.
               </p>
             </div>
@@ -63,7 +68,7 @@ export default function Hero() {
                 "Beginner-friendly",
                 "Ages 6–18"
               ].map((badge, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm font-medium text-secondary">
+                <div key={i} className="flex items-center gap-2 text-sm font-bold text-white/90 bg-white/5 px-4 py-2 rounded-full border border-white/10 backdrop-blur-sm">
                   <CheckCircle2 className="h-5 w-5 text-accent" />
                   {badge}
                 </div>
@@ -77,8 +82,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
             className="relative"
           >
-            <div className="relative rounded-[2.5rem] overflow-hidden border-[8px] border-white shadow-2xl shadow-secondary/10 bg-white rotate-2 aspect-[4/3] group">
-              <div className="absolute inset-0 bg-secondary/5 group-hover:bg-transparent transition-colors z-10" />
+            <div className="relative rounded-[3rem] overflow-hidden border-[12px] border-white shadow-2xl shadow-black/50 bg-white rotate-3 hover:rotate-0 transition-transform duration-500 aspect-[4/3] group">
+              <div className="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors z-10" />
               <img 
                 src="/images/hero-coding.png" 
                 alt="Diverse kids engaged in coding with an expert instructor" 
@@ -90,20 +95,22 @@ export default function Hero() {
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg z-20 flex items-center gap-4"
+                className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-[2rem] p-4 shadow-2xl z-20 flex items-center gap-4 border-[3px] border-muted"
               >
-                <div className="h-12 w-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                <div className="h-14 w-14 rounded-2xl bg-accent/20 flex items-center justify-center flex-shrink-0 rotate-6">
                   <span className="text-2xl">✨</span>
                 </div>
                 <div>
-                  <p className="font-bold text-secondary text-sm">Most kids don't want to leave</p>
-                  <p className="text-muted-foreground text-xs">after their first class.</p>
+                  <p className="font-bold text-secondary text-sm md:text-base leading-tight">Most kids don't want to leave</p>
+                  <p className="text-muted-foreground font-medium text-xs md:text-sm">after their first class.</p>
                 </div>
               </motion.div>
             </div>
           </motion.div>
         </div>
       </div>
+      
+      <WaveDivider position="bottom" fill="#ffffff" />
     </section>
   );
 }
