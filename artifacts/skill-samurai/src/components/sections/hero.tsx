@@ -7,7 +7,6 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-secondary pt-24 pb-32 lg:pt-32 lg:pb-40">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 4px 4px, rgba(255,255,255,0.4) 2px, transparent 0)', backgroundSize: '32px 32px' }}></div>
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-30 pointer-events-none">
         <div className="w-[800px] h-[800px] rounded-full bg-primary blur-[120px]" />
       </div>
