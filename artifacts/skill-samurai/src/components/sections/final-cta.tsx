@@ -7,7 +7,6 @@ export default function FinalCta() {
     <section className="py-28 relative overflow-hidden">
       {/* Dynamic Background */}
       <div className="absolute inset-0 bg-secondary">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 4px 4px, rgba(255,255,255,0.4) 2px, transparent 0)', backgroundSize: '32px 32px' }}></div>
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/40 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-accent/30 rounded-full blur-[120px] translate-y-1/3 -translate-x-1/3"></div>
       </div>

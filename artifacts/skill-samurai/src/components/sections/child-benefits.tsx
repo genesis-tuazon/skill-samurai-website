@@ -32,7 +32,6 @@ export default function ChildBenefits() {
 
   return (
     <section className="py-32 bg-primary/5 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-full h-full opacity-30 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 40px 40px, hsl(var(--primary)/0.2) 2%, transparent 2%)', backgroundSize: '80px 80px' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">

@@ -21,8 +21,6 @@ export default function BeforeAfter() {
 
   return (
     <section className="py-32 bg-white relative overflow-hidden">
-      <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(0,0,0,0.03) 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
-      
       <div className="container mx-auto px-4 relative z-10 pt-10">
         <FadeIn className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">The Shift</h2>

@@ -29,7 +29,6 @@ export default function Relatability() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
       {/* Background dot grid */}
-      <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(0,0,0,0.05) 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
 
       <div className="container mx-auto px-4 relative z-10 pt-10">
         <FadeIn className="text-center max-w-4xl mx-auto mb-16">
@@ -57,7 +56,7 @@ export default function Relatability() {
         </div>
 
         <FadeIn delay={0.4} direction="up" className="max-w-4xl mx-auto bg-secondary text-white rounded-[3rem] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-secondary/30 rotate-1 hover:rotate-0 transition-transform">
-          <div className="absolute top-0 left-0 w-full h-full bg-primary/10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-primary/10"></div>
           <div className="absolute -top-20 -right-20 w-60 h-60 bg-accent rounded-full blur-[60px] opacity-40"></div>
           <div className="relative z-10">
             <h3 className="text-3xl md:text-5xl font-black uppercase font-heading mb-6 leading-tight tracking-tight">
