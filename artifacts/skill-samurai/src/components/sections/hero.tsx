@@ -60,7 +60,8 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/30 transition-all hover:scale-110 hover:bg-primary/90"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition-all hover:scale-110"
+              style={{ background: 'radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)' }}
             >
               <Instagram className="h-5 w-5" />
             </a>
@@ -69,9 +70,10 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-white border-2 border-white shadow-lg transition-all hover:scale-110 hover:bg-secondary/80"
+              className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition-all hover:scale-110"
+              style={{ backgroundColor: '#1877F2' }}
             >
-              <Facebook className="h-5 w-5" />
+              <Facebook className="h-5 w-5 fill-white" />
             </a>
           </div>
         </motion.div>
