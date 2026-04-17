@@ -31,9 +31,9 @@ export default function Hero() {
             
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black font-heading leading-[1.05] mb-6 tracking-tight text-white">
               Where screen time becomes a{" "}
-              <span className="relative inline-block text-accent">
+              <span className="relative inline-block text-primary">
                 real skill
-                <svg className="absolute -bottom-2 left-0 w-full h-4 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <svg className="absolute -bottom-2 left-0 w-full h-4 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
                 </svg>
               </span>
