@@ -77,29 +77,29 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
 
 export default function Faq() {
   return (
-    <section className="py-28 bg-muted/30 relative overflow-hidden">
+    <section className="py-28 bg-secondary relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-[1fr,1.5fr] gap-12 lg:gap-20 max-w-6xl mx-auto items-start">
           <FadeIn className="lg:sticky lg:top-28">
-            <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">FAQ</h2>
-            <h3 className="text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-5">
+          <h2 className="text-accent font-bold tracking-wider uppercase text-sm mb-3">FAQ</h2>
+          <h3 className="text-4xl md:text-5xl font-black font-heading text-white leading-tight tracking-tight mb-5">
               Parent questions,<br />honestly answered.
             </h3>
-            <p className="text-lg text-muted-foreground font-medium mb-6">
+          <p className="text-lg text-white/75 font-medium mb-6">
               The things parents actually ask before booking a trial. If you don't see your question here, just ask us — we'd rather over-explain than oversell.
             </p>
             <a
               href="https://skillsamurai.ca/book-a-free-trial"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-secondary px-7 py-3 text-base font-bold text-white shadow-lg hover:bg-secondary/90 hover:scale-[1.02] active:scale-95 transition-all"
+              className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-base font-bold text-white shadow-lg hover:bg-primary/90 hover:scale-[1.02] active:scale-95 transition-all"
             >
-              Book a free trial
+              BOOK A FREE TRIAL
             </a>
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div className="bg-white rounded-3xl border border-border shadow-xl shadow-secondary/5 px-7 md:px-10 py-2">
+            <div className="bg-white/10 rounded-3xl border border-white/10 shadow-xl shadow-black/20 px-7 md:px-10 py-2 backdrop-blur-sm">
               {faqs.map((f, i) => (
                 <FaqItem key={i} q={f.q} a={f.a} defaultOpen={i === 0} />
               ))}
