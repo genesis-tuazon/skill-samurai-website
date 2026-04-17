@@ -66,27 +66,32 @@
   --popover-foreground: 224 45% 15%;
   --popover-border: 220 20% 90%;
 
-  /* Hot Pink/Magenta — brand CTA */
-  --primary: 332 82% 52%;
+  /* Hot Pink — brand CTA (#ee3c83) */
+  --primary: 335 84% 58%;
   --primary-foreground: 0 0% 100%;
 
-  /* Deep Navy — brand primary */
-  --secondary: 220 44% 24%;
+  /* Deep Navy — brand primary (#152f40) */
+  --secondary: 206 50% 17%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Warm Orange — from the samurai fox flame */
-  --accent: 22 92% 56%;
-  --accent-foreground: 220 44% 14%;
+  /* Warm Orange — brand accent (#f0904c) */
+  --accent: 22 84% 62%;
+  --accent-foreground: 206 50% 12%;
 
-  --muted: 220 20% 94%;
-  --muted-foreground: 220 25% 40%;
+  /* Muted — soft sky blue tint of brand light blue (#7aa6bf) */
+  --muted: 204 30% 94%;
+  --muted-foreground: 206 35% 30%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 220 20% 88%;
-  --input: 220 20% 88%;
-  --ring: 332 82% 52%;
+  --border: 204 25% 86%;
+  --input: 204 25% 86%;
+  --ring: 335 84% 58%;
+
+  /* Extended brand palette */
+  --brand-light-blue: 204 32% 62%;
+  --brand-aubergine: 298 60% 13%;
 
   --app-font-sans: 'Plus Jakarta Sans', sans-serif;
   --app-font-heading: 'Outfit', sans-serif;
