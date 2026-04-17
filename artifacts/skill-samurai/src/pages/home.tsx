@@ -2,8 +2,6 @@ import React from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Hero from "@/components/sections/hero";
-import FeaturedIn from "@/components/sections/featured-in";
-import FutureReady from "@/components/sections/future-ready";
 import Relatability from "@/components/sections/relatability";
 import ChildBenefits from "@/components/sections/child-benefits";
 import ParentBenefits from "@/components/sections/parent-benefits";
@@ -20,8 +18,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <FeaturedIn />
-        <FutureReady />
         <Relatability />
         <ChildBenefits />
         <ParentBenefits />
