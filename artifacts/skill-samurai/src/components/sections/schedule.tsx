@@ -8,13 +8,13 @@ export default function Schedule() {
       icon: <Clock className="h-7 w-7" />,
       label: "Class length",
       value: "60 minutes",
-      detail: "Focused, hands-on classes that fit a busy family schedule."
+      detail: "Focused, hands-on classes designed to keep kids engaged while fitting into a busy schedule."
     },
     {
       icon: <Users className="h-7 w-7" />,
       label: "Group size",
       value: "15 students · 2 instructors",
-      detail: "A 1:7.5 ratio gives kids the support they need while still learning with peers."
+      detail: "A 1:7.5 ratio gives kids the support they need while still learning alongside peers."
     },
     {
       icon: <CalendarDays className="h-7 w-7" />,
@@ -25,8 +25,8 @@ export default function Schedule() {
     {
       icon: <Wallet className="h-7 w-7" />,
       label: "Pricing",
-      value: "Pricing available by program",
-      detail: "The trial class is free — pay only if it's the right fit for your child."
+      value: "Pricing varies by program",
+      detail: "The trial class is free — you only continue if it’s the right fit for your child."
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Schedule() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 text-primary font-bold text-lg hover:gap-3 transition-all"
           >
-            See available trial times
+            👉 See available trial times
             <ArrowRight className="h-5 w-5" />
           </a>
         </FadeIn>
