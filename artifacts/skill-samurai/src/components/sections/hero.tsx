@@ -24,9 +24,9 @@ export default function Hero() {
             transform: 'translate(-50%, -50%) scale(1.15)',
           }}
         />
-        {/* Dark overlay for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/85 via-secondary/70 to-secondary/85"></div>
-        <div className="absolute inset-0 bg-secondary/30"></div>
+        {/* Grey overlay for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/80 via-neutral-800/65 to-neutral-900/80"></div>
+        <div className="absolute inset-0 bg-neutral-900/25"></div>
       </div>
 
       {/* Color blob accents */}
