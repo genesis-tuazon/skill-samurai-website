@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight, Facebook, Instagram } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -37,79 +37,58 @@ export default function Hero() {
         <div className="w-[500px] h-[500px] rounded-full bg-accent blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-24 pb-32 lg:pt-32 lg:pb-40">
+      <div className="container mx-auto px-4 relative z-10 pt-32 pb-28 lg:pt-40 lg:pb-36 min-h-[640px] lg:min-h-[720px] flex items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="max-w-3xl"
+          className="max-w-2xl"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white font-bold text-sm mb-6 border border-white/20 backdrop-blur-sm shadow-xl shadow-black/10">
-            <span className="relative flex h-3 w-3">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border border-white/20 backdrop-blur-sm">
+            <span className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent"></span>
             </span>
-            NOW ENROLLING IN WINNIPEG
+            Now enrolling in Winnipeg
           </div>
 
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-black font-heading leading-[1.05] mb-6 tracking-tight text-white drop-shadow-lg">
-            Where screen time becomes a{" "}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black font-heading leading-[1.05] mb-6 tracking-tight text-white drop-shadow-2xl">
+            Where screen time<br className="hidden sm:block" /> becomes a{" "}
             <span className="relative inline-block text-primary">
               real skill
-              <svg className="absolute -bottom-2 left-0 w-full h-4 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <svg className="absolute -bottom-2 left-0 w-full h-3 text-primary" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round"/>
               </svg>
             </span>
             .
           </h1>
 
-          <p className="text-xl text-white/90 mb-10 leading-relaxed max-w-2xl font-medium mt-4 drop-shadow">
-            After-school coding, robotics, and STEM classes in Winnipeg for ages 6–18 — taught by real coaches, in small groups, with no long-term contracts.
+          <p className="text-lg lg:text-xl text-white/85 mb-10 leading-relaxed max-w-xl font-medium drop-shadow">
+            After-school coding, robotics &amp; STEM classes for ages 6–18 — small groups, real coaches, no long-term contracts.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center mb-10">
             <a
               href="https://skillsamurai.ca/book-a-free-trial"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-16 items-center justify-center rounded-full bg-primary px-10 text-xl font-black uppercase tracking-wide text-white shadow-2xl shadow-primary/40 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 group w-full sm:w-auto hover:shadow-primary/60 border-b-4 border-primary-foreground/20"
+              className="inline-flex h-14 items-center justify-center rounded-full bg-primary px-8 text-base lg:text-lg font-black uppercase tracking-wide text-white shadow-2xl shadow-primary/40 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 group hover:shadow-primary/60 border-b-4 border-primary-foreground/20"
             >
               Book a Free Trial Class
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
-            <p className="text-sm font-medium text-white/80 sm:ml-2">
-              Free 60-minute trial.<br />No experience needed.
+            <p className="text-xs sm:text-sm font-medium text-white/75 sm:ml-3">
+              Free 60-min trial.<br className="hidden sm:block" /> No experience needed.
             </p>
           </div>
-          <div className="flex items-center gap-3 mb-8">
-            <a
-              href="https://facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white border border-white/20 backdrop-blur-sm transition-all hover:bg-white hover:text-secondary hover:scale-105"
-            >
-              <Facebook className="h-5 w-5" />
-            </a>
-            <a
-              href="https://instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white border border-white/20 backdrop-blur-sm transition-all hover:bg-white hover:text-secondary hover:scale-105"
-            >
-              <Instagram className="h-5 w-5" />
-            </a>
-          </div>
 
-          <div className="flex flex-wrap gap-x-6 gap-y-3 pt-4 border-t border-white/15 mt-2">
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs sm:text-sm font-semibold text-white/80">
             {[
-              "Loved by Winnipeg families",
-              "Small group classes",
+              "Small groups",
               "Certified coaches",
-              "Month-to-month, no contracts"
+              "Month-to-month",
             ].map((badge, i) => (
-              <div key={i} className="flex items-center gap-2 text-sm font-medium text-white/85">
+              <div key={i} className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" />
                 {badge}
               </div>
