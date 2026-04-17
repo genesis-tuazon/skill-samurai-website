@@ -74,9 +74,9 @@
   --secondary: 218 42% 29%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Warm Orange — brand accent (#f0904c) */
-  --accent: 22 84% 62%;
-  --accent-foreground: 206 50% 12%;
+  /* Sky Blue — accent replacement */
+  --accent: 204 32% 62%;
+  --accent-foreground: 220 44% 14%;
 
   /* Muted — soft sky blue tint of brand light blue (#7aa6bf) */
   --muted: 204 30% 94%;
