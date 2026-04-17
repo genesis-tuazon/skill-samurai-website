@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "wouter";
-import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react";
 import logoUrl from "@assets/SkillSamurai_Logo_Full_(1)_(1)_(1)_1776400767722.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground py-16">
+    <footer className="bg-muted/40 text-secondary border-t border-border/60 py-16">
       <div className="container mx-auto px-4">
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
@@ -16,38 +16,45 @@ export default function Footer() {
                 className="h-20 w-auto"
               />
             </Link>
-            <p className="text-secondary-foreground/80 max-w-sm mb-8">
-              Turning screen time into something parents feel great about. 
-              We help kids ages 6–18 build confidence, focus, and real-world 
-              skills through coding and STEM.
+            <p className="text-secondary/70 max-w-sm mb-8 font-medium leading-relaxed">
+              Turning screen time into something parents feel great about. We help kids ages 6–18 build confidence, focus, and real-world skills through coding and STEM.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+            <div className="flex gap-3">
+              <a href="#" aria-label="Facebook" className="h-11 w-11 rounded-full bg-white border border-border flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="#" aria-label="Instagram" className="h-11 w-11 rounded-full bg-white border border-border flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="#" aria-label="Twitter" className="h-11 w-11 rounded-full bg-white border border-border flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
-          
+
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6 text-white">Contact</h4>
-            <ul className="space-y-4 text-secondary-foreground/80">
-              <li>123 Main St, Winnipeg, MB</li>
-              <li>(204) 555-0123</li>
-              <li>hello@skillsamurai.ca</li>
+            <h4 className="font-heading font-bold text-base mb-5 text-secondary uppercase tracking-wide">Contact</h4>
+            <ul className="space-y-4 text-secondary/75 font-medium">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                <span>Winnipeg, MB</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                <span>(204) 555-0123</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                <span>hello@skillsamurai.ca</span>
+              </li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6 text-white">Quick Links</h4>
-            <ul className="space-y-4 text-secondary-foreground/80">
+            <h4 className="font-heading font-bold text-base mb-5 text-secondary uppercase tracking-wide">Quick Links</h4>
+            <ul className="space-y-3 text-secondary/75 font-medium">
               <li>
-                <a href="https://skillsamurai.ca/book-a-free-trial" className="hover:text-primary transition-colors">
+                <a href="https://skillsamurai.ca/book-a-free-trial" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                   Book a Free Trial
                 </a>
               </li>
@@ -57,12 +64,12 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        
-        <div className="mt-16 pt-8 border-t border-white/10 text-center text-sm text-secondary-foreground/60 flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <div className="mt-14 pt-6 border-t border-border/70 text-sm text-secondary/60 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>© {new Date().getFullYear()} Skill Samurai Winnipeg. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
