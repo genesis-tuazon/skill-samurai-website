@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import { CheckCircle2, ArrowRight, Sparkles } from "lucide-react";
 import { WaveDivider } from "@/components/ui/wave-divider";
+import heroPhoto from "@assets/Screenshot_2026-04-16_234335_1776401048604.png";
 
 export default function Hero() {
   return (
@@ -85,8 +86,8 @@ export default function Hero() {
             <div className="relative rounded-[3rem] overflow-hidden border-[12px] border-white shadow-2xl shadow-black/50 bg-white rotate-3 hover:rotate-0 transition-transform duration-500 aspect-[4/3] group">
               <div className="absolute inset-0 bg-secondary/10 group-hover:bg-transparent transition-colors z-10" />
               <img 
-                src="/images/hero-coding.png" 
-                alt="Diverse kids engaged in coding with an expert instructor" 
+                src={heroPhoto}
+                alt="Skill Samurai students focused on building their own coding projects" 
                 className="w-full h-full object-cover"
               />
               
@@ -97,8 +98,8 @@ export default function Hero() {
                 transition={{ delay: 0.8, duration: 0.5 }}
                 className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-[2rem] p-4 shadow-2xl z-20 flex items-center gap-4 border-[3px] border-muted"
               >
-                <div className="h-14 w-14 rounded-2xl bg-accent/20 flex items-center justify-center flex-shrink-0 rotate-6">
-                  <span className="text-2xl">✨</span>
+                <div className="h-14 w-14 rounded-2xl bg-accent/20 flex items-center justify-center flex-shrink-0 rotate-6 text-accent">
+                  <Sparkles className="h-7 w-7" strokeWidth={2.5} />
                 </div>
                 <div>
                   <p className="font-bold text-secondary text-sm md:text-base leading-tight">Most kids don't want to leave</p>
