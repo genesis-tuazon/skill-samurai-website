@@ -35,7 +35,7 @@ export default function Relatability() {
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">This might sound familiar...</h2>
           <h3 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading uppercase leading-tight tracking-tight">
             <span className="text-secondary block mb-2">THE SCREEN TIME BATTLE</span>
-            <span className="text-primary">EVERY PARENT KNOWS</span>
+            <span className="text-primary block">EVERY PARENT KNOWS</span>
           </h3>
         </FadeIn>
 
