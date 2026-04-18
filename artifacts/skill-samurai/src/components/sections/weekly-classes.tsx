@@ -149,22 +149,28 @@ export default function WeeklyClasses() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <a
-              href="https://winnipeg.jumbula.com/north-east-coding-classes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-primary/30 hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all"
-            >
-              North East Programs
-            </a>
-            <a
-              href="https://winnipeg.jumbula.com/seven-oaks-coding-classes"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center rounded-full bg-secondary px-8 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-secondary/30 hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-all"
-            >
-              Seven Oaks Programs
-            </a>
+            <div className="flex flex-col items-center">
+              <a
+                href="https://winnipeg.jumbula.com/north-east-coding-classes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-primary px-8 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-primary/30 hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all"
+              >
+                North East Programs
+              </a>
+              <span className="mt-2 text-sm font-semibold text-secondary/70">North East Location</span>
+            </div>
+            <div className="flex flex-col items-center">
+              <a
+                href="https://winnipeg.jumbula.com/seven-oaks-coding-classes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-secondary px-8 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-secondary/30 hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-all"
+              >
+                Seven Oaks Programs
+              </a>
+              <span className="mt-2 text-sm font-semibold text-secondary/70">Seven Oaks Location</span>
+            </div>
           </div>
         </FadeIn>
       </div>
