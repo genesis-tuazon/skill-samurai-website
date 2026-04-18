@@ -29,6 +29,14 @@ const reviews: Review[] = [
     text: "My kids have been coming for almost two months now, and they absolutely love it! As a homeschooling family, I really appreciate how Skill Samurai makes learning feel like play. What I love most is how Skill Samurai sneaks in so many different subjects without the kids feeling like they're doing \"work\". They just think they're playing games! The staff is amazing, patient, and encouraging, and the location is super convenient with plenty of parking. Highly recommend for any parent who wants to make learning fun and meaningful.",
   },
   {
+    name: "Olga Talmatska",
+    initials: "OT",
+    color: "bg-secondary",
+    weeksAgo: "27 weeks ago",
+    rating: 5,
+    text: "My son has been attending these computer classes for over a year, and he really enjoys them! The atmosphere is very welcoming, and the instructors provide an individual approach to every child. There are many interesting directions to choose from — coding, robotics, STEM, and game development. My son has already completed more than three programs and continues to learn with great interest. I love that these classes help him focus, think critically, and be creative while doing something he truly enjoys. The schedule and location are convenient, and the price is affordable. I highly recommend this program for kids in Winnipeg!",
+  },
+  {
     name: "Tanvir Soor",
     initials: "TS",
     color: "bg-accent text-secondary",
@@ -86,7 +94,7 @@ export default function GoogleReviews() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {reviews.map((r, i) => (
             <FadeIn key={r.name} direction="up" delay={i * 0.1}>
               <article className="h-full flex flex-col bg-white rounded-3xl p-7 md:p-8 border border-secondary/10 shadow-xl shadow-black/5 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
