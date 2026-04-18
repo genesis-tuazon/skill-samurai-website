@@ -44,7 +44,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href="https://skillsamurai.ca/book-a-free-trial"
+            href="https://link.skillsamurai.com/widget/booking/Ku7skA5XAkgQpg8rQqN1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 self-start md:self-auto rounded-full bg-primary px-7 py-3.5 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-primary/30 hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all"
@@ -177,7 +177,7 @@ export default function Footer() {
               <ul className="space-y-3 text-white/75 font-medium text-sm">
                 <li>
                   <a
-                    href="https://skillsamurai.ca/book-a-free-trial"
+                    href="https://link.skillsamurai.com/widget/booking/Ku7skA5XAkgQpg8rQqN1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"
