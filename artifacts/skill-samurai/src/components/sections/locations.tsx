@@ -1,11 +1,12 @@
 import React from "react";
 import { FadeIn } from "@/components/ui/fade-in";
-import { MapPin, Clock, ArrowRight, CalendarClock } from "lucide-react";
+import { MapPin, Clock, ArrowRight, CalendarClock, Sparkles } from "lucide-react";
 
 const locations = [
   {
     name: "Seven Oaks",
     tag: "After-school coding classes for ages 6–18",
+    region: "Great for families in North/West Winnipeg",
     address: "745 Kingsbury Ave., Winnipeg, MB",
     days: "Tue – Sat",
     times: "After-school and weekend options",
@@ -16,6 +17,7 @@ const locations = [
   {
     name: "North East",
     tag: "After-school coding classes for ages 6–18",
+    region: "Great for families in East/North East Winnipeg",
     address: "1199 Rothesay St., Winnipeg, MB",
     days: "Mon – Sat",
     times: "After-school and weekend options",
@@ -29,19 +31,26 @@ export default function Locations() {
   return (
     <section id="locations" className="py-20 md:py-28 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <FadeIn className="text-center max-w-3xl mx-auto mb-12 md:mb-14">
+        <FadeIn className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">
             Two Winnipeg Locations
           </h2>
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-4">
-            Find the location that works best for your family.
+            Choose the location that works best for your family.
           </h3>
-          <p className="text-base sm:text-lg text-muted-foreground font-medium mb-2">
+          <p className="text-base sm:text-lg text-muted-foreground font-medium mb-3">
             Choose a location below to book a free trial or schedule a makeup class.
           </p>
           <p className="text-sm sm:text-base text-primary font-semibold">
-            Most kids start with a free trial — no experience needed.
+            Most kids start with a free trial. No experience needed.
           </p>
+        </FadeIn>
+
+        <FadeIn delay={0.1} className="text-center mb-8 md:mb-10">
+          <span className="inline-flex items-center gap-2 rounded-full bg-secondary/5 border border-secondary/10 px-4 py-2 text-xs sm:text-sm font-semibold text-secondary/80">
+            <CalendarClock className="h-4 w-4 text-primary" />
+            Classes available after school and on weekends.
+          </span>
         </FadeIn>
 
         <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
@@ -69,8 +78,14 @@ export default function Locations() {
                     </div>
                   </div>
 
-                  <p className="text-sm font-semibold text-muted-foreground mb-5">
+                  <p className="text-sm font-semibold text-secondary/80 mb-1">
                     {loc.tag}
+                  </p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-2 italic">
+                    Beginner-friendly — most kids start with no experience.
+                  </p>
+                  <p className={`text-xs font-bold uppercase tracking-wider ${accentText} mb-5`}>
+                    {loc.region}
                   </p>
 
                   <ul className="space-y-3 mb-7">
@@ -103,25 +118,27 @@ export default function Locations() {
                     </li>
                   </ul>
 
-                  <div className="mt-auto flex flex-col sm:flex-row gap-3">
-                    <a
-                      href={loc.bookHref}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex-1 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-lg transition-all hover:scale-[1.03] active:scale-95 ${accentBg} hover:opacity-90`}
-                    >
-                      Book a Free Trial
-                      <ArrowRight className="h-4 w-4" />
-                    </a>
+                  <div className="mt-auto flex flex-col gap-3">
+                    <div className="flex flex-col items-center">
+                      <a
+                        href={loc.bookHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-black uppercase tracking-wide text-white shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] active:scale-95 ${accentBg} hover:opacity-90`}
+                      >
+                        <Sparkles className="h-4 w-4" />
+                        Book a Free Trial
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                      <span className="mt-1.5 text-[11px] font-bold uppercase tracking-wider text-primary">
+                        Best place to start
+                      </span>
+                    </div>
                     <a
                       href={loc.makeupHref}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex-1 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-black uppercase tracking-wide border-2 transition-all hover:scale-[1.03] active:scale-95 ${
-                        isPrimary
-                          ? "border-primary text-primary hover:bg-primary hover:text-white"
-                          : "border-secondary text-secondary hover:bg-secondary hover:text-white"
-                      }`}
+                      className="w-full inline-flex items-center justify-center gap-2 rounded-full px-6 py-2.5 text-xs font-bold uppercase tracking-wide text-secondary/70 border border-border hover:text-secondary hover:bg-muted/40 transition-all"
                     >
                       Schedule a Makeup Class
                     </a>
