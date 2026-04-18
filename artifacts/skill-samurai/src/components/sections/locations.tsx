@@ -5,20 +5,20 @@ import { MapPin, Clock, ArrowRight, CalendarClock } from "lucide-react";
 const locations = [
   {
     name: "Seven Oaks",
-    tag: "After-school coding classes",
+    tag: "After-school coding classes for ages 6–18",
     address: "745 Kingsbury Ave., Winnipeg, MB",
     days: "Tue – Sat",
-    times: "After-school & weekend slots",
+    times: "After-school and weekend options",
     bookHref: "https://winnipeg.jumbula.com/seven-oaks-coding-classes",
     makeupHref: "https://meetings.hubspot.com/skillsamurai/school-hour-of-code?uuid=b840de06-ab04-43d2-a397-5c3889bf58c7",
     accent: "primary",
   },
   {
     name: "North East",
-    tag: "After-school coding classes",
+    tag: "After-school coding classes for ages 6–18",
     address: "1199 Rothesay St., Winnipeg, MB",
     days: "Mon – Sat",
-    times: "After-school & weekend slots",
+    times: "After-school and weekend options",
     bookHref: "https://winnipeg.jumbula.com/north-east-coding-classes",
     makeupHref: "https://meetings.hubspot.com/skillsamurai/school-hour-of-code?uuid=b840de06-ab04-43d2-a397-5c3889bf58c7",
     accent: "secondary",
@@ -34,10 +34,13 @@ export default function Locations() {
             Two Winnipeg Locations
           </h2>
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-4">
-            Find the location that works for your family.
+            Find the location that works best for your family.
           </h3>
-          <p className="text-base sm:text-lg text-muted-foreground font-medium">
-            Pick a location below to book a free trial or schedule a makeup class.
+          <p className="text-base sm:text-lg text-muted-foreground font-medium mb-2">
+            Choose a location below to book a free trial or schedule a makeup class.
+          </p>
+          <p className="text-sm sm:text-base text-primary font-semibold">
+            Most kids start with a free trial — no experience needed.
           </p>
         </FadeIn>
 
@@ -107,7 +110,7 @@ export default function Locations() {
                       rel="noopener noreferrer"
                       className={`flex-1 inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-black uppercase tracking-wide text-white shadow-lg transition-all hover:scale-[1.03] active:scale-95 ${accentBg} hover:opacity-90`}
                     >
-                      Book Free Trial
+                      Book a Free Trial
                       <ArrowRight className="h-4 w-4" />
                     </a>
                     <a
@@ -120,7 +123,7 @@ export default function Locations() {
                           : "border-secondary text-secondary hover:bg-secondary hover:text-white"
                       }`}
                     >
-                      Schedule Makeup
+                      Schedule a Makeup Class
                     </a>
                   </div>
                 </article>
@@ -131,7 +134,7 @@ export default function Locations() {
 
         <FadeIn delay={0.25} className="mt-10 text-center">
           <p className="text-base md:text-lg text-secondary/80 font-semibold">
-            No contracts. Flexible, month-to-month memberships.
+            No contracts. Flexible, month-to-month membership that fits your schedule.
           </p>
         </FadeIn>
       </div>
