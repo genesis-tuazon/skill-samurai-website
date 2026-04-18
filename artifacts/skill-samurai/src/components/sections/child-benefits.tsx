@@ -29,6 +29,18 @@ export default function ChildBenefits() {
       title: "Confidence",
       desc: "When they build something real, they start believing they can tackle harder things too.",
       color: "bg-[#F59100]"
+    },
+    {
+      icon: <Blocks className="h-8 w-8 text-white" />,
+      title: "Communication",
+      desc: "They learn to explain ideas clearly, ask for help, and work better with other kids.",
+      color: "bg-accent"
+    },
+    {
+      icon: <Code className="h-8 w-8 text-white" />,
+      title: "Teamwork",
+      desc: "Group projects help them listen, collaborate, and support each other through challenges.",
+      color: "bg-primary"
     }
   ];
 
