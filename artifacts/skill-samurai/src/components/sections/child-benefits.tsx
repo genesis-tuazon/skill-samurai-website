@@ -58,70 +58,72 @@ export default function ChildBenefits() {
 
   return (
     <section className="py-20 md:py-32 bg-primary/5 relative overflow-hidden">
-      
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
-          <div className="lg:w-1/2">
+        <div className="grid lg:grid-cols-[1.05fr_0.95fr] gap-12 lg:gap-16 items-center">
+          <div>
             <FadeIn direction="right">
-              <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">For Your Child</h2>
-              <h3 className="text-4xl md:text-6xl font-black font-heading uppercase leading-tight tracking-tight mb-8 max-w-xl">
-                <span className="text-secondary block">WHAT YOUR CHILD</span>
-                <span className="text-primary block">GETS OUT OF IT</span>
+              <h2 className="text-primary font-bold tracking-[0.28em] uppercase text-xs sm:text-sm mb-3 sm:mb-4">
+                For Your Child
+              </h2>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading uppercase leading-[0.95] tracking-tight max-w-xl text-secondary">
+                <span className="block">WHAT YOUR CHILD</span>
+                <span className="block text-primary">GETS OUT OF IT</span>
               </h3>
-              <p className="text-xl text-secondary/80 mb-10 font-medium">
+              <p className="mt-5 sm:mt-6 text-lg sm:text-xl text-secondary/80 font-medium max-w-xl leading-relaxed">
                 We meet your child exactly where they're at. No experience needed. Just a structured, fun environment where playing on a tablet becomes learning that builds real skills they’ll use everywhere.
               </p>
-              
-              <div className="grid sm:grid-cols-2 gap-5">
-                {benefits.map((benefit, i) => (
-                  <div key={i} className="bg-white rounded-[1.75rem] p-5 shadow-xl shadow-secondary/5 border-2 border-white hover:border-primary/20 transition-all hover:-translate-y-2 group">
-                    <div className={`h-16 w-16 rounded-[1.25rem] flex items-center justify-center ${benefit.color} transition-transform group-hover:scale-110 mb-4 shadow-lg rotate-3 group-hover:-rotate-3`}>
+            </FadeIn>
+
+            <div className="mt-8 grid sm:grid-cols-2 gap-4 sm:gap-5">
+              {benefits.map((benefit, i) => (
+                <FadeIn key={i} delay={i * 0.08} direction="up">
+                  <div className="bg-white rounded-[1.75rem] p-5 shadow-xl shadow-secondary/5 border-2 border-white hover:border-primary/20 transition-all hover:-translate-y-2 group h-full">
+                    <div className={`h-14 w-14 rounded-[1.1rem] flex items-center justify-center ${benefit.color} transition-transform group-hover:scale-110 mb-4 shadow-lg rotate-3 group-hover:-rotate-3`}>
                       {benefit.icon}
                     </div>
-                    <h4 className="text-xl font-bold font-heading text-secondary mb-2">{benefit.title}</h4>
-                    <p className="text-muted-foreground font-medium">{benefit.desc}</p>
+                    <h4 className="text-lg sm:text-xl font-bold font-heading text-secondary mb-2 leading-snug">
+                      {benefit.title}
+                    </h4>
+                    <p className="text-sm sm:text-base text-muted-foreground font-medium leading-relaxed">
+                      {benefit.desc}
+                    </p>
                   </div>
-                ))}
-              </div>
-            </FadeIn>
+                </FadeIn>
+              ))}
+            </div>
           </div>
 
-          <div className="lg:w-1/2 w-full mt-10 lg:mt-0">
-            <FadeIn direction="left" className="relative">
-              <div className="grid gap-3 max-w-[520px] mx-auto">
-                <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
-                  <img
-                    src={classroomPhoto}
-                    alt="Children learning together in a classroom"
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-                <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-2 hover:rotate-0 transition-transform duration-500 md:ml-12">
-                  <img
-                    src={classroomPhotoTwo}
-                    alt="Kids smiling while coding together"
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
+          <FadeIn direction="left" className="relative lg:pt-6">
+            <div className="grid gap-4 max-w-[560px] mx-auto">
+              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
+                <img
+                  src={classroomPhoto}
+                  alt="Children learning together in a classroom"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              
-              {/* Decorative blobs */}
-              <div className="absolute -top-12 -right-12 w-64 h-64 bg-accent rounded-full blur-[60px] opacity-60 z-0 animate-pulse"></div>
-              <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-primary rounded-full blur-[60px] opacity-40 z-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
-              
-              <div className="absolute top-1/2 -left-8 md:-left-12 -translate-y-1/2 bg-white rounded-[2rem] p-5 shadow-2xl z-20 border-[4px] border-muted animate-bounce" style={{ animationDuration: '3s' }}>
-                <span className="text-5xl">🚀</span>
+              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-2 hover:rotate-0 transition-transform duration-500 lg:ml-14">
+                <img
+                  src={classroomPhotoTwo}
+                  alt="Kids smiling while coding together"
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-[2rem] p-5 shadow-2xl z-20 border-[4px] border-muted animate-bounce" style={{ animationDuration: '4s', animationDelay: '0.5s' }}>
-                <span className="text-5xl">💡</span>
-              </div>
-            </FadeIn>
-          </div>
+            </div>
 
+            <div className="absolute -top-10 -right-2 sm:-right-6 w-56 h-56 sm:w-64 sm:h-64 bg-accent rounded-full blur-[60px] opacity-55 z-0 animate-pulse"></div>
+            <div className="absolute -bottom-10 -left-2 sm:-left-6 w-56 h-56 sm:w-64 sm:h-64 bg-primary rounded-full blur-[60px] opacity-35 z-0 animate-pulse" style={{ animationDelay: '1s' }}></div>
+
+            <div className="absolute top-1/2 -left-2 sm:-left-10 -translate-y-1/2 bg-white rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-5 shadow-2xl z-20 border-[4px] border-muted animate-bounce" style={{ animationDuration: '3s' }}>
+              <span className="text-4xl sm:text-5xl">🚀</span>
+            </div>
+            <div className="absolute -bottom-4 sm:-bottom-6 -right-2 sm:-right-6 bg-white rounded-[1.5rem] sm:rounded-[2rem] p-4 sm:p-5 shadow-2xl z-20 border-[4px] border-muted animate-bounce" style={{ animationDuration: '4s', animationDelay: '0.5s' }}>
+              <span className="text-4xl sm:text-5xl">💡</span>
+            </div>
+          </FadeIn>
         </div>
       </div>
-      
+
       <div className="absolute bottom-0 left-0 h-px w-full bg-border/70" />
     </section>
   );
