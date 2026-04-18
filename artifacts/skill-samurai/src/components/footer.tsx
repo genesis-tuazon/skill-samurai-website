@@ -14,13 +14,8 @@ import logoUrl from "@assets/SkillSamurai_Logo_Full_(1)_(1)_(1)_1776400767722.pn
 
 const locations = [
   {
-    name: "North East",
-    address: "1199 Rothesay St.",
-    city: "Winnipeg, MB",
-  },
-  {
     name: "Seven Oaks",
-    address: "745 Kingsbury Ave.",
+    address: "1199 Rothesay St.",
     city: "Winnipeg, MB",
   },
 ];
@@ -42,7 +37,7 @@ export default function Footer() {
             </p>
           </div>
           <a
-            href="https://winnipeg.jumbula.com/north-east-coding-classes"
+            href="https://winnipeg.jumbula.com/seven-oaks-coding-classes"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 self-start md:self-auto rounded-full bg-primary px-7 py-3.5 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-primary/30 hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all"
@@ -171,7 +166,7 @@ export default function Footer() {
               <ul className="space-y-3 text-white/75 font-medium text-sm">
                 <li>
                   <a
-                    href="https://winnipeg.jumbula.com/north-east-coding-classes"
+                    href="https://winnipeg.jumbula.com/seven-oaks-coding-classes"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"

@@ -6,22 +6,12 @@ const locations = [
   {
     name: "Seven Oaks",
     tag: "After-school coding classes",
-    address: "Seven Oaks area, Winnipeg, MB",
-    days: "Tue – Sat",
+    address: "1199 Rothesay St., Winnipeg, MB",
+    days: "Mon – Sat",
     times: "After-school & weekend slots",
     bookHref: "https://winnipeg.jumbula.com/seven-oaks-coding-classes",
     makeupHref: "https://meetings.hubspot.com/skillsamurai/school-hour-of-code?uuid=b840de06-ab04-43d2-a397-5c3889bf58c7",
     accent: "primary",
-  },
-  {
-    name: "North East",
-    tag: "After-school coding classes",
-    address: "North East Winnipeg, MB",
-    days: "Mon – Sat",
-    times: "After-school & weekend slots",
-    bookHref: "https://winnipeg.jumbula.com/north-east-coding-classes",
-    makeupHref: "https://meetings.hubspot.com/skillsamurai/school-hour-of-code?uuid=b840de06-ab04-43d2-a397-5c3889bf58c7",
-    accent: "secondary",
   },
 ];
 
@@ -31,17 +21,17 @@ export default function Locations() {
       <div className="container mx-auto px-4">
         <FadeIn className="text-center max-w-3xl mx-auto mb-12 md:mb-14">
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">
-            Two Winnipeg Locations
+            Visit Us in Winnipeg
           </h2>
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-4">
-            Find the location that works for your family.
+            Come see what learning looks like at Skill Samurai.
           </h3>
           <p className="text-base sm:text-lg text-muted-foreground font-medium">
-            Pick a location below to book a free trial or schedule a makeup class.
+            Book a free trial or schedule a makeup class at our Winnipeg location.
           </p>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+        <div className="grid gap-5 md:gap-6 max-w-2xl mx-auto">
           {locations.map((loc, i) => {
             const isPrimary = loc.accent === "primary";
             const accentBg = isPrimary ? "bg-primary" : "bg-secondary";
