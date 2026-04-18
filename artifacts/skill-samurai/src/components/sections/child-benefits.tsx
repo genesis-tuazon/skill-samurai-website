@@ -110,7 +110,7 @@ export default function ChildBenefits() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-1deg] hover:rotate-0 transition-transform duration-500 md:ml-6 lg:ml-24">
+              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-1deg] hover:rotate-0 transition-transform duration-500 md:ml-6 lg:ml-24 w-full max-w-none">
                 <img
                   src={classroomPhotoThree}
                   alt="Children using headphones and laptops in class"
