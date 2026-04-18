@@ -39,7 +39,8 @@ export default function ParentBenefits() {
             <span className="text-accent block">FOR YOU AS A PARENT</span>
           </h3>
           <p className="text-xl text-white/80 font-medium">
-            A safe answer to the screen time battle. We provide a warm, expert hand on the shoulder saying, "we've got this."
+            A safe answer to the screen time battle. We provide a warm, expert hand on the
+            shoulder saying, "we've got this."
           </p>
         </FadeIn>
 
