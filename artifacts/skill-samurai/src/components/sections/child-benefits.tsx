@@ -8,26 +8,26 @@ export default function ChildBenefits() {
   const benefits = [
     {
       icon: <Blocks className="h-8 w-8 text-white" />,
-      title: "Roblox games",
-      desc: "They'll transform from consumers to creators, learning the mechanics behind the games they love.",
+      title: "Critical thinking",
+      desc: "They learn how to break big problems into smaller steps and solve them one piece at a time.",
       color: "bg-accent"
     },
     {
       icon: <Code className="h-8 w-8 text-white" />,
-      title: "Minecraft projects",
-      desc: "They create fun, guided projects that build logic, persistence, and creativity.",
+      title: "Focus",
+      desc: "Coding helps kids stay engaged, follow through, and build attention on tasks that matter.",
       color: "bg-primary"
     },
     {
       icon: <Rocket className="h-8 w-8 text-white" />,
-      title: "Apps",
-      desc: "They build simple apps and see how ideas turn into something real.",
+      title: "Patience",
+      desc: "They learn that mistakes are part of the process and that progress comes with practice.",
       color: "bg-secondary"
     },
     {
       icon: <Lightbulb className="h-8 w-8 text-white" />,
-      title: "Coding projects",
-      desc: "We teach computational thinking—how to break big problems into solvable pieces.",
+      title: "Confidence",
+      desc: "When they build something real, they start believing they can tackle harder things too.",
       color: "bg-[#F59100]"
     }
   ];
@@ -43,10 +43,10 @@ export default function ChildBenefits() {
               <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">For Your Child</h2>
               <h3 className="text-4xl md:text-6xl font-black font-heading uppercase leading-tight tracking-tight mb-8">
                 <span className="text-secondary block mb-2">WHAT YOUR CHILD</span>
-                <span className="text-primary">ACTUALLY LEARNS HERE</span>
+                <span className="text-primary">ACTUALLY GETS OUT OF IT</span>
               </h3>
               <p className="text-xl text-secondary/80 mb-10 font-medium">
-                We meet your child exactly where they're at. No experience needed. Just a structured, incredibly fun environment where learning feels like playing.
+                We meet your child exactly where they're at. No experience needed. Just a structured, fun environment where learning builds the skills that carry over into everything else.
               </p>
               
               <div className="grid sm:grid-cols-2 gap-6">
