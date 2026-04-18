@@ -11,16 +11,16 @@ export default function Hero() {
           title="Skill Samurai students at work"
           allow="autoplay; fullscreen; picture-in-picture"
           loading="eager"
-          className="absolute inset-0 w-full h-full pointer-events-none"
+          className="absolute pointer-events-none"
           style={{
             border: 0,
-            width: '100vw',
-            height: '68vw',
-            minHeight: '100%',
-            minWidth: '177.77vh',
             top: '50%',
             left: '50%',
-            transform: 'translate(-50%, -50%) scale(1.15)',
+            width: 'max(100%, calc(100% * 16 / 9))',
+            height: 'max(100%, calc(100% * 9 / 16))',
+            minWidth: '177.77%',
+            minHeight: '56.25vw',
+            transform: 'translate(-50%, -50%)',
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/80 via-neutral-800/65 to-neutral-900/80"></div>
