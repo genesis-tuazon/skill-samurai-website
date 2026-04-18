@@ -41,6 +41,24 @@ export default function ChildBenefits() {
       title: "Teamwork",
       desc: "Group projects help them listen, collaborate, and support each other through challenges.",
       color: "bg-primary"
+    },
+    {
+      icon: <Lightbulb className="h-8 w-8 text-white" />,
+      title: "Independence",
+      desc: "They build the confidence to figure things out on their own instead of waiting for answers.",
+      color: "bg-[#F59100]"
+    },
+    {
+      icon: <Rocket className="h-8 w-8 text-white" />,
+      title: "Creativity",
+      desc: "They get to imagine, design, and build their own ideas from scratch.",
+      color: "bg-secondary"
+    },
+    {
+      icon: <Blocks className="h-8 w-8 text-white" />,
+      title: "Resilience",
+      desc: "When something breaks, they learn how to try again, adjust, and keep going.",
+      color: "bg-accent"
     }
   ];
 
