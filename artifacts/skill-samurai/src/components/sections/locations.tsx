@@ -10,8 +10,8 @@ const locations = [
     address: "745 Kingsbury Ave., Winnipeg, MB",
     days: "Tue – Sat",
     times: "After-school and weekend options",
-    bookHref: "https://winnipeg.jumbula.com/seven-oaks-coding-classes",
-    makeupHref: "https://meetings.hubspot.com/skillsamurai/school-hour-of-code?uuid=b840de06-ab04-43d2-a397-5c3889bf58c7",
+    bookHref: "https://skillsamurai.com/mb-winnipeg",
+    makeupHref: "https://skillsamurai.com/mb-winnipeg",
     accent: "primary",
   },
   {
@@ -21,8 +21,8 @@ const locations = [
     address: "1199 Rothesay St., Winnipeg, MB",
     days: "Mon – Sat",
     times: "After-school and weekend options",
-    bookHref: "https://winnipeg.jumbula.com/north-east-coding-classes",
-    makeupHref: "https://meetings.hubspot.com/skillsamurai/school-hour-of-code?uuid=b840de06-ab04-43d2-a397-5c3889bf58c7",
+    bookHref: "https://winnipeg.jumbula.com/book-your-free-session",
+    makeupHref: "https://skillsamurai.com/mb-winnipeg",
     accent: "secondary",
   },
 ];
