@@ -13,7 +13,7 @@ export default function Schedule() {
     {
       icon: <Users className="h-7 w-7" />,
       label: "Group size",
-      value: "15 students · 2 instructors",
+      value: "Small Group",
       detail: "A 1:7.5 ratio, so your child gets help when they need it while still learning with other kids."
     },
     {
