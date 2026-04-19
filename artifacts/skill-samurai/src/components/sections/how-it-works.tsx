@@ -1,6 +1,6 @@
 import React from "react";
 import { FadeIn } from "@/components/ui/fade-in";
-import { Calendar, Laptop, Sparkles, ThumbsUp, ArrowRight } from "lucide-react";
+import { Calendar, Laptop, Sparkles, ThumbsUp } from "lucide-react";
 
 export default function HowItWorks() {
   const steps = [
@@ -59,17 +59,6 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <FadeIn delay={0.6} className="mt-20 text-center">
-          <a
-            href="https://winnipeg.jumbula.com/north-east-coding-classes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-14 md:h-16 items-center justify-center rounded-full bg-primary px-8 md:px-10 text-base md:text-xl font-black uppercase tracking-wide text-white shadow-2xl shadow-primary/40 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 group border-b-4 border-primary-foreground/20"
-          >
-            Book Free Trial
-            <ArrowRight className="ml-3 h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </FadeIn>
       </div>
       
       <div className="absolute bottom-0 left-0 h-px w-full bg-border/70" />

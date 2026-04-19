@@ -20,22 +20,10 @@ export default function ChildBenefits() {
       color: "bg-primary"
     },
     {
-      icon: <Rocket className="h-8 w-8 text-white" />,
-      title: "Patience",
-      desc: "They learn that mistakes are part of the process and that progress comes with practice.",
-      color: "bg-secondary"
-    },
-    {
       icon: <Lightbulb className="h-8 w-8 text-white" />,
       title: "Confidence",
       desc: "When they build something real, they start believing they can tackle harder things too.",
       color: "bg-[#F59100]"
-    },
-    {
-      icon: <Blocks className="h-8 w-8 text-white" />,
-      title: "Communication",
-      desc: "They learn to explain ideas clearly, ask for help, and work better with other kids.",
-      color: "bg-accent"
     },
     {
       icon: <Code className="h-8 w-8 text-white" />,
