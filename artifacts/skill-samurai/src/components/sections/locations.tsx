@@ -136,7 +136,7 @@ export default function Locations() {
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </span>
                       <p className="mt-2 text-center text-[11px] font-semibold text-secondary/60">
-                        Takes 1 hour · No commitment · No experience needed
+                        Takes 1 hour · Free · Ages 6–18
                       </p>
                     </div>
                   </div>

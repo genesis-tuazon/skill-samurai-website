@@ -24,7 +24,7 @@ export default function FinalCta() {
               </h2>
 
               <p className="text-lg md:text-xl text-white/80 font-medium max-w-2xl mx-auto mb-10">
-                One free 60-minute class. In an hour, you'll see what your child walks away with.
+                One free hour. A real class, a real project, and a clear picture of what your child walks away with.
               </p>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 text-left max-w-4xl mx-auto">
@@ -59,7 +59,7 @@ export default function FinalCta() {
               </a>
 
               <p className="mt-6 text-white/60 text-sm font-medium">
-                Zero commitment. A safe answer to the screen-time battle.
+                Takes 1 hour · Both Winnipeg locations · Ages 6–18
               </p>
             </div>
           </div>
