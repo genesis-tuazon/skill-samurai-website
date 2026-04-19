@@ -11,7 +11,7 @@ const locations = [
     days: "Tue – Sat",
     times: "After-school options",
     bookHref: "https://link.skillsamurai.com/widget/booking/uLciDSsBTUDqpqKRDaZq",
-    makeupHref: "https://skillsamurai.com/mb-winnipeg",
+    makeupHref: "https://link.skillsamurai.com/widget/booking/RjGKMmLLevpPEAJx8FnW",
     accent: "primary",
   },
   {
