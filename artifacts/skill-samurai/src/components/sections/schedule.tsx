@@ -34,8 +34,8 @@ export default function Schedule() {
     {
       icon: <Tag className="h-7 w-7" />,
       label: "Pricing",
-      value: "First class free",
-      detail: "Come check it out before committing. We’ll cover pricing after your trial.",
+      value: "Month-to-month",
+      detail: "No contracts, 30-day notice, and no cancellation fees.",
       iconBg: "bg-primary",
       tint: "bg-primary/5",
       hoverBorder: "hover:border-primary/40",
