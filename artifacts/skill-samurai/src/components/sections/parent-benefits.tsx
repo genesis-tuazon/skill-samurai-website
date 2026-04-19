@@ -46,7 +46,7 @@ export default function ParentBenefits() {
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {benefits.map((benefit, i) => (
             <FadeIn key={i} delay={i * 0.1} direction="up">
-            <div className="bg-white/5 backdrop-blur-md border-[3px] border-white/10 rounded-[2.5rem] p-8 hover:bg-white/10 transition-all hover:-translate-y-2 hover:border-white/20 group shadow-2xl shadow-black/15">
+            <div className="bg-white/10 backdrop-blur-md border-[3px] border-white/10 rounded-[2.5rem] p-8 hover:bg-white/15 transition-all hover:-translate-y-2 hover:border-white/20 group shadow-2xl shadow-black/20">
                 <div className="h-16 w-16 rounded-[1.25rem] bg-primary flex items-center justify-center mb-6 shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform rotate-3 group-hover:-rotate-3">
                   {benefit.icon}
                 </div>

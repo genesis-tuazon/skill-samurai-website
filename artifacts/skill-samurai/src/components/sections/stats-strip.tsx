@@ -15,15 +15,15 @@ const stats = [
 
 export default function StatsStrip() {
   return (
-    <section className="bg-secondary/10 py-20 relative overflow-hidden">
-      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
-      <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-accent/15 rounded-full blur-[100px] pointer-events-none"></div>
+    <section className="bg-secondary py-20 relative overflow-hidden">
+      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid gap-5 lg:grid-cols-2">
           {stats.map((stat) => (
             <div
               key={stat.value}
-              className="rounded-[2rem] border-[3px] border-secondary/10 bg-white/70 backdrop-blur-md p-7 md:p-9 shadow-2xl shadow-secondary/10"
+              className="rounded-[2rem] border-[3px] border-white/10 bg-white/10 backdrop-blur-md p-7 md:p-9 shadow-2xl shadow-black/20"
             >
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
                 {stat.eyebrow}
