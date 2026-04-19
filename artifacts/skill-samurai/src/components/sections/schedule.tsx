@@ -34,8 +34,8 @@ export default function Schedule() {
     {
       icon: <Tag className="h-7 w-7" />,
       label: "Pricing",
-      value: "Try your first class free",
-      detail: "Come check it out before committing. We'll walk you through pricing once you've seen it in action.",
+      value: "First class free",
+      detail: "Come check it out before committing. We’ll cover pricing after your trial.",
       iconBg: "bg-primary",
       tint: "bg-primary/5",
       hoverBorder: "hover:border-primary/40",
