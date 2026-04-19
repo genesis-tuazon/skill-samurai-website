@@ -10,7 +10,7 @@ const locations = [
     address: "745 Kingsbury Ave., Winnipeg, MB",
     days: "Tue – Sat",
     times: "After-school options",
-    bookHref: "https://skillsamurai.com/mb-winnipeg",
+    bookHref: "https://link.skillsamurai.com/widget/booking/uLciDSsBTUDqpqKRDaZq",
     makeupHref: "https://link.skillsamurai.com/widget/booking/RjGKMmLLevpPEAJx8FnW",
     accent: "primary",
   },
