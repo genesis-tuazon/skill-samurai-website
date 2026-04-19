@@ -21,7 +21,7 @@ export default function Navbar() {
       external: true,
     },
     {
-      href: "https://link.skillsamurai.com/widget/booking/uLciDSsBTUDqpqKRDaZq",
+      href: "https://skillsamurai.com/mb-winnipeg",
       label: "Seven Oaks Location",
       external: true,
     },
