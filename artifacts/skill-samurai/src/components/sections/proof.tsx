@@ -3,8 +3,8 @@ import { FadeIn } from "@/components/ui/fade-in";
 
 export default function Proof() {
   return (
-    <section className="py-20 md:py-32 bg-accent/10 relative overflow-hidden">
-      <div className="absolute top-1/4 -right-40 w-96 h-96 bg-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
+    <section className="py-20 md:py-32 bg-secondary/5 relative overflow-hidden">
+      <div className="absolute top-1/4 -right-40 w-96 h-96 bg-accent/10 rounded-full blur-[80px] pointer-events-none"></div>
       
       <div className="container mx-auto px-4 relative z-10 pt-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
