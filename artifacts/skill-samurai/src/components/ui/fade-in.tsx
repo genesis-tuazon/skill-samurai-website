@@ -9,6 +9,20 @@ interface FadeInProps {
   duration?: number;
 }
 
+// Detect environments where entrance animations should be skipped entirely
+// (PDF/print rendering, headless screenshots, search-engine bots, etc.).
+function isStaticRenderEnvironment() {
+  if (typeof window === "undefined") return true;
+  try {
+    if (window.matchMedia && window.matchMedia("print").matches) return true;
+  } catch {}
+  const ua = (navigator.userAgent || "").toLowerCase();
+  if (/headlesschrome|jsdom|prerender|googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|embedly/i.test(ua)) {
+    return true;
+  }
+  return false;
+}
+
 export function FadeIn({
   children,
   delay = 0,
@@ -18,16 +32,23 @@ export function FadeIn({
 }: FadeInProps) {
   const ref = useRef(null);
   const prefersReducedMotion = useReducedMotion();
+  const [staticRender] = useState(isStaticRenderEnvironment);
   const isInView = useInView(ref, { once: true, amount: 0.05 });
-  const [forceVisible, setForceVisible] = useState(false);
+  const [forceVisible, setForceVisible] = useState(staticRender);
 
-  // Safety net: if the IntersectionObserver doesn't fire (e.g. mobile quirks,
-  // very tall sections, or fast scrolls), make sure content becomes visible
-  // shortly after mount so users never see a blank section.
+  // Safety net: if the IntersectionObserver hasn't fired shortly after mount
+  // (mobile quirks, tall sections, fast scrolls, no-JS print snapshots), make
+  // sure the content becomes visible so users never see a blank section.
   useEffect(() => {
-    const timer = window.setTimeout(() => setForceVisible(true), 1200);
-    return () => window.clearTimeout(timer);
-  }, []);
+    if (forceVisible) return;
+    const timer = window.setTimeout(() => setForceVisible(true), 250);
+    const onPrint = () => setForceVisible(true);
+    window.addEventListener("beforeprint", onPrint);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("beforeprint", onPrint);
+    };
+  }, [forceVisible]);
 
   const directions = {
     up: { y: 30, x: 0 },
@@ -37,13 +58,14 @@ export function FadeIn({
     none: { x: 0, y: 0 },
   };
 
-  const shouldShow = isInView || forceVisible || prefersReducedMotion;
+  const skipAnimation = prefersReducedMotion || staticRender;
+  const shouldShow = isInView || forceVisible || skipAnimation;
 
   return (
     <motion.div
       ref={ref}
       initial={
-        prefersReducedMotion
+        skipAnimation
           ? { opacity: 1, x: 0, y: 0 }
           : { opacity: 0, ...directions[direction] }
       }
@@ -53,8 +75,8 @@ export function FadeIn({
           : { opacity: 0, ...directions[direction] }
       }
       transition={{
-        duration: prefersReducedMotion ? 0 : duration,
-        delay: prefersReducedMotion ? 0 : delay,
+        duration: skipAnimation ? 0 : duration,
+        delay: skipAnimation ? 0 : delay,
         ease: [0.21, 0.47, 0.32, 0.98],
       }}
       className={className}
