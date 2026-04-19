@@ -22,7 +22,7 @@ export default function HowItWorks() {
     {
       icon: <ThumbsUp className="h-8 w-8 text-white" />,
       title: "Decide if it fits",
-      desc: "If they love it (most do!), we'll find the right month-to-month program for them."
+      desc: "If they love it (most do!), we'll help you pick the right program — and the right pace — for your child."
     }
   ];
 
