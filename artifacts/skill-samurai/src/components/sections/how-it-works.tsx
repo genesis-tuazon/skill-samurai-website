@@ -27,7 +27,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-white relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-secondary/5 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10 pt-4 md:pt-10">
         <FadeIn className="text-center max-w-4xl mx-auto mb-20">
           <h2 className="text-accent font-bold tracking-wider uppercase text-sm mb-3">Simple Process</h2>
@@ -41,7 +41,7 @@ export default function HowItWorks() {
         </FadeIn>
 
         <div className="max-w-6xl mx-auto relative">
-          <div className="hidden md:block absolute top-14 left-[10%] right-[10%] h-3 bg-muted rounded-full z-0"></div>
+          <div className="hidden md:block absolute top-14 left-[10%] right-[10%] h-3 bg-secondary/15 rounded-full z-0"></div>
 
           <div className="grid md:grid-cols-4 gap-8 relative z-10">
             {steps.map((step, i) => (

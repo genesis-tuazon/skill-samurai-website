@@ -27,7 +27,7 @@ export default function Relatability() {
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-muted/40 relative overflow-hidden">
+    <section className="py-20 md:py-24 bg-secondary/10 relative overflow-hidden">
       {/* Background dot grid */}
 
       <div className="container mx-auto px-4 relative z-10 pt-10">
@@ -41,7 +41,7 @@ export default function Relatability() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {painPoints.map((point, i) => (
-            <FadeIn key={i} delay={i * 0.1} direction="up" className="bg-white rounded-3xl p-8 border-[3px] border-muted hover:-translate-y-2 hover:border-primary/30 transition-all shadow-xl shadow-black/5">
+            <FadeIn key={i} delay={i * 0.1} direction="up" className="bg-white rounded-3xl p-8 border-[3px] border-secondary/10 hover:-translate-y-2 hover:border-primary/30 transition-all shadow-xl shadow-black/5">
               <div className="h-20 w-20 rounded-[1.5rem] bg-primary/10 flex items-center justify-center mb-6 rotate-3 group-hover:-rotate-3 transition-transform">
                 {point.icon}
               </div>
@@ -55,7 +55,7 @@ export default function Relatability() {
           ))}
         </div>
 
-        <FadeIn delay={0.4} direction="up" className="w-full max-w-6xl mx-auto bg-secondary text-white rounded-[2rem] md:rounded-[3rem] p-8 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-secondary/30 rotate-1 hover:rotate-0 transition-transform">
+        <FadeIn delay={0.4} direction="up" className="w-full max-w-6xl mx-auto bg-secondary text-white rounded-[2rem] md:rounded-[3rem] p-8 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-secondary/30 rotate-0 hover:rotate-0 transition-transform">
           <div className="absolute top-0 left-0 w-full h-full bg-primary/10"></div>
           <div className="absolute -top-20 -right-20 w-60 h-60 bg-accent rounded-full blur-[60px] opacity-40"></div>
           <div className="relative z-10">

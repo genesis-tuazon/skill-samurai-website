@@ -44,7 +44,7 @@ export default function WeeklyClasses() {
   };
 
   return (
-    <section id="weekly-classes" className="py-20 md:py-28 bg-muted/30 relative overflow-hidden">
+    <section id="weekly-classes" className="py-20 md:py-28 bg-secondary/8 relative overflow-hidden">
       <div className="container mx-auto px-4">
         <FadeIn className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Weekly Classes</h2>
@@ -70,7 +70,7 @@ export default function WeeklyClasses() {
             type="button"
             aria-label="Scroll left"
             onClick={() => scrollBy(-1)}
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-20 h-12 w-12 items-center justify-center rounded-full bg-white border border-border shadow-xl text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 z-20 h-12 w-12 items-center justify-center rounded-full bg-white border border-secondary/15 shadow-xl text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
@@ -78,7 +78,7 @@ export default function WeeklyClasses() {
             type="button"
             aria-label="Scroll right"
             onClick={() => scrollBy(1)}
-            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-20 h-12 w-12 items-center justify-center rounded-full bg-white border border-border shadow-xl text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 z-20 h-12 w-12 items-center justify-center rounded-full bg-white border border-secondary/15 shadow-xl text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
@@ -94,7 +94,7 @@ export default function WeeklyClasses() {
                 <div
                   key={c.label}
                   data-card
-                  className="snap-start flex-shrink-0 w-[260px] md:w-[280px] bg-white rounded-3xl border-2 border-white hover:border-primary/30 shadow-xl shadow-secondary/5 p-8 flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300 group"
+                  className="snap-start flex-shrink-0 w-[260px] md:w-[280px] bg-white rounded-3xl border-2 border-secondary/10 hover:border-primary/30 shadow-xl shadow-secondary/5 p-8 flex flex-col items-center text-center hover:-translate-y-2 transition-all duration-300 group"
                 >
                   <div
                     className={`h-20 w-20 rounded-2xl ${c.color} flex items-center justify-center mb-6 shadow-lg rotate-3 group-hover:-rotate-3 group-hover:scale-110 transition-all`}
