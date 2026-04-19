@@ -25,15 +25,15 @@ export default function Home() {
         <Hero />
         <MediaBanner />
         <Relatability />
-        <StatsStrip />
         <ChildBenefits />
         <BeforeAfter />
+        <Proof />
+        <GoogleReviews />
+        <StatsStrip />
+        <ParentBenefits />
         <HowItWorks />
         <Schedule />
         <WeeklyClasses />
-        <Proof />
-        <GoogleReviews />
-        <ParentBenefits />
         <Locations />
         <FinalCta />
         <CommunitySchools />
