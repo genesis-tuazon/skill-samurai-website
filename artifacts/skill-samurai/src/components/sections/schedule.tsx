@@ -8,25 +8,37 @@ export default function Schedule() {
       icon: <Clock className="h-7 w-7" />,
       label: "Class length",
       value: "60 minutes",
-      detail: "Focused, hands-on sessions that keep kids engaged without it feeling like more school."
+      detail: "Focused, hands-on sessions that keep kids engaged without it feeling like more school.",
+      iconBg: "bg-primary",
+      tint: "bg-primary/5",
+      hoverBorder: "hover:border-primary/40",
     },
     {
       icon: <Users className="h-7 w-7" />,
       label: "Group size",
       value: "Small Group",
-      detail: "Your child gets personal attention while still learning alongside other kids."
+      detail: "Your child gets personal attention while still learning alongside other kids.",
+      iconBg: "bg-secondary",
+      tint: "bg-secondary/5",
+      hoverBorder: "hover:border-secondary/40",
     },
     {
       icon: <CalendarDays className="h-7 w-7" />,
       label: "When",
       value: "Weekly, after school",
-      detail: "Pick a recurring after-school time slot that fits around school and the rest of your week."
+      detail: "Pick a recurring after-school time slot that fits around school and the rest of your week.",
+      iconBg: "bg-accent text-secondary",
+      tint: "bg-accent/10",
+      hoverBorder: "hover:border-accent/50",
     },
     {
       icon: <Tag className="h-7 w-7" />,
       label: "Pricing",
       value: "Try your first class free",
-      detail: "Come check it out before committing. We'll walk you through pricing once you've seen it in action."
+      detail: "Come check it out before committing. We'll walk you through pricing once you've seen it in action.",
+      iconBg: "bg-primary",
+      tint: "bg-primary/5",
+      hoverBorder: "hover:border-primary/40",
     },
   ];
 
@@ -46,13 +58,13 @@ export default function Schedule() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
           {facts.map((f, i) => (
             <FadeIn key={i} delay={i * 0.08} direction="up">
-              <div className="h-full bg-muted/40 border border-border rounded-2xl p-6 hover:border-primary/40 hover:bg-white hover:shadow-xl hover:shadow-secondary/5 transition-all duration-300">
-                <div className="h-12 w-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+              <div className={`h-full ${f.tint} border-2 border-secondary/10 rounded-2xl p-6 ${f.hoverBorder} hover:shadow-xl hover:shadow-secondary/10 transition-all duration-300`}>
+                <div className={`h-12 w-12 rounded-xl ${f.iconBg} text-white flex items-center justify-center mb-5 shadow-md`}>
                   {f.icon}
                 </div>
-                <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-1.5">{f.label}</p>
+                <p className="text-xs font-bold uppercase tracking-wider text-secondary/60 mb-1.5">{f.label}</p>
                 <p className="text-xl font-black font-heading text-secondary mb-2 leading-tight">{f.value}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">{f.detail}</p>
+                <p className="text-sm text-secondary/70 leading-relaxed">{f.detail}</p>
               </div>
             </FadeIn>
           ))}
