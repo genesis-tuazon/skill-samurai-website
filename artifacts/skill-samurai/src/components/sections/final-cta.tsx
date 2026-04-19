@@ -16,15 +16,15 @@ export default function FinalCta() {
 
             <div className="relative z-10">
               <p className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-accent mb-4">
-                One free hour · Then you decide
+                Free trial · No commitment
               </p>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading text-white uppercase tracking-tight mb-5 leading-[1.05]">
-                What's the worst that<br />
-                <span className="text-accent">happens if they try one class?</span>
+                Let your child try it.<br />
+                <span className="text-accent">You'll see the difference.</span>
               </h2>
 
               <p className="text-lg md:text-xl text-white/80 font-medium max-w-2xl mx-auto mb-10">
-                If it's not for them, you've spent an hour. If it is — you've quietly solved something you've been carrying for a while.
+                One free hour. A real class, a real project, and a clear picture of what your child walks away with.
               </p>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10 text-left max-w-4xl mx-auto">
