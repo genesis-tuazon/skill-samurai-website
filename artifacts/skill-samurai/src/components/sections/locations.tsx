@@ -21,7 +21,7 @@ const locations = [
     address: "1199 Rothesay St., Winnipeg, MB",
     days: "Mon – Sat",
     times: "After-school options",
-    bookHref: "https://winnipeg.jumbula.com/book-your-free-session",
+    bookHref: "https://link.skillsamurai.com/widget/booking/Ku7skA5XAkgQpg8rQqN1",
     makeupHref: "https://skillsamurai.com/mb-winnipeg",
     accent: "secondary",
   },
