@@ -4,13 +4,13 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function FinalCta() {
   return (
-    <section className="py-16 md:py-24 bg-secondary/10 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-secondary relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <FadeIn className="max-w-5xl mx-auto relative">
           <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/15 rounded-full blur-3xl pointer-events-none"></div>
           <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-accent/20 rounded-full blur-3xl pointer-events-none"></div>
 
-          <div className="relative bg-secondary text-white border-[3px] border-secondary/20 rounded-[2rem] md:rounded-[2.5rem] p-6 sm:p-8 md:p-14 shadow-2xl shadow-secondary/25 text-center">
+          <div className="relative bg-secondary/10 text-white border-[3px] border-white/10 rounded-[2rem] md:rounded-[2.5rem] p-6 sm:p-8 md:p-14 shadow-2xl shadow-secondary/25 text-center">
             <p className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-accent mb-4">
               Free trial · No commitment
             </p>
