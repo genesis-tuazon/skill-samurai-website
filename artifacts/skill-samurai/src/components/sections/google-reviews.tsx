@@ -97,8 +97,8 @@ export default function GoogleReviews() {
         <div className="-mx-4 px-4 overflow-x-auto overflow-y-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden" style={{ overscrollBehaviorX: "contain", overscrollBehaviorY: "none", touchAction: "pan-x" }}>
           <div className="flex gap-6 md:gap-8 pb-4 w-max min-w-full">
             {reviews.map((r, i) => (
-              <FadeIn key={r.name} direction="up" delay={i * 0.1} className="snap-start shrink-0 w-[85vw] sm:w-[420px] md:w-[460px]">
-            <article className="h-full flex flex-col bg-secondary/5 rounded-3xl p-7 md:p-8 border border-secondary/10 shadow-xl shadow-secondary/5 hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+            <FadeIn key={r.name} direction="up" delay={i * 0.1} className="snap-start shrink-0 w-[85vw] sm:w-[420px] md:w-[460px]">
+              <article className="h-full flex flex-col bg-secondary/5 rounded-3xl p-7 md:p-8 border border-secondary/10 shadow-xl shadow-secondary/5 transition-all duration-300">
                 <div className="flex items-start justify-between mb-5">
                   <div className="flex items-center gap-3">
                     <div className={`w-11 h-11 rounded-full ${r.color} text-white flex items-center justify-center font-black text-sm shrink-0`}>
