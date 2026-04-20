@@ -35,19 +35,26 @@ export default function Hero() {
           className="max-w-4xl text-center mx-auto flex flex-col items-center pb-4 lg:pb-8"
         >
           <h1 className="text-[1.5rem] sm:text-4xl lg:text-5xl font-black font-heading leading-[1.06] mb-4 lg:mb-6 tracking-tight text-white drop-shadow-2xl">
-            <span className="block lg:whitespace-nowrap">After-School Coding &amp; STEM</span>
-            <span className="block lg:whitespace-nowrap">Classes for Kids in Winnipeg</span>
+            <span className="block lg:whitespace-nowrap">Coding Classes for Kids in Winnipeg</span>
+            <span className="block lg:whitespace-nowrap text-primary">Ages 6–18</span>
           </h1>
 
-          <p className="text-sm sm:text-lg lg:text-xl text-white/90 mb-6 lg:mb-8 leading-relaxed font-medium drop-shadow lg:whitespace-nowrap">
-            Transform screen time into valuable skills that will shape your child’s future.
+          <p className="text-base sm:text-lg lg:text-2xl text-white font-bold mb-3 lg:mb-4 leading-tight drop-shadow">
+            Turn screen time into something your child is proud of.
+          </p>
+
+          <p className="text-sm sm:text-base lg:text-lg text-white/90 mb-2 leading-relaxed font-medium drop-shadow max-w-2xl">
+            Your child already loves Roblox, Minecraft, and YouTube. We help them go from playing… to creating.
+          </p>
+          <p className="text-sm sm:text-base lg:text-lg text-white mb-6 lg:mb-8 leading-relaxed font-semibold drop-shadow max-w-2xl">
+            In their very first class, they’ll build something real — and show you.
           </p>
 
           <a
             href="#locations"
             className="inline-flex h-10 sm:h-12 items-center justify-center rounded-full bg-primary px-5 sm:px-7 text-[11px] sm:text-sm font-black uppercase tracking-wide text-white shadow-2xl shadow-primary/40 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 border-b-4 border-primary-foreground/20 mb-6 lg:mb-8"
           >
-            START YOUR CHILD'S JOURNEY
+            BOOK A FREE TRIAL
           </a>
 
           <div className="flex items-center justify-center gap-3">
