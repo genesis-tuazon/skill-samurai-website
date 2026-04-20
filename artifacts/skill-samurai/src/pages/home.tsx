@@ -30,10 +30,10 @@ export default function Home() {
         <Proof />
         <GoogleReviews />
         <Schedule />
-        <WeeklyClasses />
         <HowItWorks />
         <Locations />
         <CommunitySchools />
+        <WeeklyClasses />
         <FinalCta />
       </main>
       <Footer />
