@@ -149,7 +149,7 @@ export default function GoogleReviews() {
                 ))}
               </div>
             </div>
-            <div ref={scrollerRef} className="flex gap-6 md:gap-8 pb-4 w-max min-w-full">
+            <div ref={scrollerRef} className="flex gap-6 md:gap-8 w-max min-w-full">
             {reviews.map((r, i) => (
             <div key={r.name} data-review-card className="snap-start shrink-0 w-[85vw] sm:w-[420px] md:w-[460px]">
               <article className="h-full flex flex-col bg-secondary/5 rounded-3xl p-7 md:p-8 border border-secondary/10 shadow-xl shadow-secondary/5">
