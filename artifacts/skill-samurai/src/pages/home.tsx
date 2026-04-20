@@ -23,18 +23,18 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <MediaBanner />
+        <StatsStrip />
         <Relatability />
         <ChildBenefits />
-        <StatsStrip />
+        <WeeklyClasses />
         <BeforeAfter />
         <Proof />
         <GoogleReviews />
-        <Schedule />
         <HowItWorks />
+        <Schedule />
         <Locations />
-        <CommunitySchools />
-        <WeeklyClasses />
         <FinalCta />
+        <CommunitySchools />
       </main>
       <Footer />
     </div>
