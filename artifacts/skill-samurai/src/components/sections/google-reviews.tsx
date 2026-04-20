@@ -13,6 +13,46 @@ type Review = {
 
 const reviews: Review[] = [
   {
+    name: "Angelica Roque",
+    initials: "AR",
+    color: "bg-primary",
+    weeksAgo: "4 days ago",
+    rating: 5,
+    text: "My class absolutely loved the workshop. The facilitators were very friendly and helpful. Would do it again!",
+  },
+  {
+    name: "Eva Riddell",
+    initials: "ER",
+    color: "bg-secondary",
+    weeksAgo: "4 days ago",
+    rating: 5,
+    text: "A very fun experience for students and they love it! I have attended two classroom workshops with my Grade 2 students and it has been engaging and inspiring for them each time.",
+  },
+  {
+    name: "julie lim",
+    initials: "JL",
+    color: "bg-accent text-secondary",
+    weeksAgo: "2 weeks ago",
+    rating: 5,
+    text: "Very good instructors, my kids enjoyed the trial class. Thank you",
+  },
+  {
+    name: "Rhoda V",
+    initials: "RV",
+    color: "bg-primary",
+    weeksAgo: "3 weeks ago",
+    rating: 5,
+    text: "Productive and innovative learning. Genesis assured your customer experience is smooth and achieved! Whenever I ran into issues she would get back to me and she is reliable!",
+  },
+  {
+    name: "Chris K",
+    initials: "CK",
+    color: "bg-secondary",
+    weeksAgo: "5 weeks ago",
+    rating: 5,
+    text: "Had a great experience participating in a demo coding class the other day. The environment was welcoming and well organized, instructors were attentive to students unique needs, and everyone was engaged in their projects. Genesis (the owner) answered all my questions and also educated me on all the various benefits this program provides beyond just coding. My son had a blast and was hooked from the start. Looking forward to watching him flourish as he develops his coding skills, builds confidence and becomes more comfortable with evolving technology and software.",
+  },
+  {
     name: "Christine Remoquillo",
     initials: "CR",
     color: "bg-primary",
