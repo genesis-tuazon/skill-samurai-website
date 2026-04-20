@@ -161,32 +161,31 @@
 
 .reviews-scroller {
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--secondary) / 0.4) hsl(var(--secondary) / 0.1);
-  padding-bottom: 0.5rem;
+  scrollbar-color: hsl(var(--secondary) / 0.35) transparent;
+  padding-bottom: 1.25rem;
+  scroll-padding: 1rem;
 }
 
 .reviews-scroller::-webkit-scrollbar {
-  height: 10px;
+  height: 6px;
   -webkit-appearance: none;
   appearance: none;
   display: block;
 }
 
 .reviews-scroller::-webkit-scrollbar-track {
-  background: hsl(var(--secondary) / 0.1);
+  background: hsl(var(--secondary) / 0.08);
   border-radius: 999px;
-  margin: 0 1rem;
+  margin: 0 1.25rem;
 }
 
 .reviews-scroller::-webkit-scrollbar-thumb {
-  background: hsl(var(--secondary) / 0.45);
+  background: linear-gradient(90deg, hsl(var(--secondary) / 0.5), hsl(var(--primary) / 0.7));
   border-radius: 999px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+  transition: background 200ms ease;
 }
 
+.reviews-scroller:hover::-webkit-scrollbar-thumb,
 .reviews-scroller::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary));
-  background-clip: padding-box;
-  border: 2px solid transparent;
+  background: linear-gradient(90deg, hsl(var(--secondary)), hsl(var(--primary)));
 }
