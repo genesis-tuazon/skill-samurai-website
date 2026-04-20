@@ -23,13 +23,13 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <MediaBanner />
-        <StatsStrip />
         <Relatability />
         <ChildBenefits />
         <WeeklyClasses />
         <BeforeAfter />
         <Proof />
         <GoogleReviews />
+        <StatsStrip />
         <HowItWorks />
         <Schedule />
         <Locations />
