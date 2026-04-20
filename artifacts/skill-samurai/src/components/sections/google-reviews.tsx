@@ -45,14 +45,6 @@ const reviews: Review[] = [
     text: "Had a great experience participating in a demo coding class the other day. The environment was welcoming and well organized, instructors were attentive to students unique needs, and everyone was engaged in their projects. Genesis (the owner) answered all my questions and also educated me on all the various benefits this program provides beyond just coding. My son had a blast and was hooked from the start. Looking forward to watching him flourish as he develops his coding skills, builds confidence and becomes more comfortable with evolving technology and software.",
   },
   {
-    name: "Evangeline Mae Lara",
-    initials: "EL",
-    color: "bg-accent text-secondary",
-    weeksAgo: "20 weeks ago",
-    rating: 5,
-    text: "Skills Samurai has been such a wonderful experience for both my kids! My 4yo absolutely loved his first coding lesson, he was so excited to make the cat bounce on the screen. The instructors were so patient and knew exactly how to keep younger kids engaged. It was also my 7yo daughter's first time trying coding, and she had so much fun. They used Scratch, a kid-friendly coding platform, and she proudly told me how she changed the cat into a donut, switched the background, and made everything bounce. It was amazing to watch her creativity and confidence grow. I love that Skills Samurai doesn't just teach coding, it also helps kids learn focus, patience, and problem-solving in such a fun and hands-on way. The people running it make the experience even better. Genesis and Akil, the owners, are very accommodating and friendly. The instructors are incredibly patient and knowledgeable. They make every child feel supported and capable. Highly recommended if you want your kids to explore coding in a fun, encouraging, and well-guided environment!",
-  },
-  {
     name: "Christine Remoquillo",
     initials: "CR",
     color: "bg-primary",
