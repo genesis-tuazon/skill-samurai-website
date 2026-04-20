@@ -108,7 +108,7 @@ export default function GoogleReviews() {
             type="button"
             onClick={() => scrollByCard(-1)}
             aria-label="Previous reviews"
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-4 z-20 h-12 w-12 items-center justify-center rounded-full bg-white text-secondary shadow-xl shadow-secondary/20 border border-secondary/10 hover:bg-primary hover:text-white hover:border-primary transition-colors"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 lg:-translate-x-14 z-20 h-12 w-12 items-center justify-center rounded-full bg-white text-secondary shadow-xl shadow-secondary/20 border border-secondary/10 hover:bg-primary hover:text-white hover:border-primary transition-colors"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
@@ -116,7 +116,7 @@ export default function GoogleReviews() {
             type="button"
             onClick={() => scrollByCard(1)}
             aria-label="Next reviews"
-            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-4 z-20 h-12 w-12 items-center justify-center rounded-full bg-white text-secondary shadow-xl shadow-secondary/20 border border-secondary/10 hover:bg-primary hover:text-white hover:border-primary transition-colors"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 lg:translate-x-14 z-20 h-12 w-12 items-center justify-center rounded-full bg-white text-secondary shadow-xl shadow-secondary/20 border border-secondary/10 hover:bg-primary hover:text-white hover:border-primary transition-colors"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
