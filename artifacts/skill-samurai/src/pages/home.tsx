@@ -25,9 +25,9 @@ export default function Home() {
         <MediaBanner />
         <Relatability />
         <ChildBenefits />
-        <WeeklyClasses />
-        <BeforeAfter />
         <StatsStrip />
+        <BeforeAfter />
+        <WeeklyClasses />
         <GoogleReviews />
         <Proof />
         <HowItWorks />
