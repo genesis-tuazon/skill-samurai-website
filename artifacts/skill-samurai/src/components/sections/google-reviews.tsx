@@ -45,6 +45,22 @@ const reviews: Review[] = [
     text: "With a few sessions in my son Isaiah felt so comfortable and at ease. The Skill Samurai team have been super helpful and patient. It's refreshing to see him use his creativity and imagination to program fun games! The skills that he's learning will serve him well in the long run and help build on his self-confidence. Highly recommend the Skill Samurai Winnipeg program; Akil, Genesis and the entire team are the absolute best!",
   },
   {
+    name: "Bria Lylyk",
+    initials: "BL",
+    color: "bg-secondary",
+    weeksAgo: "Mar 14, 2025",
+    rating: 5,
+    text: "My 6-year-old son, Hudson, started at Skill Samurai last fall, and I can't praise the program enough! Thanks to Genesis, we've transformed screen time into valuable learning, and I feel so confident in the skills he's developing. Hudson often gets discouraged quickly, but we've noticed he's become much more patient and persistent since he began coding. Genesis and Akil are amazing — so supportive and attentive. They're teaching him not only how to create video games but also how to present them, and he practices this skill often. Hudson looks forward to coding class every week and proudly shares his experiences with his friends and teachers. I'm incredibly grateful we found Skill Samurai and can offer him these valuable skills, which I am confident he will use for a lifetime.",
+  },
+  {
+    name: "RJ & Charlene Bernardo",
+    initials: "RC",
+    color: "bg-primary",
+    weeksAgo: "Mar 12, 2025",
+    rating: 5,
+    text: "We signed up after hearing about this program through my sister-in-law. It was definitely more up Isaiah's alley in terms of his interests and personality. Isaiah looks forward to class every week! Puts his critical thinking and problem solving skills to work and challenges him. Yes, it's more screen time BUT he's learning too! Isaiah can't wait to create his own Roblox. It's conveniently located and Genesis & Akil are amazing. It's a very relaxed & comfortable environment. A plus for the parents is that it's a nice change from sitting on gym benches waiting for your kids to finish their extra curricular sports activities! Especially after being a basketball mom with my eldest for several years. Definitely recommend to everyone and take advantage of the free trial!",
+  },
+  {
     name: "Rosalia Esquibel",
     initials: "RE",
     color: "bg-secondary",
@@ -83,6 +99,14 @@ const reviews: Review[] = [
     weeksAgo: "5 weeks ago",
     rating: 5,
     text: "Had a great experience participating in a demo coding class the other day. The environment was welcoming and well organized, instructors were attentive to students unique needs, and everyone was engaged in their projects. Genesis (the owner) answered all my questions and also educated me on all the various benefits this program provides beyond just coding. My son had a blast and was hooked from the start. Looking forward to watching him flourish as he develops his coding skills, builds confidence and becomes more comfortable with evolving technology and software.",
+  },
+  {
+    name: "Natasha Penniston",
+    initials: "NP",
+    color: "bg-accent text-secondary",
+    weeksAgo: "Mar 5, 2025",
+    rating: 5,
+    text: "My son expressed interest in coding and I came across Skill Samurai on Instagram. After trying the first class, my son absolutely loved it and has enjoyed learning with them for the past month. Everything about the program is welcoming and flexible. I am blown away with what the kids learn and are capable of creating… Great program!!",
   },
   {
     name: "Jeffrey Reyes",
