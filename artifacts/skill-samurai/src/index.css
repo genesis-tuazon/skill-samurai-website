@@ -158,3 +158,35 @@
     text-wrap: pretty;
   }
 }
+
+.reviews-scroller {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--secondary) / 0.4) hsl(var(--secondary) / 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.reviews-scroller::-webkit-scrollbar {
+  height: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+}
+
+.reviews-scroller::-webkit-scrollbar-track {
+  background: hsl(var(--secondary) / 0.1);
+  border-radius: 999px;
+  margin: 0 1rem;
+}
+
+.reviews-scroller::-webkit-scrollbar-thumb {
+  background: hsl(var(--secondary) / 0.45);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.reviews-scroller::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
