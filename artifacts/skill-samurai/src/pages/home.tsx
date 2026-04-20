@@ -27,8 +27,8 @@ export default function Home() {
         <ChildBenefits />
         <WeeklyClasses />
         <BeforeAfter />
-        <Proof />
         <GoogleReviews />
+        <Proof />
         <StatsStrip />
         <HowItWorks />
         <Schedule />
