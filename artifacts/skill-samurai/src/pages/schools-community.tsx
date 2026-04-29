@@ -66,14 +66,16 @@ export default function SchoolsCommunityPage() {
                       {item.desc}
                     </p>
                     {item.ctaHref && (
-                      <a
-                        href={item.ctaHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-5 inline-flex items-center justify-center self-start rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2.5 text-xs font-black uppercase tracking-wide shadow-lg shadow-primary/30 transition-all"
-                      >
-                        {item.ctaLabel}
-                      </a>
+                      <div className="mt-auto pt-6">
+                        <a
+                          href={item.ctaHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center rounded-full bg-primary hover:bg-primary/90 text-white px-5 py-2.5 text-xs font-black uppercase tracking-wide shadow-lg shadow-primary/30 transition-all"
+                        >
+                          {item.ctaLabel}
+                        </a>
+                      </div>
                     )}
                   </div>
                 </FadeIn>
