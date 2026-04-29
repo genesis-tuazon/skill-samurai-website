@@ -90,7 +90,7 @@ export default function Navbar() {
             </div>
           </div>
           {links.map((link) =>
-            link.href.startsWith("/") ? (
+            link.href.startsWith("/") && !link.href.includes("#") ? (
               <Link
                 key={link.href}
                 href={link.href}
@@ -166,7 +166,7 @@ export default function Navbar() {
               </div>
             </div>
             {links.map((link) =>
-              link.href.startsWith("/") ? (
+              link.href.startsWith("/") && !link.href.includes("#") ? (
                 <Link
                   key={link.href}
                   href={link.href}
