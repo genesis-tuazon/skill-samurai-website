@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { FadeIn } from "@/components/ui/fade-in";
 import { MapPin, Clock, ArrowRight, CalendarClock, Sparkles, CalendarCheck } from "lucide-react";
-import CalendarModal from "@/components/ui/calendar-modal";
+import { openCalendarPopup } from "@/components/ui/calendar-modal";
 
 const locations = [
   {
@@ -31,7 +31,6 @@ const locations = [
 const programTags = ["Roblox", "Minecraft", "Game Design"];
 
 export default function Locations() {
-  const [calendarOpen, setCalendarOpen] = useState(false);
   return (
     <section id="locations" className="py-20 md:py-28 bg-secondary relative overflow-hidden">
       <div className="absolute -top-20 -right-20 w-96 h-96 bg-primary/15 rounded-full blur-[80px] pointer-events-none" />
@@ -155,7 +154,7 @@ export default function Locations() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <button
               type="button"
-              onClick={() => setCalendarOpen(true)}
+              onClick={() => openCalendarPopup()}
               className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-secondary bg-accent hover:bg-accent/90 transition-all cursor-pointer"
             >
               <CalendarCheck className="h-4 w-4" />
@@ -186,7 +185,6 @@ export default function Locations() {
           </p>
         </FadeIn>
       </div>
-      <CalendarModal open={calendarOpen} onClose={() => setCalendarOpen(false)} />
     </section>
   );
 }

@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown } from "lucide-react";
 import logoUrl from "@assets/SkillSamurai_Logo_Full_(1)_(1)_(1)_1776400767722.png";
-import CalendarModal from "@/components/ui/calendar-modal";
+import { openCalendarPopup } from "@/components/ui/calendar-modal";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
-  const [calendarOpen, setCalendarOpen] = useState(false);
   const [, navigate] = useLocation();
 
   const handleHashNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -139,7 +138,7 @@ export default function Navbar() {
           )}
           <button
             type="button"
-            onClick={() => setCalendarOpen(true)}
+            onClick={() => openCalendarPopup()}
             className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors cursor-pointer"
           >
             Calendar
@@ -233,7 +232,7 @@ export default function Navbar() {
             )}
             <button
               type="button"
-              onClick={() => { setCalendarOpen(true); setOpen(false); }}
+              onClick={() => { openCalendarPopup(); setOpen(false); }}
               className="text-base font-semibold text-white text-left cursor-pointer"
             >
               Calendar
@@ -241,7 +240,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-      <CalendarModal open={calendarOpen} onClose={() => setCalendarOpen(false)} />
     </header>
   );
 }
