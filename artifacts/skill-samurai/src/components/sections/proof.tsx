@@ -32,7 +32,7 @@ export default function Proof() {
               <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 translate-y-4 group-hover:translate-y-0 transition-transform">
                 <div className="inline-block px-4 py-2 bg-accent text-secondary text-sm font-black uppercase tracking-wider rounded-full mb-4 shadow-lg rotate-2 group-hover:rotate-0 transition-transform">Roblox Studio</div>
-                <h4 className="text-3xl font-black font-heading mb-3 text-white">3D Obby Platformer</h4>
+                <h4 className="text-3xl font-black font-heading mb-3 text-white">Publish your own Roblox Obby Game</h4>
                 <p className="text-white/90 font-medium line-clamp-2 text-lg">A complete multi-level obstacle course with checkpoints, moving platforms, and custom scripts.</p>
               </div>
             </div>
