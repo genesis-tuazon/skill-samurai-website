@@ -27,7 +27,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-secondary/5 relative overflow-hidden">
+    <section id="how-it-works" className="py-20 md:py-32 bg-secondary/5 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10 pt-4 md:pt-10">
         <FadeIn className="text-center max-w-4xl mx-auto mb-20">
           <h2 className="text-accent font-bold tracking-wider uppercase text-sm mb-3">Simple Process</h2>

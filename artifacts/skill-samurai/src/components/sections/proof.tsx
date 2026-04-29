@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/ui/fade-in";
 
 export default function Proof() {
   return (
-    <section className="py-20 md:py-32 bg-secondary relative overflow-hidden">
+    <section id="proof" className="py-20 md:py-32 bg-secondary relative overflow-hidden">
       <div className="absolute top-1/4 -right-40 w-96 h-96 bg-accent/20 rounded-full blur-[80px] pointer-events-none"></div>
       <div className="absolute -bottom-20 -left-20 w-96 h-96 bg-primary/15 rounded-full blur-[80px] pointer-events-none"></div>
 

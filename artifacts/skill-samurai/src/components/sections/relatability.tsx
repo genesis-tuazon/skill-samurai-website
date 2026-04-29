@@ -27,7 +27,7 @@ export default function Relatability() {
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-secondary/10 relative overflow-hidden">
+    <section id="relatability" className="py-20 md:py-24 bg-secondary/10 relative overflow-hidden">
       {/* Background dot grid */}
 
       <div className="container mx-auto px-4 relative z-10 pt-10">
