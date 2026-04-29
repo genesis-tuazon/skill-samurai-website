@@ -45,7 +45,7 @@ export default function Footer() {
             href="/#locations"
             className="inline-flex items-center justify-center gap-2 self-start md:self-auto rounded-full bg-primary px-7 py-3.5 text-base font-black uppercase tracking-wide text-white shadow-xl shadow-primary/30 hover:bg-primary/90 hover:scale-105 active:scale-95 transition-all"
           >
-            Book a Free Trial
+            Try a Free Class
             <ArrowRight className="h-5 w-5" />
           </a>
         </div>
