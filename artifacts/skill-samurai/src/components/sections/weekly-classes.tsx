@@ -58,26 +58,6 @@ export default function WeeklyClasses() {
           <p className="text-lg text-white/75 font-medium">
             Hands-on classes that let kids explore game design, robotics, AI, app development and more — personalized to their age, interests, and learning style.
           </p>
-          <div className="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="https://link.skillsamurai.com/widget/booking/Ku7skA5XAkgQpg8rQqN1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 text-white px-7 py-3.5 text-sm font-bold uppercase tracking-wide shadow-lg shadow-primary/30 transition-all"
-            >
-              <MapPin className="h-4 w-4" />
-              Book Trial · North East
-            </a>
-            <a
-              href="https://link.skillsamurai.com/widget/booking/uLciDSsBTUDqpqKRDaZq"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 text-white px-7 py-3.5 text-sm font-bold uppercase tracking-wide shadow-lg shadow-primary/30 transition-all"
-            >
-              <MapPin className="h-4 w-4" />
-              Book Trial · Seven Oaks
-            </a>
-          </div>
         </FadeIn>
 
         <FadeIn delay={0.1} className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-10">
@@ -134,6 +114,26 @@ export default function WeeklyClasses() {
           </div>
         </div>
 
+        <FadeIn delay={0.2} className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href="https://link.skillsamurai.com/widget/booking/Ku7skA5XAkgQpg8rQqN1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 text-white px-7 py-3.5 text-sm font-bold uppercase tracking-wide shadow-lg shadow-primary/30 transition-all"
+          >
+            <MapPin className="h-4 w-4" />
+            Enroll · North East
+          </a>
+          <a
+            href="https://link.skillsamurai.com/widget/booking/uLciDSsBTUDqpqKRDaZq"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 text-white px-7 py-3.5 text-sm font-bold uppercase tracking-wide shadow-lg shadow-primary/30 transition-all"
+          >
+            <MapPin className="h-4 w-4" />
+            Enroll · Seven Oaks
+          </a>
+        </FadeIn>
       </div>
 
       <style>{`
