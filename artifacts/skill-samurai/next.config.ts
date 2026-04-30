@@ -12,6 +12,7 @@ const config: NextConfig = {
   images: {
     unoptimized: true,
   },
+  allowedDevOrigins: ["*.replit.dev", "*.kirk.replit.dev"],
   webpack: (webpackConfig) => {
     webpackConfig.resolve.alias = {
       ...webpackConfig.resolve.alias,

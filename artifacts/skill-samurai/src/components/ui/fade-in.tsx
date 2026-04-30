@@ -11,15 +11,17 @@ interface FadeInProps {
   duration?: number;
 }
 
-// Detect environments where entrance animations should be skipped entirely
-// (PDF/print rendering, headless screenshots, search-engine bots, etc.).
 function isStaticRenderEnvironment() {
   if (typeof window === "undefined") return true;
   try {
     if (window.matchMedia && window.matchMedia("print").matches) return true;
   } catch {}
   const ua = (navigator.userAgent || "").toLowerCase();
-  if (/headlesschrome|jsdom|prerender|googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|embedly/i.test(ua)) {
+  if (
+    /headlesschrome|jsdom|prerender|googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|embedly/i.test(
+      ua
+    )
+  ) {
     return true;
   }
   return false;
@@ -34,23 +36,29 @@ export function FadeIn({
 }: FadeInProps) {
   const ref = useRef(null);
   const prefersReducedMotion = useReducedMotion();
-  const [staticRender] = useState(isStaticRenderEnvironment);
-  const isInView = useInView(ref, { once: true, amount: 0.05 });
-  const [forceVisible, setForceVisible] = useState(staticRender);
 
-  // Safety net: if the IntersectionObserver hasn't fired shortly after mount
-  // (mobile quirks, tall sections, fast scrolls, no-JS print snapshots), make
-  // sure the content becomes visible so users never see a blank section.
+  // Start as "static" (visible) on both server and client initial render
+  // to avoid SSR/client hydration mismatch. After mount, detect the real env.
+  const [staticRender, setStaticRender] = useState(true);
+  const [forceVisible, setForceVisible] = useState(true);
+
+  const isInView = useInView(ref, { once: true, amount: 0.05 });
+
   useEffect(() => {
-    if (forceVisible) return;
-    const timer = window.setTimeout(() => setForceVisible(true), 250);
-    const onPrint = () => setForceVisible(true);
-    window.addEventListener("beforeprint", onPrint);
-    return () => {
-      window.clearTimeout(timer);
-      window.removeEventListener("beforeprint", onPrint);
-    };
-  }, [forceVisible]);
+    const isStatic = isStaticRenderEnvironment();
+    setStaticRender(isStatic);
+    setForceVisible(isStatic);
+
+    if (!isStatic) {
+      const timer = window.setTimeout(() => setForceVisible(true), 250);
+      const onPrint = () => setForceVisible(true);
+      window.addEventListener("beforeprint", onPrint);
+      return () => {
+        window.clearTimeout(timer);
+        window.removeEventListener("beforeprint", onPrint);
+      };
+    }
+  }, []);
 
   const directions = {
     up: { y: 30, x: 0 },
