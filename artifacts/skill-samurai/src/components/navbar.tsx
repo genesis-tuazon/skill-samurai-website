@@ -51,8 +51,8 @@ export default function Navbar() {
   ];
 
   const resourceLinks = [
-    { label: "Blog", href: "/blog", type: "internal" as const },
     { label: "FAQ", href: "/faq", type: "internal" as const },
+    { label: "Blog", href: "/blog", type: "internal" as const },
     { label: "Parent Calendar", href: null, type: "popup" as const },
   ];
 
@@ -292,18 +292,18 @@ export default function Navbar() {
               <span className="text-base font-semibold text-white">Resources</span>
               <div className="mt-3 ml-4 flex flex-col gap-3 border-l border-white/15 pl-4">
                 <Link
-                  href="/blog"
-                  className="text-sm font-medium text-white/80 hover:text-primary"
-                  onClick={() => setOpen(false)}
-                >
-                  Blog
-                </Link>
-                <Link
                   href="/faq"
                   className="text-sm font-medium text-white/80 hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
                   FAQ
+                </Link>
+                <Link
+                  href="/blog"
+                  className="text-sm font-medium text-white/80 hover:text-primary"
+                  onClick={() => setOpen(false)}
+                >
+                  Blog
                 </Link>
                 <button
                   type="button"
