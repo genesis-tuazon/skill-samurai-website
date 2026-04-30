@@ -88,21 +88,21 @@ export default function ChildBenefits() {
             <div className="grid gap-4 max-w-[560px] mx-auto">
               <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
                 <img
-                  src={classroomPhoto}
+                  src={(classroomPhoto as any).src ?? classroomPhoto}
                   alt="Children learning together in a classroom"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-2 hover:rotate-0 transition-transform duration-500 lg:ml-14">
                 <img
-                  src={classroomPhotoTwo}
+                  src={(classroomPhotoTwo as any).src ?? classroomPhotoTwo}
                   alt="Children using headphones and laptops in class"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-1deg] hover:rotate-0 transition-transform duration-500 md:ml-6 lg:ml-24">
                 <img
-                  src={classroomPhotoThree}
+                  src={(classroomPhotoThree as any).src ?? classroomPhotoThree}
                   alt="Kids smiling while coding together"
                   className="w-full h-full object-cover object-center"
                 />
