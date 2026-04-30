@@ -57,6 +57,7 @@ export default function Navbar() {
   const resourceLinks = [
     { label: "FAQ", href: "/faq", type: "internal" as const },
     { label: "Blog", href: "/blog", type: "internal" as const },
+    { label: "Free Coding", href: "https://www.youtube.com/@SkillSamuraiWinnipeg/playlists", type: "external" as const },
     { label: "Parent Calendar", href: null, type: "popup" as const },
   ];
 
@@ -182,6 +183,17 @@ export default function Navbar() {
                     >
                       {r.label}
                     </Link>
+                  ) : r.type === "external" ? (
+                    <a
+                      key={r.label}
+                      href={r.href!}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setResourcesOpen(false)}
+                      className="block px-5 py-3.5 text-sm font-semibold text-secondary hover:bg-primary hover:text-white transition-colors border-b border-border last:border-b-0"
+                    >
+                      {r.label}
+                    </a>
                   ) : (
                     <button
                       key={r.label}
@@ -307,6 +319,15 @@ export default function Navbar() {
                 >
                   Blog
                 </Link>
+                <a
+                  href="https://www.youtube.com/@SkillSamuraiWinnipeg/playlists"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-white/80 hover:text-primary"
+                  onClick={() => setOpen(false)}
+                >
+                  Free Coding
+                </a>
                 <button
                   type="button"
                   onClick={() => { openCalendarModal(); setOpen(false); }}
