@@ -73,6 +73,61 @@ const posts = [
     tagColor: "bg-primary/10 text-primary",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
   },
+  {
+    slug: "ai-robotics-kids-winnipeg",
+    title: "AI Is Already Here — Here's How We're Preparing Winnipeg Kids for It",
+    excerpt:
+      "Artificial intelligence will reshape every industry in your child's lifetime. At Skill Samurai, we introduce AI concepts early so kids grow up as creators — not just consumers — of this technology.",
+    date: "October 30, 2024",
+    readTime: "5 min read",
+    tag: "Future Ready",
+    tagColor: "bg-secondary/10 text-secondary",
+    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
+  },
+  {
+    slug: "girls-in-stem-closing-the-gap",
+    title: "Girls in STEM: Why We're Passionate About Closing the Gender Gap",
+    excerpt:
+      "Women make up just 25% of Canada's tech workforce. We're proud to serve families raising the next generation of female engineers, developers, and innovators — and we know how to keep girls engaged.",
+    date: "September 14, 2024",
+    readTime: "4 min read",
+    tag: "Child Development",
+    tagColor: "bg-accent/15 text-orange-700",
+    image: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80",
+  },
+  {
+    slug: "coding-helps-kids-at-school",
+    title: "How Learning to Code Makes Kids Better at Math, Reading, and Science",
+    excerpt:
+      "Coding isn't just a tech skill — it's a thinking skill. Studies show that students who learn to code improve in logical reasoning, math scores, and reading comprehension. Here's the science.",
+    date: "August 5, 2024",
+    readTime: "5 min read",
+    tag: "STEM Learning",
+    tagColor: "bg-accent/15 text-orange-700",
+    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+  },
+  {
+    slug: "summer-coding-camp-winnipeg",
+    title: "Why Summer Is the Best Time to Start Coding Classes",
+    excerpt:
+      "No homework, no rush — summer gives kids the mental space to explore something new. See why families across Winnipeg use the break to give their child a massive head start in tech.",
+    date: "July 1, 2024",
+    readTime: "3 min read",
+    tag: "Parent Guide",
+    tagColor: "bg-primary/10 text-primary",
+    image: "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=800&q=80",
+  },
+  {
+    slug: "is-coding-class-worth-the-cost",
+    title: "Is a Coding Class Worth the Cost? An Honest Answer for Winnipeg Parents",
+    excerpt:
+      "Between hockey, dance, and tutoring, budgets are tight. We break down exactly what your child gains from a month of classes — and why most parents tell us it's the highest-value activity their kid does.",
+    date: "June 12, 2024",
+    readTime: "4 min read",
+    tag: "Parent Guide",
+    tagColor: "bg-primary/10 text-primary",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+  },
 ];
 
 export default function BlogPage() {
@@ -143,10 +198,9 @@ export default function BlogPage() {
               ))}
             </div>
 
-            {/* Coming soon note */}
             <FadeIn delay={400}>
               <p className="text-center text-muted-foreground text-sm mt-16">
-                More articles coming soon — follow us on social media to stay updated.
+                Follow us on Instagram and Facebook for the latest tips and updates.
               </p>
             </FadeIn>
           </div>
