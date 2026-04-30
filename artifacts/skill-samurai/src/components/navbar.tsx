@@ -57,7 +57,7 @@ export default function Navbar() {
   const resourceLinks = [
     { label: "FAQ", href: "/faq", type: "internal" as const },
     { label: "Blog", href: "/blog", type: "internal" as const },
-    { label: "Free Coding", href: "https://www.youtube.com/@SkillSamuraiWinnipeg/playlists", type: "external" as const },
+    { label: "Scratch Coding Classes", href: "https://www.youtube.com/@SkillSamuraiWinnipeg/playlists", type: "external" as const },
     { label: "Parent Calendar", href: null, type: "popup" as const },
   ];
 
@@ -326,7 +326,7 @@ export default function Navbar() {
                   className="text-sm font-medium text-white/80 hover:text-primary"
                   onClick={() => setOpen(false)}
                 >
-                  Free Coding
+                  Scratch Coding Classes
                 </a>
                 <button
                   type="button"
