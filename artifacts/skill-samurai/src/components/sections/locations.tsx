@@ -179,11 +179,6 @@ export default function Locations() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.3} className="mt-8 text-center">
-          <p className="text-sm md:text-base text-white/70 font-medium">
-            No contracts. Flexible, month-to-month membership that fits your schedule.
-          </p>
-        </FadeIn>
       </div>
     </section>
   );

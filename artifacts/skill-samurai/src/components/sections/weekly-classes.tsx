@@ -136,7 +136,7 @@ export default function WeeklyClasses() {
             </a>
           </div>
           <p className="text-white/60 text-sm font-medium">
-            No contract &nbsp;·&nbsp; Month-to-month &nbsp;·&nbsp; Flexible
+            No contracts. Flexible, month-to-month membership that fits your schedule.
           </p>
         </FadeIn>
       </div>
