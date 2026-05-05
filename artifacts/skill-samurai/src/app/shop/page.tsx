@@ -15,12 +15,12 @@ export default function ShopPage() {
   return (
     <main>
       {/* Hero banner */}
-      <section className="relative w-full bg-[#0a0a1a]">
+      <section className="relative w-full bg-[#0a0a1a] py-8">
         <a
           href={SHOP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="block group relative"
+          className="block group relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl"
           aria-label="Shop Skill Samurai gear — opens in a new tab"
         >
           <img
