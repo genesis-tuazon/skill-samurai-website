@@ -1,9 +1,10 @@
 {
   "/_not-found/page": "/_not-found",
   "/page": "/",
-  "/faq/page": "/faq",
   "/blog/page": "/blog",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/faq/page": "/faq",
+  "/schools-community/page": "/schools-community",
   "/careers/page": "/careers",
-  "/shop/page": "/shop",
-  "/schools-community/page": "/schools-community"
+  "/shop/page": "/shop"
 }
