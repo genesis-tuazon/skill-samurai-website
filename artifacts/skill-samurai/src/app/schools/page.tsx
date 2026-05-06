@@ -146,19 +146,19 @@ export default function SchoolsPage() {
               <div className="flex-1 text-center md:text-left">
                 <p className="text-accent font-bold tracking-wider uppercase text-xs mb-2">High School Co-op Program</p>
                 <h3 className="text-2xl md:text-3xl font-black font-heading text-white leading-tight mb-2">
-                  Your students can earn a high school credit here.
+                  Register your school as a co-op placement partner.
                 </h3>
                 <p className="text-white/70 font-medium leading-relaxed">
-                  Grade 10–12 students can volunteer as classroom assistants and earn <strong className="text-white">1 credit for every 100 hours</strong> — no coding experience required.
+                  We accept Grade 10–12 co-op students as classroom assistants. Students earn <strong className="text-white">1 credit per 100 hours</strong> — and gain real experience in STEM education alongside our instructors.
                 </p>
               </div>
               <a
-                href="https://meetings.hubspot.com/skillsamurai/studentcoopprogram"
+                href="https://meetings.hubspot.com/skillsamurai/school-hour-of-code"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-shrink-0 inline-flex h-12 items-center justify-center rounded-full bg-accent px-7 text-sm font-black uppercase tracking-wide text-secondary shadow-lg shadow-accent/30 transition-all hover:opacity-90 hover:scale-105 active:scale-95 whitespace-nowrap"
               >
-                Book an Interview
+                Register Your School
               </a>
             </div>
           </FadeIn>
