@@ -140,10 +140,12 @@ export default function CareersPage() {
                 ))}
               </ul>
               <a
-                href="mailto:winnipeg@skillsamurai.com?subject=High School Co-op Inquiry – Skill Samurai Winnipeg"
+                href="https://meetings.hubspot.com/skillsamurai/studentcoopprogram"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3 text-sm font-black uppercase tracking-wide text-secondary shadow-lg shadow-accent/30 transition-all hover:opacity-90 hover:scale-105 active:scale-95"
               >
-                Apply for Co-op →
+                Book Your Interview →
               </a>
             </FadeIn>
             <FadeIn delay={0.15} direction="up">
