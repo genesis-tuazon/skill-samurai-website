@@ -172,22 +172,20 @@ export default function Locations() {
               <CalendarCheck className="h-4 w-4" />
               Live Parent Calendar
             </button>
-            <a
-              href={locations[0].makeupHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all"
-            >
-              Makeup Options · Seven Oaks
-            </a>
-            <a
-              href={locations[1].makeupHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all"
+            <button
+              type="button"
+              onClick={() => openPopup(locations[0].makeupHref)}
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all cursor-pointer"
             >
               Makeup Options · North East
-            </a>
+            </button>
+            <button
+              type="button"
+              onClick={() => openPopup(locations[1].makeupHref)}
+              className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all cursor-pointer"
+            >
+              Makeup Options · Seven Oaks
+            </button>
           </div>
         </FadeIn>
 

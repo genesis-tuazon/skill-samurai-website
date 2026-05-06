@@ -3,10 +3,10 @@
   "/sitemap.xml/route": "/sitemap.xml",
   "/robots.txt/route": "/robots.txt",
   "/page": "/",
-  "/blog/[slug]/page": "/blog/[slug]",
   "/blog/page": "/blog",
-  "/faq/page": "/faq",
+  "/blog/[slug]/page": "/blog/[slug]",
   "/careers/page": "/careers",
+  "/faq/page": "/faq",
   "/schools-community/page": "/schools-community",
   "/shop/page": "/shop"
 }

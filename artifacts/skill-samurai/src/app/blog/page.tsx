@@ -37,7 +37,7 @@ export default function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post, i) => (
-              <FadeIn key={post.slug} delay={i * 60}>
+              <FadeIn key={post.slug} delay={i * 0.06}>
                 <Link href={`/blog/${post.slug}`} className="group flex flex-col rounded-3xl overflow-hidden border border-border bg-white shadow-sm hover:shadow-xl transition-all duration-300 h-full">
                   <div className="relative overflow-hidden h-48">
                     <img
@@ -76,7 +76,7 @@ export default function BlogPage() {
             ))}
           </div>
 
-          <FadeIn delay={400}>
+          <FadeIn delay={0.4}>
             <p className="text-center text-muted-foreground text-sm mt-16">
               Follow us on Instagram and Facebook for the latest tips and updates.
             </p>

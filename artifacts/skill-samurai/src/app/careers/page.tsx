@@ -95,7 +95,7 @@ export default function CareersPage() {
           </FadeIn>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {perks.map((perk, i) => (
-              <FadeIn key={perk.title} delay={i * 80}>
+              <FadeIn key={perk.title} delay={i * 0.08}>
                 <div className="flex flex-col items-start gap-4 rounded-3xl border border-border bg-white p-7 shadow-sm h-full">
                   <div className="rounded-2xl bg-primary/10 p-3">
                     {perk.icon}
@@ -122,7 +122,7 @@ export default function CareersPage() {
           </FadeIn>
           <div className="flex flex-col gap-8 max-w-3xl mx-auto">
             {openings.map((job, i) => (
-              <FadeIn key={job.title + job.location} delay={i * 100}>
+              <FadeIn key={job.title + job.location} delay={i * 0.1}>
                 <div className="rounded-3xl border border-border bg-white shadow-sm p-8">
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                     <h3 className="text-xl font-bold text-secondary leading-snug">{job.title}</h3>
