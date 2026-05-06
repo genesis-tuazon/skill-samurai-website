@@ -142,12 +142,6 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={`${outfit.variable} ${plusJakartaSans.variable}`}>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body>
         <Providers>
           <div className="flex min-h-[100dvh] flex-col overflow-x-clip">
@@ -158,6 +152,10 @@ export default function RootLayout({
           <CalendarModal />
           <BookingModal />
         </Providers>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );
