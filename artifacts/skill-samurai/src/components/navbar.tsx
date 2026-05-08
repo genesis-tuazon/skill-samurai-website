@@ -240,7 +240,7 @@ export default function Navbar() {
           >
             <button
               type="button"
-              className="inline-flex h-10 sm:h-11 items-center justify-center whitespace-nowrap rounded-full border border-white/25 bg-white/10 px-4 sm:px-6 text-xs sm:text-sm font-semibold text-white shadow-md transition-all hover:bg-white/20 hover:scale-105 active:scale-95 cursor-pointer gap-1"
+              className="inline-flex h-10 sm:h-11 items-center justify-center whitespace-nowrap rounded-full bg-primary px-4 sm:px-8 text-xs sm:text-sm font-semibold text-primary-foreground shadow-md transition-all hover:bg-primary/90 hover:scale-105 hover:shadow-lg active:scale-95 cursor-pointer gap-1.5"
               aria-haspopup="true"
               aria-expanded={makeupOpen}
             >
