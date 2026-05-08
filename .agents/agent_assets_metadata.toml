@@ -30,3 +30,15 @@ id = "dJt3Vnjmhn86H6-cPFgFg"
 uri = "file://artifacts/skill-samurai/public/images/learning-calm.png"
 type = "image"
 title = "Calm classroom learning photo"
+
+[[generated]]
+id = "vrBptQay_BV7ZByR1CqfK"
+uri = "file://attached_assets/trial-project-roblox.png"
+type = "image"
+title = "trial project roblox game"
+
+[[generated]]
+id = "u0tio4W3InsQnxHKc2LX-"
+uri = "file://attached_assets/trial-project-minecraft.png"
+type = "image"
+title = "trial project minecraft build"

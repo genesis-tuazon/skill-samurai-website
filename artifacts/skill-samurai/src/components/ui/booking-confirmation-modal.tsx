@@ -1,7 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { X, Clock, Users, CalendarCheck, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
+import robloxProject from "@assets/trial-project-roblox.png";
+import minecraftProject from "@assets/trial-project-minecraft.png";
 
 const EVENT = "skill-samurai:open-booking-confirmation";
 
@@ -131,6 +134,40 @@ export function BookingConfirmationModal() {
               </li>
             ))}
           </ul>
+
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-secondary/60 mb-2">
+              What your child could build
+            </p>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="relative overflow-hidden rounded-xl aspect-[4/3]">
+                <Image
+                  src={robloxProject}
+                  alt="Sample Roblox game built during a trial class"
+                  fill
+                  sizes="(max-width: 640px) 50vw, 160px"
+                  className="object-cover"
+                  priority={false}
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent px-2 py-1.5">
+                  <p className="text-[10px] font-bold text-white leading-tight">Roblox Game</p>
+                </div>
+              </div>
+              <div className="relative overflow-hidden rounded-xl aspect-[4/3]">
+                <Image
+                  src={minecraftProject}
+                  alt="Sample Minecraft build created during a trial class"
+                  fill
+                  sizes="(max-width: 640px) 50vw, 160px"
+                  className="object-cover"
+                  priority={false}
+                />
+                <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent px-2 py-1.5">
+                  <p className="text-[10px] font-bold text-white leading-tight">Minecraft Build</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <button
             type="button"
