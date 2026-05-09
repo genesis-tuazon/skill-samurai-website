@@ -86,9 +86,11 @@ export default function ContactPage() {
                   <Clock className="h-5 w-5 text-primary" strokeWidth={2.2} />
                 </div>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-secondary/50 mb-0.5">Hours</p>
-                  <p className="text-base font-extrabold text-secondary">Mon – Fri, 4–8 PM</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">By appointment only</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-secondary/50 mb-1">Hours</p>
+                  <div className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-sm">
+                    <span className="font-semibold text-secondary/60">Sat – Sun</span><span className="font-bold text-secondary">12–6 PM</span>
+                    <span className="font-semibold text-secondary/60">Mon – Fri</span><span className="font-bold text-secondary">4–8 PM</span>
+                  </div>
                 </div>
               </div>
 
