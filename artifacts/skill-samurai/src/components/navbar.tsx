@@ -36,6 +36,7 @@ export default function Navbar() {
     { href: "/#how-it-works", label: "How It Works" },
     { href: "/#relatability", label: "Why Us" },
     { href: "/#proof", label: "Results" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   const programLinks = [
