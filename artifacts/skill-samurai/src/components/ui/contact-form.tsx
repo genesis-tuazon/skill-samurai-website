@@ -8,7 +8,7 @@ const SCRIPT_SRC = "https://link.skillsamurai.com/js/form_embed.js";
 
 export function ContactForm() {
   useEffect(() => {
-    // Don't double-inject (React StrictMode / fast refresh)
+    // Only inject once — works across client-side back/forward navigation
     if (document.getElementById(POPUP_ID)) return;
 
     // Inject the iframe directly into <body> so GHL can freely move/wrap it
@@ -37,29 +37,17 @@ export function ContactForm() {
     iframe.title = "Contact Us";
     document.body.appendChild(iframe);
 
-    // Inject the GHL embed script
-    const script = document.createElement("script");
-    script.src = SCRIPT_SRC;
-    script.async = true;
-    document.body.appendChild(script);
+    // Inject GHL script (once per session)
+    if (!document.querySelector(`script[src="${SCRIPT_SRC}"]`)) {
+      const script = document.createElement("script");
+      script.src = SCRIPT_SRC;
+      script.async = true;
+      document.body.appendChild(script);
+    }
 
-    return () => {
-      // GHL wraps the iframe in a container div attached to <body>.
-      // Walk up from the iframe to find that outermost container, then remove it.
-      const el = document.getElementById(POPUP_ID);
-      if (el) {
-        let node: Element = el;
-        while (node.parentElement && node.parentElement !== document.body) {
-          node = node.parentElement;
-        }
-        node.remove();
-      }
-      // Remove the script tag so re-navigation reloads it fresh
-      const existingScript = document.querySelector(
-        `script[src="${SCRIPT_SRC}"]`
-      );
-      if (existingScript) existingScript.remove();
-    };
+    // No cleanup — GHL manages its own overlay visibility after close.
+    // Attempting DOM removal on unmount risks crashes when GHL has already
+    // moved or destroyed those nodes. Leaving them in <body> is safe.
   }, []);
 
   // Nothing in the React tree — the iframe lives entirely in document.body
