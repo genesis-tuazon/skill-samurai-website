@@ -36,7 +36,6 @@ export default function Navbar() {
     { href: "/#how-it-works", label: "How It Works" },
     { href: "/#relatability", label: "Why Us" },
     { href: "/#proof", label: "Results" },
-    { href: "/contact", label: "Contact Us" },
   ];
 
   const programLinks = [
@@ -84,36 +83,7 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-8">
-          {links.map((link) =>
-            link.href.startsWith("/") && !link.href.includes("#") ? (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors"
-              >
-                {link.label}
-              </Link>
-            ) : link.href.includes("#") ? (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={(e) => handleHashNav(e, link.href)}
-                className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors cursor-pointer"
-              >
-                {link.label}
-              </a>
-            ) : (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors"
-              >
-                {link.label}
-              </a>
-            )
-          )}
-
-          {/* Programs dropdown */}
+          {/* Programs dropdown — first: primary conversion */}
           <div
             className="relative"
             onMouseEnter={() => setProgramsOpen(true)}
@@ -161,6 +131,18 @@ export default function Navbar() {
               </div>
             </div>
           </div>
+
+          {/* Scroll links — persuasion journey */}
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={(e) => handleHashNav(e, link.href)}
+              className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors cursor-pointer"
+            >
+              {link.label}
+            </a>
+          ))}
 
           {/* Resources dropdown */}
           <div
@@ -218,6 +200,14 @@ export default function Navbar() {
               </div>
             </div>
           </div>
+
+          {/* Contact — end of nav */}
+          <Link
+            href="/contact"
+            className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors"
+          >
+            Contact
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">
@@ -253,38 +243,7 @@ export default function Navbar() {
       {open && (
         <div className="lg:hidden border-t border-white/10 bg-secondary/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
-            {links.map((link) =>
-              link.href.startsWith("/") && !link.href.includes("#") ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-base font-semibold text-white"
-                  onClick={() => setOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ) : link.href.includes("#") ? (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => handleHashNav(e, link.href)}
-                  className="text-base font-semibold text-white cursor-pointer"
-                >
-                  {link.href.includes("weekly-classes") ? "Programs" : link.label}
-                </a>
-              ) : (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-base font-semibold text-white"
-                  onClick={() => setOpen(false)}
-                >
-                  {link.label}
-                </a>
-              )
-            )}
-
-            {/* Programs */}
+            {/* Programs — first */}
             <div>
               <a
                 href="/#weekly-classes"
@@ -320,13 +279,17 @@ export default function Navbar() {
               </div>
             </div>
 
-            <button
-              type="button"
-              onClick={() => { openMakeupModal(); setOpen(false); }}
-              className="text-base font-semibold text-white text-left cursor-pointer"
-            >
-              Book Makeup Class
-            </button>
+            {/* Persuasion journey scroll links */}
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={(e) => handleHashNav(e, link.href)}
+                className="text-base font-semibold text-white cursor-pointer"
+              >
+                {link.label}
+              </a>
+            ))}
 
             {/* Resources group */}
             <div>
@@ -378,6 +341,23 @@ export default function Navbar() {
                 </button>
               </div>
             </div>
+
+            {/* Contact */}
+            <Link
+              href="/contact"
+              className="text-base font-semibold text-white"
+              onClick={() => setOpen(false)}
+            >
+              Contact
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => { openMakeupModal(); setOpen(false); }}
+              className="text-base font-semibold text-white text-left cursor-pointer"
+            >
+              Book Makeup Class
+            </button>
           </div>
         </div>
       )}
