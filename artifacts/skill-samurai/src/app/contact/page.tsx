@@ -90,10 +90,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-xs font-bold uppercase tracking-widest text-secondary/40 mb-1">Hours</p>
-                <div className="grid grid-cols-[auto_1fr] gap-x-2 gap-y-0.5 text-xs">
-                  <span className="text-secondary/50 font-semibold">Sat–Sun</span><span className="font-bold text-secondary">12–6 PM</span>
-                  <span className="text-secondary/50 font-semibold">Mon–Fri</span><span className="font-bold text-secondary">4–8 PM</span>
-                </div>
+                <p className="text-xs font-bold text-secondary">By Appointment Only</p>
               </div>
             </div>
           </div>
