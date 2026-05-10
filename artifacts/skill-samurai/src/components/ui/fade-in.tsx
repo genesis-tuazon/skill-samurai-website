@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { motion, useInView, useReducedMotion } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 interface FadeInProps {
   children: React.ReactNode;
@@ -11,21 +10,13 @@ interface FadeInProps {
   duration?: number;
 }
 
-function isStaticRenderEnvironment() {
-  if (typeof window === "undefined") return true;
-  try {
-    if (window.matchMedia && window.matchMedia("print").matches) return true;
-  } catch {}
-  const ua = (navigator.userAgent || "").toLowerCase();
-  if (
-    /headlesschrome|jsdom|prerender|googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|embedly/i.test(
-      ua
-    )
-  ) {
-    return true;
-  }
-  return false;
-}
+const translateMap: Record<string, string> = {
+  up: "translateY(22px)",
+  down: "translateY(-22px)",
+  left: "translateX(22px)",
+  right: "translateX(-22px)",
+  none: "none",
+};
 
 export function FadeIn({
   children,
@@ -34,64 +25,47 @@ export function FadeIn({
   className = "",
   duration = 0.6,
 }: FadeInProps) {
-  const ref = useRef(null);
-  const prefersReducedMotion = useReducedMotion();
-
-  // Start as "static" (visible) on both server and client initial render
-  // to avoid SSR/client hydration mismatch. After mount, detect the real env.
-  const [staticRender, setStaticRender] = useState(true);
-  const [forceVisible, setForceVisible] = useState(true);
-
-  const isInView = useInView(ref, { once: true, amount: 0.05 });
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const isStatic = isStaticRenderEnvironment();
-    setStaticRender(isStatic);
-    setForceVisible(isStatic);
+    const el = ref.current;
+    if (!el) return;
 
-    if (!isStatic) {
-      const timer = window.setTimeout(() => setForceVisible(true), 250);
-      const onPrint = () => setForceVisible(true);
-      window.addEventListener("beforeprint", onPrint);
-      return () => {
-        window.clearTimeout(timer);
-        window.removeEventListener("beforeprint", onPrint);
-      };
-    }
-  }, []);
+    // Respect reduced-motion preference — never animate
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-  const directions = {
-    up: { y: 30, x: 0 },
-    down: { y: -30, x: 0 },
-    left: { x: 30, y: 0 },
-    right: { x: -30, y: 0 },
-    none: { x: 0, y: 0 },
-  };
+    // If the element is already in the viewport on mount, leave it fully visible
+    const rect = el.getBoundingClientRect();
+    const alreadyVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (alreadyVisible) return;
 
-  const skipAnimation = prefersReducedMotion || staticRender;
-  const shouldShow = isInView || forceVisible || skipAnimation;
+    // Element is below the fold — hide it, then fade in when scrolled to.
+    // We do this via direct DOM style (not React state) to avoid any
+    // SSR/hydration mismatch — the server renders with no inline opacity.
+    el.style.opacity = "0";
+    el.style.transform = translateMap[direction];
+    el.style.transition = `opacity ${duration}s cubic-bezier(0.21,0.47,0.32,0.98) ${delay}s, transform ${duration}s cubic-bezier(0.21,0.47,0.32,0.98) ${delay}s`;
+    el.style.willChange = "opacity, transform";
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.opacity = "1";
+          el.style.transform = "none";
+          el.style.willChange = "auto";
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.05 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [direction, delay, duration]);
 
   return (
-    <motion.div
-      ref={ref}
-      initial={
-        skipAnimation
-          ? { opacity: 1, x: 0, y: 0 }
-          : { opacity: 0, ...directions[direction] }
-      }
-      animate={
-        shouldShow
-          ? { opacity: 1, x: 0, y: 0 }
-          : { opacity: 0, ...directions[direction] }
-      }
-      transition={{
-        duration: skipAnimation ? 0 : duration,
-        delay: skipAnimation ? 0 : delay,
-        ease: [0.21, 0.47, 0.32, 0.98],
-      }}
-      className={className}
-    >
+    <div ref={ref} className={className}>
       {children}
-    </motion.div>
+    </div>
   );
 }
