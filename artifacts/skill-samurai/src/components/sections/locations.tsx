@@ -4,7 +4,6 @@ import React from "react";
 import { FadeIn } from "@/components/ui/fade-in";
 import { MapPin, Clock, ArrowRight, CalendarClock, Sparkles, CalendarCheck } from "lucide-react";
 import { openCalendarModal } from "@/components/ui/calendar-modal";
-import { openBookingConfirmation } from "@/components/ui/booking-confirmation-modal";
 
 const locations = [
   {
@@ -76,7 +75,7 @@ export default function Locations() {
               <FadeIn key={loc.name} delay={i * 0.1} direction="up">
                 <button
                   type="button"
-                  onClick={() => openBookingConfirmation({ locationName: loc.name, bookHref: loc.bookHref })}
+                  onClick={() => openPopup(loc.bookHref)}
                   aria-label={`Book a free trial at Skill Samurai ${loc.name}`}
                   className={`group block w-full h-full text-left bg-white rounded-3xl p-6 sm:p-8 border-2 border-white/20 ${ring} shadow-2xl shadow-black/30 hover:-translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-accent/60 cursor-pointer`}
                 >

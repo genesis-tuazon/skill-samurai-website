@@ -21,7 +21,6 @@ import Footer from "@/components/footer";
 import { CalendarModal } from "@/components/ui/calendar-modal";
 import { BookingModal } from "@/components/ui/booking-modal";
 import { MakeupModal } from "@/components/ui/makeup-modal";
-import { BookingConfirmationModal } from "@/components/ui/booking-confirmation-modal";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://winnipeg.skillsamurai.com"),
@@ -154,7 +153,6 @@ export default function RootLayout({
           <CalendarModal />
           <BookingModal />
           <MakeupModal />
-          <BookingConfirmationModal />
         </Providers>
         <script
           type="application/ld+json"
