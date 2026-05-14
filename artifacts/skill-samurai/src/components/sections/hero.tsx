@@ -33,11 +33,12 @@ export default function Hero() {
             height: "max(100%, calc(100% * 9 / 16))",
             minWidth: "177.77%",
             minHeight: "56.25vw",
-            transform: "translate(-50%, -50%)",
+            transform: "translate(-50%, -50%) translateZ(0)",
+            willChange: "transform",
+            backfaceVisibility: "hidden",
           }}
         />}
-        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/80 via-neutral-800/65 to-neutral-900/80" />
-        <div className="absolute inset-0 bg-neutral-900/25" />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/60 to-neutral-900/85" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10 pt-20 sm:pt-24 lg:pt-32 pb-8 min-h-[78svh] md:min-h-[calc(100svh-16rem)] flex items-center justify-center">
