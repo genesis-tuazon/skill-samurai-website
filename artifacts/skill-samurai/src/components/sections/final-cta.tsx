@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { FadeIn } from "@/components/ui/fade-in";
 import { ArrowRight, Sparkles, Brain, Smile, ShieldCheck } from "lucide-react";
