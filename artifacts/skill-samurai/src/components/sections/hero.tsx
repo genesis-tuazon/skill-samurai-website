@@ -9,8 +9,6 @@ export default function Hero() {
   const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
-    // Only load video on desktop — saves bandwidth on mobile
-    if (window.innerWidth < 768) return;
     const timer = setTimeout(() => {
       setVideoSrc(
         "https://player.vimeo.com/video/799591701?background=1&autoplay=1&loop=1&muted=1&autopause=0"
@@ -41,7 +39,7 @@ export default function Hero() {
             src={videoSrc}
             title="Skill Samurai students at work"
             allow="autoplay; fullscreen; picture-in-picture"
-            className="absolute pointer-events-none hidden md:block"
+            className="absolute pointer-events-none"
             onLoad={() => setVideoReady(true)}
             style={{
               border: 0,
