@@ -261,7 +261,13 @@ export default function GoogleReviews() {
                   <GoogleG className="w-5 h-5 shrink-0 mt-1" />
                 </div>
 
-                <Stars count={r.rating} />
+                <div className="flex items-center gap-3 mt-1">
+                  <Stars count={r.rating} />
+                  <span className="inline-flex items-center gap-1 text-xs text-secondary/50 font-medium">
+                    <GoogleG className="w-3.5 h-3.5" />
+                    Google Review
+                  </span>
+                </div>
 
                 <p className="mt-4 text-secondary/80 leading-relaxed text-[15px] flex-1">
                   {r.text}
