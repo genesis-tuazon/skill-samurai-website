@@ -6,8 +6,8 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-secondary min-h-[78svh] md:min-h-[calc(100svh-16rem)]">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-coding.png"
-          alt=""
+          src="/images/hero-coding.webp"
+          alt="Students learning to code at Skill Samurai Winnipeg"
           fill
           priority
           fetchPriority="high"

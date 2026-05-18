@@ -18,9 +18,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { CalendarModal } from "@/components/ui/calendar-modal";
-import { BookingModal } from "@/components/ui/booking-modal";
-import { MakeupModal } from "@/components/ui/makeup-modal";
+import { ModalProvider } from "@/components/ui/modal-provider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.skillsamuraiwinnipeg.com"),
@@ -161,9 +159,7 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
-          <CalendarModal />
-          <BookingModal />
-          <MakeupModal />
+          <ModalProvider />
         </Providers>
         <script
           type="application/ld+json"
