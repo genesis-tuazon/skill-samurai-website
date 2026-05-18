@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { Facebook, Instagram } from "lucide-react";
 
 export default function Hero() {
@@ -49,17 +48,6 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-secondary min-h-[78svh] md:min-h-[calc(100svh-16rem)]">
       <div className="absolute inset-0 z-0">
-        {/* Background image — always visible on mobile; hidden on desktop until video loads */}
-        <Image
-          src="/images/hero-coding.webp"
-          alt="Students learning to code at Skill Samurai Winnipeg"
-          fill
-          priority
-          fetchPriority="high"
-          sizes="(max-width: 767px) 100vw, 50vw"
-          className="object-cover object-center md:hidden"
-        />
-
         {/* Video — loaded only after first user interaction */}
         {videoSrc && (
           <iframe
