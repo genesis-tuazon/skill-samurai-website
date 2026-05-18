@@ -1,19 +1,51 @@
-import Image from "next/image";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import { Facebook, Instagram } from "lucide-react";
 
 export default function Hero() {
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    // Skip video on mobile — saves bandwidth, no visible benefit on small screens
+    if (window.innerWidth < 768) return;
+    const timer = setTimeout(() => {
+      setVideoSrc(
+        "https://player.vimeo.com/video/799591701?background=1&autoplay=1&loop=1&muted=1&autopause=0"
+      );
+      // Fallback: show video after 4s even if onLoad never fires
+      setTimeout(() => setVideoReady(true), 4000);
+    }, 800);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-secondary min-h-[78svh] md:min-h-[calc(100svh-16rem)]">
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero-coding.webp"
-          alt="Students learning to code at Skill Samurai Winnipeg"
-          fill
-          priority
-          fetchPriority="high"
-          sizes="100vw"
-          className="object-cover object-center"
-        />
+        {videoSrc && (
+          <iframe
+            src={videoSrc}
+            title="Skill Samurai students at work"
+            allow="autoplay; fullscreen; picture-in-picture"
+            className="absolute pointer-events-none"
+            onLoad={() => setVideoReady(true)}
+            style={{
+              border: 0,
+              top: "50%",
+              left: "50%",
+              width: "max(100%, calc(100% * 16 / 9))",
+              height: "max(100%, calc(100% * 9 / 16))",
+              minWidth: "177.77%",
+              minHeight: "56.25vw",
+              transform: "translate(-50%, -50%) translateZ(0)",
+              willChange: "transform",
+              backfaceVisibility: "hidden",
+              opacity: videoReady ? 1 : 0,
+              transition: "opacity 1.4s ease",
+            }}
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/60 to-neutral-900/85" />
       </div>
 
