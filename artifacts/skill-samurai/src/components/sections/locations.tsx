@@ -10,6 +10,7 @@ const locations = [
     name: "North East",
     tag: "After-school coding classes for ages 6–18",
     address: "1199 Rothesay St., Winnipeg, MB",
+    mapsHref: "https://maps.google.com/?q=1199+Rothesay+St,+Winnipeg,+MB",
     days: "Mon – Tue",
     times: "5:30pm & 6:30pm",
     timesDetail: "Two flexible after-school start times",
@@ -21,6 +22,7 @@ const locations = [
     name: "Seven Oaks",
     tag: "After-school coding classes for ages 6–18",
     address: "745 Kingsbury Ave., Winnipeg, MB",
+    mapsHref: "https://maps.google.com/?q=745+Kingsbury+Ave,+Winnipeg,+MB",
     days: "Wed – Thu",
     times: "4:30pm, 5:30pm & 6:30pm",
     timesDetail: "Three flexible after-school start times",
@@ -117,6 +119,16 @@ export default function Locations() {
                         <div>
                           <p className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground mb-0.5">Address</p>
                           <p className="text-sm sm:text-base font-semibold text-secondary leading-snug">{loc.address}</p>
+                          <span
+                            role="button"
+                            tabIndex={0}
+                            onClick={(e) => { e.stopPropagation(); window.open(loc.mapsHref, "_blank", "noopener,noreferrer"); }}
+                            onKeyDown={(e) => { if (e.key === "Enter") { e.stopPropagation(); window.open(loc.mapsHref, "_blank", "noopener,noreferrer"); }}}
+                            className={`mt-1 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-wide ${accentText} hover:underline cursor-pointer`}
+                          >
+                            <MapPin className="h-3 w-3" />
+                            Get Directions
+                          </span>
                         </div>
                       </li>
                       <li className="flex items-start gap-3">
