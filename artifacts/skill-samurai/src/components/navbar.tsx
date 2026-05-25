@@ -62,12 +62,12 @@ export default function Navbar() {
 
   const resourceLinks = [
     { label: "Contact Us", href: "/contact", type: "internal" as const },
+    { label: "Live Parent Calendar 2026", href: null, type: "popup" as const },
+    { label: "Shop / Merch", href: "/shop", type: "internal" as const },
     { label: "FAQ", href: "/faq", type: "internal" as const },
     { label: "Blog", href: "/blog", type: "internal" as const },
-    { label: "Shop / Merch", href: "/shop", type: "internal" as const },
     { label: "Careers", href: "/careers", type: "internal" as const },
     { label: "Free Coding Resources", href: "https://www.youtube.com/@SkillSamuraiWinnipeg/playlists", type: "external" as const },
-    { label: "Parent Calendar", href: null, type: "popup" as const },
   ];
 
   return (
@@ -291,6 +291,20 @@ export default function Navbar() {
             <div>
               <span className="text-base font-semibold text-white">Resources</span>
               <div className="mt-3 ml-4 flex flex-col gap-3 border-l border-white/15 pl-4">
+                <button
+                  type="button"
+                  onClick={() => { openCalendarModal(); setOpen(false); }}
+                  className="text-sm font-medium text-white/80 hover:text-primary text-left cursor-pointer"
+                >
+                  Live Parent Calendar 2026
+                </button>
+                <Link
+                  href="/shop"
+                  className="text-sm font-medium text-white/80 hover:text-primary"
+                  onClick={() => setOpen(false)}
+                >
+                  Shop / Merch
+                </Link>
                 <Link
                   href="/faq"
                   className="text-sm font-medium text-white/80 hover:text-primary"
@@ -304,13 +318,6 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                 >
                   Blog
-                </Link>
-                <Link
-                  href="/shop"
-                  className="text-sm font-medium text-white/80 hover:text-primary"
-                  onClick={() => setOpen(false)}
-                >
-                  Shop / Merch
                 </Link>
                 <Link
                   href="/careers"
@@ -328,13 +335,6 @@ export default function Navbar() {
                 >
                   Free Coding Resources
                 </a>
-                <button
-                  type="button"
-                  onClick={() => { openCalendarModal(); setOpen(false); }}
-                  className="text-sm font-medium text-white/80 hover:text-primary text-left cursor-pointer"
-                >
-                  Parent Calendar
-                </button>
               </div>
             </div>
 
