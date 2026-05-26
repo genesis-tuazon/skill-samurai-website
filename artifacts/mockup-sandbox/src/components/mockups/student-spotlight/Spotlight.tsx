@@ -82,21 +82,12 @@ export function Spotlight() {
       <div className="max-w-5xl mx-auto relative z-10">
 
         <div className="text-center mb-14">
-          <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border mb-6"
-            style={{
-              background: `${SECONDARY}0d`,
-              borderColor: `${SECONDARY}1a`,
-            }}
+          <p
+            className="text-sm font-bold uppercase tracking-wider mb-3"
+            style={{ color: "hsl(204 32% 62%)" }}
           >
-            <Trophy className="w-4 h-4" style={{ color: SECONDARY }} />
-            <span
-              className="text-xs font-bold uppercase tracking-widest"
-              style={{ color: SECONDARY }}
-            >
-              Student Spotlight
-            </span>
-          </div>
+            Student Spotlight
+          </p>
 
           <h2
             className="text-5xl font-black uppercase leading-tight tracking-tight mb-4"
