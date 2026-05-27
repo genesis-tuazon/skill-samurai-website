@@ -7,17 +7,17 @@ import { Code2, Gamepad2, Rocket, Globe, Star, ArrowLeft } from "lucide-react";
 
 const projects = [
   {
-    name: "Ethan",
-    age: 11,
-    project: "Haunted Maze",
-    projectType: "3D Game Design",
-    category: "game",
-    tag: "Game Developer",
-    emoji: "🎮",
+    name: "Kai",
+    age: null,
+    project: "Bob's Burgers 3D Build",
+    projectType: "3D Modeling",
+    category: "app",
+    tag: "3D Designer",
+    emoji: "🍔",
     description:
-      "Ethan spent 6 weeks designing and scripting his own 3D horror maze — complete with jump scares, a leaderboard, and custom sound effects. Over 200 players have played his game.",
+      "For her sandbox project, Kai built a detailed 3D replica of the Bob's Burgers restaurant — applying every tool and technique she'd mastered throughout her curriculum. She then presented her work to the class, walking through her creative process from concept to completion.",
     quote:
-      "I didn't just want to play games anymore — I wanted to make them. Now I have friends from school playing something I actually built.",
+      "I got to build something I actually love. Presenting it to everyone made me realize how much I really learned.",
     featured: true,
   },
   {
@@ -192,7 +192,7 @@ export default function StudentProjectsSection() {
                   <div className="mb-3">
                     <div className="flex items-center gap-2 flex-wrap mb-1">
                       <span className="font-black text-lg font-heading text-secondary">
-                        {p.name}, age {p.age}
+                        {p.name}{p.age ? `, age ${p.age}` : ""}
                       </span>
                     </div>
                     <div className="flex items-center gap-1.5">

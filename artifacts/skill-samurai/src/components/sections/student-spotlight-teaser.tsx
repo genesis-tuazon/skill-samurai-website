@@ -6,16 +6,16 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { Code2, Gamepad2, Rocket, ArrowRight } from "lucide-react";
 
 const featured = {
-  name: "Ethan",
-  age: 11,
-  project: "Haunted Maze",
-  projectType: "3D Game Design",
-  tag: "Game Developer",
+  name: "Kai",
+  age: null,
+  project: "Bob's Burgers 3D Build",
+  projectType: "3D Modeling",
+  tag: "3D Designer",
   description:
-    "Ethan spent 6 weeks designing and scripting his own 3D horror maze — complete with jump scares, a leaderboard, and custom sound effects. Over 200 players have played his game.",
+    "For her sandbox project, Kai built a detailed 3D replica of the Bob's Burgers restaurant — applying every tool and technique she'd mastered throughout her curriculum. She then presented her work to the class, walking through her creative process from concept to completion.",
   quote:
-    "I didn't just want to play games anymore — I wanted to make them. Now I have friends from school playing something I actually built.",
-  emoji: "🎮",
+    "I got to build something I actually love. Presenting it to everyone made me realize how much I really learned.",
+  emoji: "🍔",
 };
 
 const minis = [
@@ -84,7 +84,7 @@ export default function StudentSpotlightTeaser() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 flex-wrap mb-1">
                   <span className="font-black text-xl font-heading text-secondary">
-                    {featured.name}, age {featured.age}
+                    {featured.name}{featured.age ? `, age ${featured.age}` : ""}
                   </span>
                   <span className="px-2 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wide bg-primary/10 text-primary">
                     {featured.tag}
