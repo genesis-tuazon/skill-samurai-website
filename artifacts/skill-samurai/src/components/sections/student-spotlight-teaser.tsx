@@ -15,7 +15,7 @@ const featured = {
     "For her sandbox project, Kai built a detailed 3D replica of the Bob's Burgers restaurant — applying every tool and technique she'd mastered throughout her curriculum. She then presented her work to the class, walking through her creative process from concept to completion.",
   quote:
     "I got to build something I actually love. Presenting it to everyone made me realize how much I really learned.",
-  emoji: "🍔",
+  emoji: "🎨",
   videoUrl: "https://www.instagram.com/reel/DQxMBWdD9i6/",
 };
 
