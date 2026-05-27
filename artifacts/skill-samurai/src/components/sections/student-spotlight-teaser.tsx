@@ -21,14 +21,14 @@ const featured = {
 
 const minis = [
   {
-    name: "Sofia",
-    age: 14,
-    project: "Study Timer App",
-    projectType: "Python",
+    name: "Aria",
+    age: null,
+    project: "Robot Picture Frame",
+    projectType: "3D Design",
     Icon: Code2,
     color: "text-[#F59100]",
     bg: "bg-[#F59100]/10",
-    quote: "My teachers noticed I started coding instead of scrolling.",
+    quote: "I wanted to make something that was actually mine — and I did.",
   },
   {
     name: "Marcus",
@@ -125,7 +125,7 @@ export default function StudentSpotlightTeaser() {
                   </div>
                   <div className="min-w-0">
                     <p className="font-bold text-sm text-secondary">
-                      {s.name}, age {s.age}
+                      {s.name}{s.age ? `, age ${s.age}` : ""}
                       <span className="text-secondary/50 font-medium"> · {s.projectType}</span>
                     </p>
                     <p className="text-xs text-secondary/60 italic mt-1">"{s.quote}"</p>

@@ -22,6 +22,21 @@ const projects = [
     featured: true,
   },
   {
+    name: "Aria",
+    age: null,
+    project: "Robot Picture Frame",
+    projectType: "3D Design",
+    category: "app",
+    tag: "3D Designer",
+    emoji: "🤖",
+    description:
+      "After completing Skill Samurai's 3D design curriculum, Aria (Grade 6, Homeschool) created a Robot Picture Frame entirely from her own imagination — no template, no instructions. Just her creativity and everything she'd learned.",
+    quote:
+      "I wanted to make something that was actually mine. Once I learned the tools, I knew exactly what I wanted to build.",
+    videoUrl: "https://www.instagram.com/reel/DO54lAVjSGh/",
+    featured: false,
+  },
+  {
     name: "Sofia",
     age: 14,
     project: "Study Timer App",
