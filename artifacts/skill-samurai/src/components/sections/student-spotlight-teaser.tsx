@@ -3,64 +3,62 @@
 import React from "react";
 import Link from "next/link";
 import { FadeIn } from "@/components/ui/fade-in";
-import { Code2, Gamepad2, Rocket, Palette, ArrowRight } from "lucide-react";
+import { Code2, Gamepad2, Palette, ArrowRight } from "lucide-react";
 
-const featured = {
-  name: "Kai",
-  age: 12,
-  project: "Bob's Burgers 3D Build",
-  projectType: "3D Modeling",
-  tag: "3D Designer",
-  description:
-    "For her sandbox project, Kai built a detailed 3D replica of the Bob's Burgers restaurant — applying every tool and technique she'd mastered throughout her curriculum. She then presented her work to the class, walking through her creative process from concept to completion.",
-  quote:
-    "I got to build something I actually love. Presenting it to everyone made me realize how much I really learned.",
-  Icon: Palette,
-  color: "text-primary",
-  bg: "bg-primary/10",
-  videoUrl: "https://www.instagram.com/reel/DQxMBWdD9i6/",
-};
-
-const minis = [
+const cards = [
+  {
+    name: "Kai",
+    age: 12,
+    project: "Bob's Burgers 3D Build",
+    projectType: "3D Modeling",
+    tag: "3D Designer",
+    quote:
+      "I got to build something I actually love. Presenting it to everyone made me realize how much I really learned.",
+    Icon: Palette,
+    color: "text-primary",
+    bg: "bg-primary/10",
+    border: "border-primary/20",
+    videoUrl: "https://www.instagram.com/reel/DQxMBWdD9i6/",
+  },
   {
     name: "Aria",
     age: 12,
     project: "Robot Picture Frame",
     projectType: "3D Design",
+    tag: "3D Designer",
+    quote: "I wanted to make something that was actually mine — and I did.",
     Icon: Code2,
     color: "text-[#F59100]",
     bg: "bg-[#F59100]/10",
-    quote: "I wanted to make something that was actually mine — and I did.",
+    border: "border-[#F59100]/20",
+    videoUrl: null,
   },
   {
     name: "Jack",
     age: 7,
     project: "Froggy Flap",
     projectType: "Scratch Game",
+    tag: "Game Creator",
+    quote: "I made my own game and my frog is the main character!",
     Icon: Gamepad2,
     color: "text-primary",
     bg: "bg-primary/10",
-    quote: "I made my own game and my frog is the main character!",
-  },
-  {
-    name: "Owen",
-    age: 8,
-    project: "Dino Defense",
-    projectType: "Game Design",
-    Icon: Rocket,
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    quote: "I finally finished my game. Showing it to everyone was really fun.",
+    border: "border-primary/20",
+    videoUrl: "https://www.instagram.com/reel/DHego-dytfS/",
   },
   {
     name: "Jayrel",
     age: 16,
     project: "Interactive Robot Game",
     projectType: "Game Design",
+    tag: "Game Creator",
+    quote:
+      "Built an interactive robot game using block-based coding — a beginner project that already shows serious creative thinking.",
     Icon: Gamepad2,
-    color: "text-primary",
-    bg: "bg-primary/10",
-    quote: "Built an interactive robot game using block-based coding — a beginner project that already shows serious creative thinking.",
+    color: "text-secondary",
+    bg: "bg-secondary/10",
+    border: "border-secondary/20",
+    videoUrl: "https://www.instagram.com/reel/DPjNdEQja7L/",
   },
 ];
 
@@ -81,81 +79,68 @@ export default function StudentSpotlightTeaser() {
               <span className="text-primary">REAL THINGS</span>
             </h3>
           </FadeIn>
+          <FadeIn delay={0.1}>
+            <Link
+              href="/student-projects"
+              className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-wide text-primary hover:underline"
+            >
+              See All Projects
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </FadeIn>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-6">
-          <FadeIn className="lg:col-span-3" direction="up" delay={0.1}>
-            <div className="h-full bg-white rounded-3xl p-7 border border-secondary/10 shadow-lg shadow-secondary/5 flex flex-col sm:flex-row gap-6 items-start">
-              <div className="flex-shrink-0">
-                <div className={`w-16 h-16 rounded-2xl ${featured.bg} flex items-center justify-center relative`}>
-                  <featured.Icon className={`w-8 h-8 ${featured.color}`} />
-                  <div className="absolute -top-2.5 -right-2.5 bg-primary text-white text-[9px] font-black uppercase tracking-wide px-2 py-0.5 rounded-full shadow-lg shadow-primary/40">
-                    ⭐ Featured
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {cards.map((s, i) => (
+            <FadeIn key={s.name} direction="up" delay={0.1 + i * 0.08}>
+              <div className={`h-full bg-white rounded-3xl p-6 border ${s.border} shadow-sm hover:shadow-md transition-shadow flex flex-col gap-4`}>
+                <div className="flex items-center gap-3">
+                  <div className={`w-11 h-11 rounded-2xl ${s.bg} flex items-center justify-center flex-shrink-0`}>
+                    <s.Icon className={`w-5 h-5 ${s.color}`} />
+                  </div>
+                  <div>
+                    <p className="font-black text-base font-heading text-secondary leading-tight">
+                      {s.name}{s.age ? `, ${s.age}` : ""}
+                    </p>
+                    <span className={`text-[10px] font-bold uppercase tracking-wide ${s.color}`}>
+                      {s.tag}
+                    </span>
                   </div>
                 </div>
-              </div>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 flex-wrap mb-1">
-                  <span className="font-black text-xl font-heading text-secondary">
-                    {featured.name}{featured.age ? `, age ${featured.age}` : ""}
-                  </span>
-                  <span className="px-2 py-0.5 rounded-lg text-[10px] font-bold uppercase tracking-wide bg-primary/10 text-primary">
-                    {featured.tag}
-                  </span>
+
+                <div>
+                  <p className="text-sm font-bold text-secondary">{s.project}</p>
+                  <p className="text-xs text-secondary/50">{s.projectType}</p>
                 </div>
-                <div className="flex items-center gap-1.5 mb-3">
-                  <Gamepad2 className="w-3.5 h-3.5 text-[#F59100] flex-shrink-0" />
-                  <span className="text-sm font-bold text-secondary">{featured.project}</span>
-                  <span className="text-sm text-secondary/50">— {featured.projectType}</span>
-                </div>
-                <p className="text-sm text-secondary/70 leading-relaxed mb-4">
-                  {featured.description}
-                </p>
-                <blockquote className="bg-primary/8 border-l-[3px] border-primary rounded-xl px-4 py-3 text-sm italic text-secondary/75 font-medium">
-                  "{featured.quote}"
+
+                <blockquote className="flex-1 text-sm italic text-secondary/65 leading-relaxed">
+                  "{s.quote}"
                 </blockquote>
-                {featured.videoUrl && (
+
+                {s.videoUrl && (
                   <a
-                    href={featured.videoUrl}
+                    href={s.videoUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 mt-4 text-xs font-black uppercase tracking-wide text-primary hover:underline"
+                    className={`text-xs font-black uppercase tracking-wide ${s.color} hover:underline`}
                   >
-                    ▶ Watch the video on Instagram
+                    ▶ Watch on Instagram
                   </a>
                 )}
               </div>
-            </div>
-          </FadeIn>
-
-          <div className="lg:col-span-2 flex flex-col gap-4">
-            {minis.map((s, i) => (
-              <FadeIn key={s.name} direction="up" delay={0.15 + i * 0.08}>
-                <div className="bg-white rounded-2xl p-5 border border-secondary/10 shadow-sm flex items-start gap-4">
-                  <div className={`w-9 h-9 rounded-xl ${s.bg} flex items-center justify-center flex-shrink-0`}>
-                    <s.Icon className={`w-4.5 h-4.5 ${s.color}`} />
-                  </div>
-                  <div className="min-w-0">
-                    <p className="font-bold text-sm text-secondary">
-                      {s.name}{s.age ? `, age ${s.age}` : ""}
-                      <span className="text-secondary/50 font-medium"> · {s.projectType}</span>
-                    </p>
-                    {s.quote && <p className="text-xs text-secondary/60 italic mt-1">"{s.quote}"</p>}
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-            <FadeIn delay={0.35}>
-              <Link
-                href="/student-projects"
-                className="w-full flex items-center justify-center gap-2 py-3.5 rounded-2xl bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors"
-              >
-                See All Student Projects
-                <ArrowRight className="w-4 h-4" />
-              </Link>
             </FadeIn>
-          </div>
+          ))}
         </div>
+
+        <FadeIn delay={0.45} className="mt-8 text-center">
+          <Link
+            href="/student-projects"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors"
+          >
+            See All Student Projects
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </FadeIn>
       </div>
     </section>
   );
