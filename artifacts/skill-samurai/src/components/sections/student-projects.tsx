@@ -67,6 +67,21 @@ const projects = [
     featured: false,
   },
   {
+    name: "Soren",
+    age: null,
+    project: "Breakfast Obby",
+    projectType: "Game Design",
+    category: "game",
+    tag: "Game Creator",
+    emoji: "🥓",
+    description:
+      "Soren designed a breakfast-themed obstacle course game — complete with bacon, eggs, and his own custom level design. His coaches had a blast playing it. The bacon level was a highlight.",
+    quote:
+      "I wanted to make something funny and nobody had done a breakfast game before so I went for it.",
+    videoUrl: "https://www.instagram.com/reel/C_boC2RA4CJ/",
+    featured: false,
+  },
+  {
     name: "Melanie",
     age: null,
     project: "Obby + Face Tracker",
