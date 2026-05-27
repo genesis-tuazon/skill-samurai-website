@@ -116,13 +116,26 @@ export default function WeeklyClasses() {
           </div>
         </div>
 
-        <FadeIn delay={0.2} className="mt-10 flex flex-col items-center gap-3">
-          <a
-            href="#locations"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 hover:scale-105 active:scale-95 text-white px-8 py-4 text-sm font-black uppercase tracking-wide shadow-lg shadow-primary/30 transition-all border-b-4 border-primary-foreground/20"
-          >
-            Enroll Now
-          </a>
+        <FadeIn delay={0.2} className="mt-10 flex flex-col items-center gap-4">
+          <p className="text-white/70 text-sm font-bold uppercase tracking-wider">Choose your location to enroll:</p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://winnipeg.jumbula.com/north-east-coding-classes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary hover:bg-primary/90 hover:scale-105 active:scale-95 text-white px-7 py-4 text-sm font-black uppercase tracking-wide shadow-lg shadow-primary/30 transition-all border-b-4 border-primary-foreground/20"
+            >
+              Enroll — North East
+            </a>
+            <a
+              href="https://winnipeg.jumbula.com/seven-oaks-coding-classes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-secondary hover:bg-secondary/90 hover:scale-105 active:scale-95 text-white px-7 py-4 text-sm font-black uppercase tracking-wide shadow-lg shadow-secondary/30 transition-all border-b-4 border-primary-foreground/20"
+            >
+              Enroll — Seven Oaks
+            </a>
+          </div>
           <p className="text-white/60 text-sm font-medium">
             No contracts. Flexible, month-to-month membership that fits your schedule.
           </p>
