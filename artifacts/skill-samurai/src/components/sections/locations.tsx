@@ -32,7 +32,7 @@ const locations = [
   },
 ];
 
-const programTags = ["Roblox", "Minecraft", "Game Design"];
+const programTags = ["Game Design", "Minecraft", "Python"];
 
 function openPopup(url: string) {
   const w = 900, h = 700;

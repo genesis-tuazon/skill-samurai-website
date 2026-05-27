@@ -26,15 +26,15 @@ export default function Proof() {
             <div className="group rounded-[3rem] overflow-hidden relative aspect-video bg-secondary border-[8px] border-white shadow-2xl shadow-black/10 hover:-translate-y-2 hover:rotate-1 transition-all duration-500">
               <img 
                 src="/images/roblox-project.webp" 
-                alt="3D Roblox game level built by a student" 
+                alt="3D game level built by a student" 
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent pointer-events-none" />
               <div className="absolute bottom-0 left-0 w-full p-8 md:p-10 translate-y-4 group-hover:translate-y-0 transition-transform">
-                <div className="inline-block px-4 py-2 bg-accent text-secondary text-sm font-black uppercase tracking-wider rounded-full mb-4 shadow-lg rotate-2 group-hover:rotate-0 transition-transform">Roblox Studio</div>
-                <h4 className="text-3xl font-black font-heading mb-3 text-white">Publish your own Roblox Obby Game</h4>
+                <div className="inline-block px-4 py-2 bg-accent text-secondary text-sm font-black uppercase tracking-wider rounded-full mb-4 shadow-lg rotate-2 group-hover:rotate-0 transition-transform">Game Design Studio</div>
+                <h4 className="text-3xl font-black font-heading mb-3 text-white">Design Your Own 3D Game</h4>
                 <p className="text-white/90 font-medium line-clamp-2 text-lg">A complete multi-level obstacle course with checkpoints, moving platforms, and custom scripts.</p>
               </div>
             </div>

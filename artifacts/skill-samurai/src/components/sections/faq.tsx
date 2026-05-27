@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "What ages do you teach?",
-    a: "We work with kids ages 6 through 18. Younger students start with playful, drag-and-drop coding (Scratch, Roblox-style projects), and older students move into Python, JavaScript, AI/ML, robotics, and Minecraft modding."
+    a: "We work with kids ages 6 through 18. Younger students start with playful, drag-and-drop coding (Scratch, game design projects), and older students move into Python, JavaScript, AI/ML, robotics, and Minecraft modding."
   },
   {
     q: "How long is each class?",

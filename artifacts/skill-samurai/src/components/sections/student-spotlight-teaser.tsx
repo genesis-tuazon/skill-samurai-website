@@ -9,10 +9,10 @@ const featured = {
   name: "Ethan",
   age: 11,
   project: "Haunted Maze",
-  projectType: "Roblox Game",
+  projectType: "3D Game Design",
   tag: "Game Developer",
   description:
-    "Ethan spent 6 weeks designing and scripting his own Roblox horror maze — complete with jump scares, a leaderboard, and custom sound effects. Over 200 players have visited his game.",
+    "Ethan spent 6 weeks designing and scripting his own 3D horror maze — complete with jump scares, a leaderboard, and custom sound effects. Over 200 players have played his game.",
   quote:
     "I didn't just want to play games anymore — I wanted to make them. Now I have friends from school playing something I actually built.",
   emoji: "🎮",

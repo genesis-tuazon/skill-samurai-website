@@ -6,7 +6,7 @@ export default function Relatability() {
   const painPoints = [
     {
       icon: <Gamepad2 className="h-10 w-10 text-primary" />,
-      title: "Your child loves Roblox, Minecraft, or YouTube",
+      title: "Your child loves video games, Minecraft, or YouTube",
       desc: "They can spend hours on it… and part of you wonders, \"Is this actually helping them?\""
     },
     {

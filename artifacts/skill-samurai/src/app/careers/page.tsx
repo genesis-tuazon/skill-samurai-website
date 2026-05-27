@@ -16,7 +16,7 @@ const openings = [
     type: "Part-Time",
     location: "North East Winnipeg",
     description:
-      "Lead engaging after-school coding classes for kids aged 6–18. You'll guide students through Scratch, Roblox scripting, Python, and more using our proven curriculum. No teaching degree required — just passion, patience, and a love of tech.",
+      "Lead engaging after-school coding classes for kids aged 6–18. You'll guide students through Scratch, game design, Python, and more using our proven curriculum. No teaching degree required — just passion, patience, and a love of tech.",
     skills: ["Python or JavaScript", "Patience with kids", "Reliable & punctual", "Team player"],
   },
   {

@@ -136,7 +136,7 @@ export default function RootLayout({
           itemOffered: {
             "@type": "Service",
             name: "After-School Coding Classes",
-            description: "Weekly coding classes for kids ages 6–18 using Scratch, Roblox, Python, and JavaScript.",
+            description: "Weekly coding classes for kids ages 6–18 using Scratch, Python, JavaScript, and game design.",
           },
         },
         {

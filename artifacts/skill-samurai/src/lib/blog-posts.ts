@@ -48,26 +48,26 @@ At Skill Samurai Winnipeg, we see it every week. A shy 8-year-old who couldn't g
 You wouldn't wait until high school to teach your child to read. Don't wait to teach them to code either. The foundations built in childhood become the launching pad for everything that follows. Book a free trial class and let's find out what your child can create.`,
   },
   {
-    slug: "roblox-and-minecraft-gateway-to-real-coding",
-    title: "Roblox & Minecraft: Gateway to Real Programming Skills",
+    slug: "games-and-minecraft-gateway-to-real-coding",
+    title: "Minecraft & Game Design: Gateway to Real Programming Skills",
     excerpt:
-      "Kids already love these games — we use that passion to teach actual coding concepts like variables, loops, and logic. See how play-based learning accelerates skill development.",
+      "Kids already love games — we use that passion to teach actual coding concepts like variables, loops, and logic. See how play-based learning accelerates skill development.",
     date: "March 10, 2025",
     readTime: "5 min read",
     tag: "STEM Learning",
     tagColor: "bg-accent/15 text-orange-700",
     image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&q=80",
-    content: `Ask almost any kid in Winnipeg what game they play, and there's a good chance the answer is Roblox or Minecraft. These aren't just entertainment — they're some of the most powerful learning tools we've ever seen, and at Skill Samurai, we use them intentionally.
+    content: `Ask almost any kid in Winnipeg what game they play, and there's a good chance the answer involves Minecraft or some kind of game design. These aren't just entertainment — they're some of the most powerful learning tools we've ever seen, and at Skill Samurai, we use them intentionally.
 
 **Why Games Work So Well**
 
-Traditional coding education often starts with abstract concepts: variables, loops, conditionals. For a 7-year-old, that's meaningless. But when you explain that a variable is how you store your Roblox character's health points, or that a loop is what makes Minecraft repeat a building pattern — suddenly it clicks.
+Traditional coding education often starts with abstract concepts: variables, loops, conditionals. For a 7-year-old, that's meaningless. But when you explain that a variable is how you store a game character's health points, or that a loop is what makes Minecraft repeat a building pattern — suddenly it clicks.
 
-Games provide immediate, meaningful feedback. When a child writes their first script and their Roblox character actually does what they told it to do, the connection between code and outcome is instant and visceral. That's the hook that keeps them coming back.
+Games provide immediate, meaningful feedback. When a child writes their first script and their game character actually does what they told it to do, the connection between code and outcome is instant and visceral. That's the hook that keeps them coming back.
 
 **What Kids Actually Learn**
 
-In our Roblox coding modules, students work with Lua — a real programming language used professionally in game development. They learn:
+In our game design modules, students work with Lua — a real programming language used professionally in game development. They learn:
 
 - **Variables and data types** — storing and manipulating information
 - **Conditionals (if/then)** — making their game respond to player actions
@@ -83,9 +83,9 @@ Minecraft Education Edition takes things even further. Students can program in-g
 
 **The Bridge to "Real" Coding**
 
-The goal isn't to keep kids in games forever. Games are the on-ramp. Once a student understands loops and variables through Roblox, transitioning those concepts to Python or JavaScript is dramatically easier. The abstract becomes concrete because they've already seen it work.
+The goal isn't to keep kids in games forever. Games are the on-ramp. Once a student understands loops and variables through game design, transitioning those concepts to Python or JavaScript is dramatically easier. The abstract becomes concrete because they've already seen it work.
 
-Many of our students who started with Roblox scripting at age 8 or 9 are now building web apps and Python projects by age 12 or 13. The foundation the games laid made everything after it faster.
+Many of our students who started with game scripting at age 8 or 9 are now building web apps and Python projects by age 12 or 13. The foundation the games laid made everything after it faster.
 
 **Parents: Don't Worry About Screen Time**
 
@@ -218,7 +218,7 @@ Coding doesn't just teach coding. It teaches how to think when you don't know th
     slug: "what-age-should-kids-start-coding",
     title: "What Age Should Kids Start Coding? (Hint: Sooner Than You Think)",
     excerpt:
-      "We answer the #1 question parents ask us. From our youngest 6-year-old Roblox builders to our 17-year-old JavaScript developers, there's a right time — and it might be now.",
+      "We answer the #1 question parents ask us. From our youngest 6-year-old game designers to our 17-year-old JavaScript developers, there's a right time — and it might be now.",
     date: "November 18, 2024",
     readTime: "4 min read",
     tag: "Parent Guide",
@@ -236,7 +236,7 @@ The goal at this stage isn't to write Python. It's to build a mental model of ho
 
 **Ages 9–12: The Building Years**
 
-This is where things accelerate. Kids this age can handle more complexity, more abstraction, and longer projects. We move into Roblox scripting with Lua, more advanced Scratch, and introduce Python fundamentals.
+This is where things accelerate. Kids this age can handle more complexity, more abstraction, and longer projects. We move into Lua game scripting, more advanced Scratch, and introduce Python fundamentals.
 
 Attention spans are longer, frustration tolerance is higher, and the desire to build something impressive is strong. Students in this range often make the most visible leaps — finishing a month with a playable game they built from scratch.
 
