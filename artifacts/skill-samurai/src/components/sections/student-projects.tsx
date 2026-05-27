@@ -143,48 +143,6 @@ const projects = [
     featured: false,
   },
   {
-    name: "Marcus",
-    age: 9,
-    project: "Space Shooter",
-    projectType: "Scratch Game",
-    category: "game",
-    tag: "Game Creator",
-    emoji: "🚀",
-    description:
-      "Marcus built a fully playable space shooter with lives, a scoring system, enemy waves, and his own pixel-art sprites — all in Scratch.",
-    quote:
-      "I made a game my whole class plays at lunch. It's the best feeling ever.",
-    featured: false,
-  },
-  {
-    name: "Priya",
-    age: 16,
-    project: "Portfolio Website",
-    projectType: "HTML/CSS/JS",
-    category: "web",
-    tag: "Web Developer",
-    emoji: "🌐",
-    description:
-      "Priya designed and coded her own personal portfolio from scratch — responsive layout, smooth animations, and a contact form that actually sends emails.",
-    quote:
-      "I put it on my college application. My counsellor was really impressed.",
-    featured: false,
-  },
-  {
-    name: "Jordan",
-    age: 12,
-    project: "Weather Dashboard",
-    projectType: "Python + API",
-    category: "app",
-    tag: "App Developer",
-    emoji: "🌦️",
-    description:
-      "Jordan connected to a live weather API and built a dashboard that shows current conditions, a 5-day forecast, and fun emoji for each weather type.",
-    quote:
-      "I showed my parents the live weather on my app and they couldn't believe I made it.",
-    featured: false,
-  },
-  {
     name: "Aiden",
     age: 10,
     project: "Platformer Game",
