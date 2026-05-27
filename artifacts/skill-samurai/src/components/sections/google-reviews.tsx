@@ -291,7 +291,7 @@ export default function GoogleReviews() {
                   </span>
                 </div>
 
-                <p className="mt-4 text-secondary/80 leading-relaxed text-[15px] flex-1 line-clamp-5">
+                <p className="mt-4 text-secondary/80 leading-relaxed text-[15px] flex-1">
                   {r.text}
                 </p>
 
