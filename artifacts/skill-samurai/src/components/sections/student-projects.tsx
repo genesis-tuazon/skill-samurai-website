@@ -66,6 +66,21 @@ const projects = [
     featured: false,
   },
   {
+    name: "Melanie",
+    age: null,
+    project: "Obby + Face Tracker",
+    projectType: "Game Design + Scripting",
+    category: "game",
+    tag: "Game Developer",
+    emoji: "🎭",
+    description:
+      "Melanie scripted her first obstacle course game from scratch and got her face tracker working in the same session — two milestones in one day. Her coaches couldn't have been more proud.",
+    quote:
+      "I didn't think I could get the face tracker to work but I figured it out!",
+    videoUrl: "https://www.instagram.com/reel/C8GDhNUA0Rm/",
+    featured: false,
+  },
+  {
     name: "Jack",
     age: 7,
     project: "Froggy Flap",
