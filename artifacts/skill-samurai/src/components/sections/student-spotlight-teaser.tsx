@@ -1,20 +1,18 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import { ArrowRight, Code2, Gamepad2 } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
-import { Code2, Gamepad2, Palette, ArrowRight } from "lucide-react";
 
 const cards = [
   {
     name: "Kai",
-    age: 12,
-    project: "Bob's Burgers 3D Build",
-    projectType: "3D Modeling",
-    tag: "3D Designer",
-    quote:
-      "I got to present it to the whole class. My hands were shaking but I was so proud. I actually made something real.",
-    Icon: Palette,
+    age: null,
+    project: "Multiplayer Dodgeball Game",
+    projectType: "Game Design",
+    tag: "Game Creator",
+    quote: "I didn't think I could make a real game. Now my friends play it every day.",
+    Icon: Gamepad2,
     color: "text-primary",
     bg: "bg-primary/10",
     border: "border-primary/20",
@@ -68,15 +66,20 @@ export default function StudentSpotlightTeaser() {
       <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-[#F59100]/20 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8 md:mb-14">
+
+        {/* Heading */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14">
           <FadeIn className="max-w-2xl">
             <h2 className="text-accent font-bold tracking-wider uppercase text-sm mb-3">
-              Student Spotlight
+              Real Results
             </h2>
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading uppercase leading-tight tracking-tight">
               <span className="text-white block mb-2">KIDS WHO BUILD</span>
               <span className="text-primary">REAL THINGS</span>
             </h3>
+            <p className="text-lg text-white/70 font-medium mt-4">
+              Most parents are surprised at what their kids can create after just a few classes. This isn&apos;t abstract theory — it&apos;s hands-on creation.
+            </p>
           </FadeIn>
           <FadeIn delay={0.1}>
             <Link
@@ -89,6 +92,51 @@ export default function StudentSpotlightTeaser() {
           </FadeIn>
         </div>
 
+        {/* Project images */}
+        <div className="grid md:grid-cols-2 gap-6 mb-10 md:mb-14">
+          <FadeIn direction="up" delay={0.1}>
+            <div className="group rounded-[2.5rem] overflow-hidden relative aspect-video bg-secondary/80 border-[6px] border-white/90 shadow-2xl shadow-black/20 hover:-translate-y-2 hover:rotate-1 transition-all duration-500">
+              <img
+                src="/images/roblox-project.webp"
+                alt="3D game level built by a student"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-full p-5 md:p-8 md:translate-y-4 md:group-hover:translate-y-0 md:transition-transform">
+                <div className="inline-block px-3 py-1.5 bg-accent text-secondary text-xs font-black uppercase tracking-wider rounded-full mb-2 shadow-lg md:rotate-2 md:group-hover:rotate-0 md:transition-transform">Game Design Studio</div>
+                <h4 className="text-xl md:text-2xl font-black font-heading mb-1 text-white">Design Your Own 3D Game</h4>
+                <p className="text-white/80 text-sm hidden sm:block">A complete multi-level obstacle course with checkpoints, moving platforms, and custom scripts.</p>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn direction="up" delay={0.2}>
+            <div className="group rounded-[2.5rem] overflow-hidden relative aspect-video bg-secondary/80 border-[6px] border-white/90 shadow-2xl shadow-black/20 hover:-translate-y-2 hover:-rotate-1 transition-all duration-500 mt-0 md:mt-10">
+              <img
+                src="/images/kids-collaborating.webp"
+                alt="Kids celebrating their coding project"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/40 to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-full p-5 md:p-8 md:translate-y-4 md:group-hover:translate-y-0 md:transition-transform">
+                <div className="inline-block px-3 py-1.5 bg-primary text-white text-xs font-black uppercase tracking-wider rounded-full mb-2 shadow-lg md:-rotate-2 md:group-hover:rotate-0 md:transition-transform">Small Groups</div>
+                <h4 className="text-xl md:text-2xl font-black font-heading mb-1 text-white">Confidence you can see</h4>
+                <p className="text-white/80 text-sm hidden sm:block">Kids smile, collaborate, and leave proud of what they made together.</p>
+              </div>
+            </div>
+          </FadeIn>
+        </div>
+
+        {/* Student spotlight eyebrow */}
+        <FadeIn>
+          <p className="text-accent font-bold tracking-wider uppercase text-sm mb-8">Student Spotlight</p>
+        </FadeIn>
+
+        {/* Student cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {cards.map((s, i) => (
             <FadeIn key={s.name} direction="up" delay={0.1 + i * 0.08}>
@@ -113,7 +161,7 @@ export default function StudentSpotlightTeaser() {
                 </div>
 
                 <blockquote className="flex-1 text-sm italic text-secondary/65 leading-relaxed">
-                  "{s.quote}"
+                  &ldquo;{s.quote}&rdquo;
                 </blockquote>
 
                 {s.videoUrl && (
