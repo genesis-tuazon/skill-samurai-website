@@ -25,16 +25,16 @@ const projects = [
     name: "Aria",
     age: 12,
     grade: "Grade 5",
-    project: "Bob's Burgers 3D Model",
+    project: "Robot Picture Frame",
     projectType: "3D Design",
     category: "app",
     tag: "3D Designer",
     videoUrl: "https://www.instagram.com/reel/DO54lAVjSGh/",
-    emoji: "🍔",
+    emoji: "🤖",
     description:
-      "Aria used her 3D design skills to recreate the iconic Bob's Burgers restaurant as a detailed 3D model — built entirely from scratch using everything she learned at Skill Samurai.",
+      "After completing Skill Samurai's 3D design curriculum, Aria created a Robot Picture Frame entirely from her own imagination — no template, no instructions. Just her creativity and everything she'd learned.",
     quote:
-      "My mom saw it and said 'Aria, you built that?' I was like — yeah Mom, I did.",
+      "I wanted to make something that was actually mine. Once I learned the tools, I knew exactly what I wanted to build.",
     featured: false,
   },
   {

@@ -7,15 +7,15 @@ import { FadeIn } from "@/components/ui/fade-in";
 const cards = [
   {
     name: "Kai",
-    age: null,
-    project: "Multiplayer Dodgeball Game",
-    projectType: "Game Design",
-    tag: "Game Creator",
-    quote: "I didn't think I could make a real game. Now my friends play it every day.",
-    Icon: Gamepad2,
-    color: "text-primary",
-    bg: "bg-primary/10",
-    border: "border-primary/20",
+    age: 12,
+    project: "Bob's Burgers 3D Model",
+    projectType: "3D Modeling",
+    tag: "3D Designer",
+    quote: "I got to build something I actually love. Presenting it to everyone made me realize how much I really learned.",
+    Icon: Code2,
+    color: "text-[#F59100]",
+    bg: "bg-[#F59100]/10",
+    border: "border-[#F59100]/20",
     videoUrl: "https://www.instagram.com/reel/DQxMBWdD9i6/",
   },
   {
@@ -34,7 +34,7 @@ const cards = [
   {
     name: "Aria",
     age: 12,
-    project: "Bob's Burgers 3D Model",
+    project: "Robot Picture Frame",
     projectType: "3D Design",
     tag: "3D Designer",
     quote: "My mom saw it and said 'Aria, you built that?' I was like — yeah Mom, I did.",
