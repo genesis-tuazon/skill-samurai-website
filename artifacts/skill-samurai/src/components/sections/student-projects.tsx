@@ -8,7 +8,7 @@ import { Code2, Gamepad2, Rocket, Globe, Star, ArrowLeft } from "lucide-react";
 const projects = [
   {
     name: "Kai",
-    age: 12,
+    age: 13,
     project: "Bob's Burgers 3D Build",
     projectType: "3D Modeling",
     category: "app",

@@ -7,7 +7,7 @@ import { FadeIn } from "@/components/ui/fade-in";
 const cards = [
   {
     name: "Kai",
-    age: 12,
+    age: 13,
     project: "Bob's Burgers 3D Model",
     projectType: "3D Modeling",
     tag: "3D Designer",
