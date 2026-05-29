@@ -34,7 +34,7 @@ const cards = [
   {
     name: "Aria",
     age: 12,
-    project: "Robot Picture Frame",
+    project: "Bob's Burgers 3D Model",
     projectType: "3D Design",
     tag: "3D Designer",
     quote: "My mom saw it and said 'Aria, you built that?' I was like — yeah Mom, I did.",
