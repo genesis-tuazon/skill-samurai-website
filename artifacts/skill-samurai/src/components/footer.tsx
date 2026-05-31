@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 import {
   Facebook,
@@ -31,9 +31,6 @@ const locations = [
 ];
 
 export default function Footer() {
-  const [year, setYear] = useState(2025);
-  useEffect(() => { setYear(new Date().getFullYear()); }, []);
-
   return (
     <footer className="bg-secondary text-white relative overflow-hidden">
       <div className="absolute -top-40 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[100px] pointer-events-none" />
@@ -224,7 +221,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 py-6 text-sm text-white/55 flex flex-col md:flex-row justify-between items-center gap-3">
           <p>
-            © {year} Skill Samurai Winnipeg. All rights
+            © 2023 Skill Samurai Winnipeg. All rights
             reserved.
           </p>
           <div className="flex gap-6">
