@@ -132,6 +132,24 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Vision */}
+      <section className="py-24 bg-white border-y border-secondary/10">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <FadeIn>
+            <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Our Long-Term Goal</p>
+            <h2 className="text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-6">
+              Every kid deserves access — not just the ones who can afford it.
+            </h2>
+            <p className="text-lg text-secondary/75 leading-relaxed mb-5">
+              We believe coding and technology education shouldn't be a privilege. Every child — regardless of their family's income — deserves the chance to build real skills and discover what they're capable of.
+            </p>
+            <p className="text-lg text-secondary/75 leading-relaxed">
+              We're working toward building a scholarship and free coding program for underserved kids in Winnipeg. It's a goal we're deeply committed to, and one that drives everything we do. The more families we serve, the closer we get.
+            </p>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* Network */}
       <section className="py-24 bg-secondary text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 pointer-events-none" />
