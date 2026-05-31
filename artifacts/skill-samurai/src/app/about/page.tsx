@@ -88,7 +88,7 @@ export default function AboutPage() {
               <img
                 src="/images/student-headset.png"
                 alt="Student coding at Skill Samurai Winnipeg"
-                className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]"
+                className="rounded-3xl shadow-2xl w-full object-cover object-[center_30%] aspect-[4/3]"
                 loading="lazy"
                 decoding="async"
               />
