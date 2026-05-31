@@ -118,7 +118,7 @@ export default function BirthdayPartiesPage() {
                 Book a Party
               </a>
               <a
-                href="tel:+12049005437"
+                href="tel:+12048182155"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white font-bold text-sm uppercase tracking-wide hover:bg-white/20 transition-colors"
               >
                 <Phone className="h-4 w-4" />
@@ -262,11 +262,11 @@ export default function BirthdayPartiesPage() {
                 Email Us to Book
               </a>
               <a
-                href="tel:+12049005437"
+                href="tel:+12048182155"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white font-bold text-sm uppercase tracking-wide hover:bg-white/20 transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                (204) 900-5437
+                (204) 818-2155
               </a>
             </div>
             <p className="mt-5 text-white/40 text-sm">Both Winnipeg locations · Weekends · Ages 6–16</p>
