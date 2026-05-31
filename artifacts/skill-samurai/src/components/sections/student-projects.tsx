@@ -46,7 +46,7 @@ const projects = [
     tag: "Game Creator",
     emoji: "🦕",
     description:
-      "Owen built and finished Dino Defense — a complete game he designed from start to finish. He then presented it to the class, walking through how it works and what he created. His coaches were blown away by both the game and his presentation skills.",
+      "Owen built and finished Dino Defense — a complete game he designed from start to finish. He then presented it to the class, walking through how it works and what he created. His Coding Instructors were blown away by both the game and his presentation skills.",
     quote:
       "I finally finished my game. Showing it to everyone was actually really fun.",
     videoUrl: "https://www.instagram.com/reel/DCeiahwRq3v/",
@@ -91,7 +91,7 @@ const projects = [
     tag: "Game Creator",
     emoji: "🦖",
     description:
-      "Kaleb, a first-grader, built Dino Launch — a game completely driven by his own storytelling and imagination. He was so excited to show it off that his coaches were blown away. One of our youngest builders, and already thinking like a game designer.",
+      "Kaleb, a first-grader, built Dino Launch — a game completely driven by his own storytelling and imagination. He was so excited to show it off that his Coding Instructors were blown away. One of our youngest builders, and already thinking like a game designer.",
     quote:
       "I made the dino fly and then it launches! I want to add more dinosaurs next.",
     videoUrl: "https://www.instagram.com/reel/C_Lt7F8vGEa/",
@@ -106,7 +106,7 @@ const projects = [
     tag: "Game Creator",
     emoji: "🥓",
     description:
-      "Soren designed a breakfast-themed obstacle course game — complete with bacon, eggs, and his own custom level design. His coaches had a blast playing it. The bacon level was a highlight.",
+      "Soren designed a breakfast-themed obstacle course game — complete with bacon, eggs, and his own custom level design. His Coding Instructors had a blast playing it. The bacon level was a highlight.",
     quote:
       "I wanted to make something funny and nobody had done a breakfast game before so I went for it.",
     videoUrl: "https://www.instagram.com/reel/C_boC2RA4CJ/",
@@ -121,7 +121,7 @@ const projects = [
     tag: "Game Developer",
     emoji: "🎭",
     description:
-      "Melanie scripted her first obstacle course game from scratch and got her face tracker working in the same session — two milestones in one day. Her coaches couldn't have been more proud.",
+      "Melanie scripted her first obstacle course game from scratch and got her face tracker working in the same session — two milestones in one day. Her Coding Instructors couldn't have been more proud.",
     quote:
       "I didn't think I could get the face tracker to work but I figured it out!",
     videoUrl: "https://www.instagram.com/reel/C8GDhNUA0Rm/",

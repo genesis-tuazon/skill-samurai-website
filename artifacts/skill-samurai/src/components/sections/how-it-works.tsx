@@ -12,7 +12,7 @@ export default function HowItWorks() {
     {
       icon: <Laptop className="h-8 w-8 text-white" />,
       title: "Child builds first project",
-      desc: "They jump right in with our expert coaches in a fun, supportive environment."
+      desc: "They jump right in with our expert Coding Instructors in a fun, supportive environment."
     },
     {
       icon: <Sparkles className="h-8 w-8 text-white" />,
