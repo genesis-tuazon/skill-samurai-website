@@ -94,9 +94,9 @@ export default function AboutPage() {
               />
               <blockquote className="border-l-4 border-primary pl-5 mt-6">
                 <p className="text-base text-secondary/70 italic leading-relaxed">
-                  "I am blown away with what the kids learn and are capable of creating… My son was enrolled in the 3-month program and hopes that the classes can be more than once a week."
+                  "Thanks to Genesis, we've transformed screen time into valuable learning, and I feel so confident in the skills he's developing. Hudson looks forward to coding class every week and proudly shares his experiences with his friends and teachers."
                 </p>
-                <cite className="mt-2 block text-sm font-bold text-secondary not-italic">— Natasha P., Skill Samurai Winnipeg parent</cite>
+                <cite className="mt-2 block text-sm font-bold text-secondary not-italic">— Bria L., Skill Samurai Winnipeg parent</cite>
               </blockquote>
             </FadeIn>
             <FadeIn delay={0.15}>
