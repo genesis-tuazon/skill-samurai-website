@@ -87,29 +87,29 @@ export default function CampsPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(218_42%_29%/0.4),transparent_60%)]" />
         <div className="container mx-auto px-4 relative z-10 text-center">
           <FadeIn>
-            <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-1.5 mb-6">
-              <Sun className="h-4 w-4 text-primary" />
-              <span className="text-xs font-bold uppercase tracking-widest text-primary">Coding & STEM Camps</span>
+            <div className="inline-flex items-center gap-2 bg-[#F59100]/20 border border-[#F59100]/30 rounded-full px-4 py-1.5 mb-6">
+              <Calendar className="h-4 w-4 text-[#F59100]" />
+              <span className="text-xs font-bold uppercase tracking-widest text-[#F59100]">Launching Summer 2027</span>
             </div>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black font-heading text-white uppercase tracking-tight leading-[1.0] mb-6">
-              Build Something<br /><span className="text-primary">Real This Summer.</span>
+              Coding & STEM<br /><span className="text-primary">Camps Are Coming.</span>
             </h1>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="text-lg md:text-xl text-white/75 max-w-2xl mx-auto mb-8 leading-relaxed">
-              Week-long coding and STEM camps for kids ages 6–16. Hands-on projects, qualified instructors, and skills that last a lifetime.
+              Week-long coding and STEM camps for kids ages 6–16 launching Summer 2027. Get on the early interest list to be first to know when registration opens.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="mailto:Genesis@SkillSamurai.com?subject=Camp Inquiry"
+                href="mailto:Genesis@SkillSamurai.com?subject=Summer 2027 Camp Interest"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/40 hover:bg-primary/90 transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                Ask About Camps
+                Join the Interest List
               </a>
               <a
                 href="tel:+12048182155"
@@ -121,7 +121,7 @@ export default function CampsPage() {
             </div>
           </FadeIn>
           <FadeIn delay={0.4}>
-            <p className="mt-5 text-white/50 text-sm">Ages 6–16 · North East & Seven Oaks locations · Limited spots</p>
+            <p className="mt-5 text-white/50 text-sm">Ages 6–16 · North East & Seven Oaks locations · Limited spots per session</p>
           </FadeIn>
         </div>
       </section>
@@ -251,18 +251,18 @@ export default function CampsPage() {
           <FadeIn>
             <Rocket className="h-10 w-10 text-primary mx-auto mb-4" />
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black font-heading text-secondary uppercase tracking-tight mb-4">
-              Reserve a Spot
+              Get Early Access
             </h2>
             <p className="text-secondary/65 text-lg max-w-xl mx-auto mb-8">
-              Spots fill up fast. Reach out to find out about upcoming camp dates and availability at both locations.
+              Camps launch Summer 2027. Join the interest list now and be first to know when registration opens — spots will be limited.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="mailto:Genesis@SkillSamurai.com?subject=Camp Inquiry"
+                href="mailto:Genesis@SkillSamurai.com?subject=Summer 2027 Camp Interest"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/40 hover:bg-primary/90 transition-colors"
               >
                 <Mail className="h-4 w-4" />
-                Email Us
+                Join the Interest List
               </a>
               <a
                 href="tel:+12048182155"
@@ -272,7 +272,7 @@ export default function CampsPage() {
                 (204) 818-2155
               </a>
             </div>
-            <p className="mt-5 text-secondary/40 text-sm">North East & Seven Oaks · Ages 6–16 · Limited spots per session</p>
+            <p className="mt-5 text-secondary/40 text-sm">North East & Seven Oaks · Ages 6–16 · Launching Summer 2027</p>
           </FadeIn>
         </div>
       </section>
