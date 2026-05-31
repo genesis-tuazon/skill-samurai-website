@@ -32,8 +32,8 @@ export default function Navbar() {
   };
 
   const programLinks = [
-    { href: "https://winnipeg.jumbula.com/north-east-coding-classes", label: "Enroll — North East", external: true },
-    { href: "https://winnipeg.jumbula.com/seven-oaks-coding-classes", label: "Enroll — Seven Oaks", external: true },
+    { href: "https://winnipeg.jumbula.com/north-east-coding-classes", label: "Weekly Coding Classes — North East", external: true },
+    { href: "https://winnipeg.jumbula.com/seven-oaks-coding-classes", label: "Weekly Coding Classes — Seven Oaks", external: true },
     { href: "/schools", label: "For Schools", external: false },
     { href: "/non-profits", label: "For Non-Profits & Community", external: false },
   ];
