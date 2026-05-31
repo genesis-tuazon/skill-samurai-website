@@ -290,7 +290,7 @@ export default function BirthdayPartiesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 md:py-24 bg-secondary/5">
+      <section className="py-16 md:py-24 bg-gray-100">
         <div className="container mx-auto px-4">
           <FadeIn className="text-center mb-12">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-primary mb-3">Common questions</p>
@@ -317,14 +317,14 @@ export default function BirthdayPartiesPage() {
       </section>
 
       {/* Book CTA */}
-      <section className="py-16 md:py-24 bg-secondary">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 text-center">
           <FadeIn>
             <Cake className="h-10 w-10 text-primary mx-auto mb-4" />
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black font-heading text-white uppercase tracking-tight mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black font-heading text-secondary uppercase tracking-tight mb-4">
               Ready to Book?
             </h2>
-            <p className="text-white/70 text-lg max-w-xl mx-auto mb-8">
+            <p className="text-secondary/65 text-lg max-w-xl mx-auto mb-8">
               Reach out to lock in your date. A $200 deposit secures your spot — spots fill up fast, especially on weekends.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -337,13 +337,13 @@ export default function BirthdayPartiesPage() {
               </a>
               <a
                 href="tel:+12048182155"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 border border-white/20 text-white font-bold text-sm uppercase tracking-wide hover:bg-white/20 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-secondary text-white font-bold text-sm uppercase tracking-wide hover:bg-secondary/90 transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 (204) 818-2155
               </a>
             </div>
-            <p className="mt-5 text-white/40 text-sm">Both Winnipeg locations · Ages 6–16 · $200 refundable deposit</p>
+            <p className="mt-5 text-secondary/40 text-sm">Both Winnipeg locations · Ages 6–16 · $200 refundable deposit</p>
           </FadeIn>
         </div>
       </section>
