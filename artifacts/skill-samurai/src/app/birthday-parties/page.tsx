@@ -348,7 +348,6 @@ export default function BirthdayPartiesPage() {
         </div>
       </section>
 
-      <FinalCta />
     </>
   );
 }
