@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const stats = [
-  { value: "150+", label: "Five-Star Google Reviews" },
+  { value: "146+", label: "Five-Star Google Reviews" },
   { value: "2", label: "Winnipeg Locations" },
   { value: "Ages 6–18", label: "Students Served" },
   { value: "Since 2023", label: "Serving Winnipeg Families" },
@@ -63,7 +63,7 @@ export default function AboutPage() {
               Winnipeg's Home for Kids Who Build Things
             </h1>
             <p className="text-lg md:text-xl text-white/75 leading-relaxed max-w-2xl mx-auto">
-              We started Skill Samurai Winnipeg with one belief: every kid has the potential to go from consumer to creator. Two locations, 150+ five-star reviews, and hundreds of student projects later — we're just getting started.
+              We started Skill Samurai Winnipeg with one belief: every kid has the potential to go from consumer to creator. Two locations, 146+ five-star reviews, and hundreds of student projects later — we're just getting started.
             </p>
           </FadeIn>
         </div>
@@ -169,7 +169,7 @@ export default function AboutPage() {
           <FadeIn>
             <p className="text-primary font-bold uppercase tracking-widest text-sm mb-3">Don't Take Our Word For It</p>
             <h2 className="text-4xl font-black font-heading text-secondary leading-tight tracking-tight mb-5">
-              150+ five-star reviews from Winnipeg families.
+              146+ five-star reviews from Winnipeg families.
             </h2>
             <p className="text-lg text-secondary/70 mb-8">
               Read what local parents are saying about their child's experience at Skill Samurai Winnipeg.
