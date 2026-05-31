@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Facebook, Instagram } from "lucide-react";
 
 export default function Hero() {
   const [videoSrc, setVideoSrc] = useState<string | null>(null);
@@ -104,28 +103,6 @@ export default function Hero() {
             Book a Free Trial Class
           </a>
 
-          <div className="flex items-center justify-center gap-3">
-            <a
-              href="https://www.instagram.com/skillsamuraiwinnipeg/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition-all hover:scale-110"
-              style={{ background: "radial-gradient(circle at 30% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)" }}
-            >
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a
-              href="https://www.facebook.com/skillsamuraiwinnipeg/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="inline-flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition-all hover:scale-110"
-              style={{ backgroundColor: "#1877F2" }}
-            >
-              <Facebook className="h-5 w-5 fill-white" />
-            </a>
-          </div>
         </div>
       </div>
     </section>
