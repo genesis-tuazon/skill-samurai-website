@@ -33,7 +33,7 @@ const cards = [
   },
   {
     name: "Melanie",
-    age: null,
+    age: 10,
     project: "Obby + Face Tracker",
     projectType: "Game Design + Scripting",
     tag: "Game Developer",
