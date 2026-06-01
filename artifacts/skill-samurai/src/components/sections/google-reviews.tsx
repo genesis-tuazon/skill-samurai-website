@@ -16,6 +16,24 @@ type Review = {
 
 const reviews: Review[] = [
   {
+    name: "Chris K",
+    initials: "CK",
+    color: "bg-secondary",
+    weeksAgo: "11 weeks ago",
+    rating: 5,
+    tags: ["Free Demo Class", "Beyond Coding", "Instantly Hooked"],
+    text: "Had a great experience participating in a demo coding class the other day. The environment was welcoming and well organized, instructors were attentive to students unique needs, and everyone was engaged in their projects. Genesis (the owner) answered all my questions and also educated me on all the various benefits this program provides beyond just coding. My son had a blast and was hooked from the start. Looking forward to watching him flourish as he develops his coding skills, builds confidence and becomes more comfortable with evolving technology and software.",
+  },
+  {
+    name: "Bria Lylyk",
+    initials: "BL",
+    color: "bg-accent text-secondary",
+    weeksAgo: "Mar 14, 2025",
+    rating: 5,
+    tags: ["Age 6", "Screen Time → Skills", "Builds Patience"],
+    text: "My 6-year-old son, Hudson, started at Skill Samurai last fall, and I can't praise the program enough! Thanks to Genesis, we've transformed screen time into valuable learning, and I feel so confident in the skills he's developing. Hudson often gets discouraged quickly, but we've noticed he's become much more patient and persistent since he began coding. Genesis and Akil are amazing — so supportive and attentive. They're teaching him not only how to create video games but also how to present them, and he practices this skill often. Hudson looks forward to coding class every week and proudly shares his experiences with his friends and teachers. I'm incredibly grateful we found Skill Samurai and can offer him these valuable skills, which I am confident he will use for a lifetime.",
+  },
+  {
     name: "Josh Gilbert",
     initials: "JG",
     color: "bg-primary",
@@ -50,15 +68,6 @@ const reviews: Review[] = [
     rating: 5,
     tags: ["Trial Class", "Welcoming", "Caring Staff"],
     text: "Really impressed with Skill Samurai! The staff is very caring and attentive to every student. The trial lesson was well-organized and the atmosphere was very encouraging. Thank you for the warm welcome!",
-  },
-  {
-    name: "Chris K",
-    initials: "CK",
-    color: "bg-secondary",
-    weeksAgo: "11 weeks ago",
-    rating: 5,
-    tags: ["Free Demo Class", "Beyond Coding", "Instantly Hooked"],
-    text: "Had a great experience participating in a demo coding class the other day. The environment was welcoming and well organized, instructors were attentive to students unique needs, and everyone was engaged in their projects. Genesis (the owner) answered all my questions and also educated me on all the various benefits this program provides beyond just coding. My son had a blast and was hooked from the start. Looking forward to watching him flourish as he develops his coding skills, builds confidence and becomes more comfortable with evolving technology and software.",
   },
   {
     name: "Garret Chapa",
@@ -194,15 +203,6 @@ const reviews: Review[] = [
     rating: 5,
     tags: ["Selective Mutism", "Special Needs", "Patient Staff"],
     text: "My son has been coming here for almost a year now and absolutely loves it! He has Select Mutism and it has been difficult finding an extra curricular activity for him that he is comfortable with and actually enjoys. Akil has been so amazing with him, and can see if he's struggling even without the verbal cues for help. Genesis is also so friendly and helpful. The class is held in a coffee shop with a little play area for toddlers. It's a great place to catch up on work or some reading while my son does his coding.",
-  },
-  {
-    name: "Bria Lylyk",
-    initials: "BL",
-    color: "bg-accent text-secondary",
-    weeksAgo: "Mar 14, 2025",
-    rating: 5,
-    tags: ["Age 6", "Screen Time → Skills", "Builds Patience"],
-    text: "My 6-year-old son, Hudson, started at Skill Samurai last fall, and I can't praise the program enough! Thanks to Genesis, we've transformed screen time into valuable learning, and I feel so confident in the skills he's developing. Hudson often gets discouraged quickly, but we've noticed he's become much more patient and persistent since he began coding. Genesis and Akil are amazing — so supportive and attentive. They're teaching him not only how to create video games but also how to present them, and he practices this skill often. Hudson looks forward to coding class every week and proudly shares his experiences with his friends and teachers. I'm incredibly grateful we found Skill Samurai and can offer him these valuable skills, which I am confident he will use for a lifetime.",
   },
   {
     name: "Louise Hargave",
