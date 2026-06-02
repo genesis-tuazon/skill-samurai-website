@@ -115,8 +115,8 @@ export default function AboutPage() {
                 detail: "Intentionally capped so every student gets real attention — not a one-size-fits-all lecture to a room of 30.",
               },
               {
-                label: "International award-winning curriculum",
-                detail: "Backed by a global network across Canada, Australia, New Zealand, and the US — proven, structured, and always updated.",
+                label: "A curriculum that keeps up with tech",
+                detail: "We continuously update what we teach — AI, game dev, web, robotics — so your child is always learning skills that are actually relevant today.",
               },
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.07}>
