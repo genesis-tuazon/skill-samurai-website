@@ -67,13 +67,13 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-secondary/5 border-b border-secondary/10 pb-16 md:pb-20 pt-12 md:pt-16">
+      <section className="bg-secondary border-b border-white/10 pb-16 md:pb-20 pt-12 md:pt-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-secondary/10 rounded-2xl overflow-hidden max-w-4xl mx-auto shadow-sm">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden max-w-4xl mx-auto shadow-xl">
             {stats.map((s) => (
-              <div key={s.label} className="bg-white flex flex-col items-center justify-center py-8 md:py-10 px-4 md:px-6 text-center">
+              <div key={s.label} className="bg-secondary flex flex-col items-center justify-center py-8 md:py-10 px-4 md:px-6 text-center">
                 <span className="text-3xl md:text-5xl font-black font-heading text-primary mb-2">{s.value}</span>
-                <span className="text-xs md:text-sm font-semibold text-secondary/50 uppercase tracking-wider leading-snug">{s.label}</span>
+                <span className="text-xs md:text-sm font-semibold text-white/60 uppercase tracking-wider leading-snug">{s.label}</span>
               </div>
             ))}
           </div>
