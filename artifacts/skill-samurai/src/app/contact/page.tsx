@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Contact Us | Skill Samurai Winnipeg",
   description:
     "Get in touch with Skill Samurai Winnipeg. Call, email, or visit our two locations — North East and Seven Oaks. We'd love to answer your questions.",
+  alternates: {
+    canonical: "https://www.skillsamuraiwinnipeg.com/contact",
+  },
 };
 
 const locations = [

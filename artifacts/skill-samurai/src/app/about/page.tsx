@@ -5,9 +5,12 @@ import { FadeIn } from "@/components/ui/fade-in";
 import AboutHeroCta from "@/components/sections/about-hero-cta";
 
 export const metadata: Metadata = {
-  title: "About Us | Skill Samurai Winnipeg",
+  title: "About Skill Samurai Winnipeg | Kids Coding & STEM Academy",
   description:
     "Skill Samurai Winnipeg is an after-school coding & STEM academy built by parents, for parents. Two locations serving kids ages 6–18 across Winnipeg since 2023.",
+  alternates: {
+    canonical: "https://www.skillsamuraiwinnipeg.com/about",
+  },
 };
 
 const stats = [

@@ -5,9 +5,12 @@ import { HeartHandshake, CheckCircle2, Ticket, UsersRound, Megaphone, Handshake 
 import FinalCta from "@/components/sections/final-cta";
 
 export const metadata: Metadata = {
-  title: "Non-Profits & Community Groups | Skill Samurai Winnipeg",
+  title: "Non-Profits & Community Partners | Skill Samurai Winnipeg",
   description:
     "Skill Samurai Winnipeg partners with non-profits and community organizations to bring coding and STEM to under-served kids across Winnipeg through subsidized seats, group rates, and co-hosted events.",
+  alternates: {
+    canonical: "https://www.skillsamuraiwinnipeg.com/non-profits",
+  },
 };
 
 const offerings = [

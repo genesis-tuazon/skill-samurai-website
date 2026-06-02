@@ -5,9 +5,12 @@ import { GraduationCap, CheckCircle2, Calendar, Users, BookOpen, Award, Star } f
 import FinalCta from "@/components/sections/final-cta";
 
 export const metadata: Metadata = {
-  title: "School Workshops & Programs | Skill Samurai Winnipeg",
+  title: "School Coding Workshops & Programs | Skill Samurai Winnipeg",
   description:
     "Skill Samurai Winnipeg delivers curriculum-aligned coding, robotics, and STEM workshops for K–12 schools — on-site, in-class, or after-school.",
+  alternates: {
+    canonical: "https://www.skillsamuraiwinnipeg.com/schools",
+  },
 };
 
 const offerings = [
