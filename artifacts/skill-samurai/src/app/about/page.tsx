@@ -94,14 +94,14 @@ export default function AboutPage() {
             <FadeIn>
               <div className="space-y-5">
                 {[
-                  { emoji: "😩", text: "Your kid has been on a screen for three hours — again. You've asked them to stop four times." },
-                  { emoji: "📱", text: "It's YouTube, TikTok, Roblox, repeat. Passive consumption, no end in sight." },
-                  { emoji: "😶", text: "You know technology is their future — but watching them scroll mindlessly doesn't feel like preparation." },
-                  { emoji: "🤷", text: "You've looked for coding programs, but most feel boring, too advanced, or just glorified babysitting." },
-                ].map((item) => (
-                  <div key={item.emoji} className="flex gap-4 items-start bg-secondary/5 rounded-2xl p-5 border border-secondary/10">
-                    <span className="text-2xl mt-0.5 shrink-0">{item.emoji}</span>
-                    <p className="text-secondary/75 text-base leading-relaxed font-medium">{item.text}</p>
+                  "Your kid has been on a screen for three hours — again. You've asked them to stop four times.",
+                  "It's YouTube, TikTok, Roblox, repeat. Passive consumption, no end in sight.",
+                  "You know technology is their future — but watching them scroll mindlessly doesn't feel like preparation.",
+                  "You've looked for coding programs, but most feel boring, too advanced, or just glorified babysitting.",
+                ].map((text, i) => (
+                  <div key={i} className="flex gap-4 items-start bg-secondary/5 rounded-2xl p-5 border border-secondary/10">
+                    <span className="mt-0.5 h-7 w-7 rounded-full bg-secondary/10 flex items-center justify-center shrink-0 text-secondary/50 text-sm font-black">{i + 1}</span>
+                    <p className="text-secondary/75 text-base leading-relaxed font-medium">{text}</p>
                   </div>
                 ))}
               </div>
