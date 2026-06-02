@@ -11,7 +11,6 @@ import { openCalendarModal, openBookingModal, openMakeupModal } from "@/componen
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [programsOpen, setProgramsOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
@@ -31,12 +30,6 @@ export default function Navbar() {
       }, 120);
     }
   };
-
-  const aboutLinks = [
-    { href: "/about", label: "About Us" },
-    { href: "/about#why-us", label: "Why Us" },
-    { href: "/about#results", label: "Results" },
-  ];
 
   const programLinks = [
     { href: "https://winnipeg.jumbula.com/north-east-coding-classes", label: "North East Coding Classes", external: true },
@@ -78,40 +71,13 @@ export default function Navbar() {
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-7">
 
-          {/* About Us dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setAboutOpen(true)}
-            onMouseLeave={() => setAboutOpen(false)}
+          {/* About Us */}
+          <Link
+            href="/about"
+            className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors whitespace-nowrap"
           >
-            <button
-              type="button"
-              className="inline-flex items-center gap-1 text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors cursor-pointer"
-              aria-haspopup="true"
-              aria-expanded={aboutOpen}
-            >
-              About Us
-              <ChevronDown className={`h-4 w-4 transition-transform ${aboutOpen ? "rotate-180" : ""}`} />
-            </button>
-            <div
-              className={`absolute left-1/2 -translate-x-1/2 top-full pt-3 min-w-[200px] transition-all ${
-                aboutOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
-              }`}
-            >
-              <div className="bg-white rounded-2xl shadow-2xl border border-border overflow-hidden">
-                {aboutLinks.map((a) => (
-                  <Link
-                    key={a.label}
-                    href={a.href}
-                    onClick={() => setAboutOpen(false)}
-                    className={dropdownItemClass}
-                  >
-                    {a.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
+            About Us
+          </Link>
 
           {/* Programs dropdown */}
           <div
@@ -278,22 +244,7 @@ export default function Navbar() {
         <div className="lg:hidden border-t border-white/10 bg-secondary/95 backdrop-blur-md">
           <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
 
-            {/* About Us */}
-            <div>
-              <span className="text-base font-semibold text-white">About Us</span>
-              <div className="mt-3 ml-4 flex flex-col gap-3 border-l border-white/15 pl-4">
-                {aboutLinks.map((a) => (
-                  <Link
-                    key={a.label}
-                    href={a.href}
-                    className="text-sm font-medium text-white/80 hover:text-primary"
-                    onClick={() => setOpen(false)}
-                  >
-                    {a.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
+            <Link href="/about" className="text-base font-semibold text-white hover:text-primary transition-colors" onClick={() => setOpen(false)}>About Us</Link>
 
             {/* Programs */}
             <div>
