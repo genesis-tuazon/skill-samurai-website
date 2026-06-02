@@ -89,7 +89,7 @@ export default function Navbar() {
 
           {/* Results */}
           <Link
-            href="/about#results"
+            href="/#student-spotlight"
             className="text-sm font-semibold uppercase tracking-wider text-white/80 hover:text-primary transition-colors whitespace-nowrap"
           >
             Results
@@ -262,7 +262,7 @@ export default function Navbar() {
 
             <Link href="/about#why-us" className="text-base font-semibold text-white hover:text-primary transition-colors" onClick={() => setOpen(false)}>Why Us</Link>
             <Link href="/about" className="text-base font-semibold text-white hover:text-primary transition-colors" onClick={() => setOpen(false)}>About Us</Link>
-            <Link href="/about#results" className="text-base font-semibold text-white hover:text-primary transition-colors" onClick={() => setOpen(false)}>Results</Link>
+            <Link href="/#student-spotlight" className="text-base font-semibold text-white hover:text-primary transition-colors" onClick={() => setOpen(false)}>Results</Link>
 
             {/* Programs */}
             <div>
