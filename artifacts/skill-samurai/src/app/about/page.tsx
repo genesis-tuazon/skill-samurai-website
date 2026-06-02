@@ -229,10 +229,10 @@ export default function AboutPage() {
               Global reach. Local roots.
             </h2>
             <p className="text-lg text-white/75 leading-relaxed mb-4 max-w-2xl mx-auto">
-              Skill Samurai is a trusted international brand with coding academies across Canada, Australia, New Zealand, and the United States. Our Winnipeg locations are proud to bring that proven, award-winning curriculum to Manitoba families.
+              With more than 20,000 students served across 7 countries, Skill Samurai brings a proven STEM and technology education program to families around the world.
             </p>
             <p className="text-lg text-white/75 leading-relaxed max-w-2xl mx-auto">
-              You get the backing of a global network — and the personal care of a locally owned academy that genuinely knows your family.
+              Here in Winnipeg, we combine that global expertise with small class sizes, personalized support, and instructors who genuinely care about every student&apos;s success. As a locally owned and operated academy, we&apos;re proud to help Manitoba kids build confidence, creativity, and future-ready skills through coding, AI, robotics, and game development.
             </p>
           </FadeIn>
         </div>
