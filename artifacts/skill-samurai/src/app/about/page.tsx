@@ -48,17 +48,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-secondary overflow-hidden pt-24 md:pt-28 pb-16 md:pb-20">
-        <div className="absolute -top-40 -left-32 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute -bottom-40 -right-32 w-[500px] h-[500px] bg-accent/15 rounded-full blur-[120px] pointer-events-none" />
+      <section className="relative bg-white overflow-hidden pt-24 md:pt-28 pb-16 md:pb-20 border-b border-secondary/10">
+        <div className="absolute -top-40 -left-32 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute -bottom-40 -right-32 w-[500px] h-[500px] bg-accent/8 rounded-full blur-[120px] pointer-events-none" />
         <div className="container mx-auto px-4 relative z-10 max-w-4xl text-center">
           <FadeIn>
             <p className="text-primary font-bold uppercase tracking-widest text-sm mb-2">Built by Parents, for Parents</p>
-            <p className="text-white/50 font-semibold uppercase tracking-widest text-xs mb-5">An After-School Program with a Purpose</p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading text-white leading-tight tracking-tight mb-6">
+            <p className="text-secondary/40 font-semibold uppercase tracking-widest text-xs mb-5">An After-School Program with a Purpose</p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading text-secondary leading-tight tracking-tight mb-6">
               We Were Parents Looking for the Same Thing You Are
             </h1>
-            <p className="text-lg md:text-xl text-white/75 leading-relaxed max-w-2xl mx-auto mb-8">
+            <p className="text-lg md:text-xl text-secondary/65 leading-relaxed max-w-2xl mx-auto mb-8">
               We started Skill Samurai Winnipeg as parents ourselves — searching for something that would turn our kids' time on screens into something we could actually feel good about. We couldn't find it. So we built it.
             </p>
             <AboutHeroCta />
@@ -67,13 +67,13 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="bg-secondary border-t border-white/10 pb-16 md:pb-20">
+      <section className="bg-secondary/5 border-b border-secondary/10 pb-16 md:pb-20 pt-12 md:pt-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden max-w-4xl mx-auto shadow-xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-secondary/10 rounded-2xl overflow-hidden max-w-4xl mx-auto shadow-sm">
             {stats.map((s) => (
-              <div key={s.label} className="bg-secondary flex flex-col items-center justify-center py-8 md:py-10 px-4 md:px-6 text-center">
+              <div key={s.label} className="bg-white flex flex-col items-center justify-center py-8 md:py-10 px-4 md:px-6 text-center">
                 <span className="text-3xl md:text-5xl font-black font-heading text-primary mb-2">{s.value}</span>
-                <span className="text-xs md:text-sm font-semibold text-white/60 uppercase tracking-wider leading-snug">{s.label}</span>
+                <span className="text-xs md:text-sm font-semibold text-secondary/50 uppercase tracking-wider leading-snug">{s.label}</span>
               </div>
             ))}
           </div>
