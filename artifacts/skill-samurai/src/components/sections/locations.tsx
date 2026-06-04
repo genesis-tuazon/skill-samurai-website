@@ -100,12 +100,20 @@ export default function Locations() {
                       {loc.tag}
                     </p>
 
-                    <div className="mb-6">
+                    <div className="flex flex-wrap gap-1.5 mb-6">
+                      {programTags.map((tag) => (
+                        <span
+                          key={tag}
+                          className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${accentSoft} ${accentText}`}
+                        >
+                          {tag}
+                        </span>
+                      ))}
                       <a
                         href="#weekly-classes"
-                        className={`text-sm font-bold ${accentText} hover:underline`}
+                        className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${accentSoft} ${accentText} hover:opacity-80 transition-opacity`}
                       >
-                        Coding · STEM · Game Development · App Development · AI →
+                        + More →
                       </a>
                     </div>
 
