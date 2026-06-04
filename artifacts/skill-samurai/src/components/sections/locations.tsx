@@ -102,12 +102,13 @@ export default function Locations() {
 
                     <div className="flex flex-wrap gap-1.5 mb-6">
                       {programTags.map((tag) => (
-                        <span
+                        <a
                           key={tag}
-                          className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${accentSoft} ${accentText}`}
+                          href="#weekly-classes"
+                          className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${accentSoft} ${accentText} hover:opacity-80 transition-opacity`}
                         >
                           {tag}
-                        </span>
+                        </a>
                       ))}
                     </div>
 
