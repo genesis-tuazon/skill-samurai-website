@@ -105,7 +105,7 @@ export default function CampsContent() {
           <FadeIn delay={0.3}>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="mailto:Genesis@SkillSamurai.com?subject=Summer 2027 Camp Interest"
+                href="mailto:winnipeg@skillsamurai.com?subject=Summer 2027 Camp Interest"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/40 hover:bg-primary/90 transition-colors"
               >
                 <Mail className="h-4 w-4" />
@@ -258,7 +258,7 @@ export default function CampsContent() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="mailto:Genesis@SkillSamurai.com?subject=Summer 2027 Camp Interest"
+                href="mailto:winnipeg@skillsamurai.com?subject=Summer 2027 Camp Interest"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/40 hover:bg-primary/90 transition-colors"
               >
                 <Mail className="h-4 w-4" />

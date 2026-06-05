@@ -59,6 +59,15 @@ export default function HowItWorks() {
           </div>
         </div>
 
+        <FadeIn delay={0.4} className="text-center mt-12 md:mt-16">
+          <a
+            href="#locations"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
+          >
+            Book a Free Trial Class
+          </a>
+          <p className="mt-3 text-sm text-secondary/50 font-medium">First class is free · No experience needed · Ages 6–18</p>
+        </FadeIn>
       </div>
       
       <div className="absolute bottom-0 left-0 h-px w-full bg-border/70" />

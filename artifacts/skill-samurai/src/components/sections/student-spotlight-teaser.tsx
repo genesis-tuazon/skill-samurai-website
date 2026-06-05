@@ -179,10 +179,16 @@ export default function StudentSpotlightTeaser() {
           ))}
         </div>
 
-        <FadeIn delay={0.45} className="mt-8 text-center">
+        <FadeIn delay={0.45} className="mt-8 text-center flex flex-col items-center gap-4">
+          <a
+            href="#locations"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
+          >
+            Book a Free Trial Class
+          </a>
           <Link
             href="/student-projects"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-primary text-white font-black text-sm uppercase tracking-wide shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-bold text-white/60 hover:text-primary transition-colors"
           >
             See All Student Projects
             <ArrowRight className="w-4 h-4" />

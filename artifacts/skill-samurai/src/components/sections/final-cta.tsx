@@ -54,7 +54,7 @@ export default function FinalCta() {
                 href="#locations"
                 className="inline-flex h-14 md:h-16 items-center justify-center rounded-full bg-primary px-7 md:px-10 text-sm md:text-xl font-black uppercase tracking-wide text-white shadow-2xl shadow-primary/40 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 group border-b-4 border-primary-foreground/20"
               >
-                LEARN MORE
+                Book a Free Trial Class
                 <ArrowRight className="ml-2 md:ml-3 h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
               </a>
 
