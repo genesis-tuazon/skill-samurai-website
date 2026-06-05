@@ -47,7 +47,7 @@ export default function Schedule() {
       <div className="container mx-auto px-4">
         <FadeIn className="text-center max-w-3xl mx-auto mb-14">
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">At a glance</h2>
-          <h3 className="text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-5">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-secondary leading-tight tracking-tight mb-5">
             Everything you need to know,<br className="hidden sm:block" /> in one place.
           </h3>
           <p className="text-lg text-muted-foreground font-medium">

@@ -91,7 +91,7 @@ export default function ChildBenefits() {
 
           <FadeIn direction="left" className="relative lg:pt-6">
             <div className="grid gap-4 max-w-[560px] mx-auto">
-              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
+              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-4 sm:border-[10px] border-white bg-white rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
                 <img
                   src="/images/classroom-1.webp"
                   alt="Children learning together in a classroom"
@@ -100,7 +100,7 @@ export default function ChildBenefits() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-2 hover:rotate-0 transition-transform duration-500 lg:ml-14">
+              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-4 sm:border-[10px] border-white bg-white rotate-2 hover:rotate-0 transition-transform duration-500 lg:ml-14">
                 <img
                   src="/images/classroom-2.webp"
                   alt="Children using headphones and laptops in class"
@@ -109,7 +109,7 @@ export default function ChildBenefits() {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-[10px] border-white bg-white rotate-[-1deg] hover:rotate-0 transition-transform duration-500 md:ml-6 lg:ml-24">
+              <div className="aspect-[4/3] rounded-[2.25rem] overflow-hidden shadow-2xl relative z-10 border-4 sm:border-[10px] border-white bg-white rotate-[-1deg] hover:rotate-0 transition-transform duration-500 md:ml-6 lg:ml-24">
                 <img
                   src="/images/classroom-3.webp"
                   alt="Kids smiling while coding together"

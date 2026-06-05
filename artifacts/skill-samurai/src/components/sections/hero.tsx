@@ -45,7 +45,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-secondary min-h-[78svh] md:min-h-[calc(100svh-16rem)]">
+    <section className="relative overflow-hidden bg-secondary min-h-[88svh] md:min-h-[calc(100svh-16rem)]">
       <div className="absolute inset-0 z-0">
         {/* Video — loaded only after first user interaction */}
         {videoSrc && (
@@ -75,7 +75,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-900/85 via-neutral-900/60 to-neutral-900/85" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-20 sm:pt-24 lg:pt-32 pb-8 min-h-[78svh] md:min-h-[calc(100svh-16rem)] flex items-center justify-center">
+      <div className="container mx-auto px-4 relative z-10 pt-24 sm:pt-28 lg:pt-32 pb-8 min-h-[88svh] md:min-h-[calc(100svh-16rem)] flex items-center justify-center">
         <div className="max-w-4xl text-center mx-auto flex flex-col items-center pb-4 lg:pb-8">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading leading-[1.1] mb-4 lg:mb-6 tracking-tight text-white drop-shadow-2xl">
             <span className="block">After-School Coding &amp; STEM</span>

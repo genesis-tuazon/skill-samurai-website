@@ -34,7 +34,7 @@ export default function Relatability() {
       <div className="container mx-auto px-4 relative z-10 pt-10">
         <FadeIn className="text-center max-w-4xl mx-auto mb-8 md:mb-16">
           <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">This might sound familiar...</h2>
-          <h3 className="text-4xl md:text-5xl lg:text-6xl font-black font-heading uppercase leading-tight tracking-tight">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading uppercase leading-tight tracking-tight">
             <span className="text-secondary block mb-2">THE SCREEN TIME BATTLE</span>
             <span className="text-primary block">EVERY PARENT KNOWS</span>
           </h3>
@@ -56,15 +56,15 @@ export default function Relatability() {
           ))}
         </div>
 
-        <FadeIn delay={0.4} direction="up" className="w-full bg-secondary text-white rounded-[2rem] md:rounded-[3rem] p-8 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-secondary/30 rotate-0 hover:rotate-0 transition-transform">
+        <FadeIn delay={0.4} direction="up" className="w-full bg-secondary text-white rounded-[2rem] md:rounded-[3rem] p-6 sm:p-10 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-secondary/30 rotate-0 hover:rotate-0 transition-transform">
           <div className="absolute top-0 left-0 w-full h-full bg-primary/10"></div>
           <div className="absolute -top-20 -right-20 w-60 h-60 bg-accent rounded-full blur-[60px] opacity-40"></div>
           <div className="relative z-10">
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase font-heading mb-8 leading-tight tracking-tight">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase font-heading mb-6 sm:mb-8 leading-tight tracking-tight">
               <span className="text-white block">THAT'S EXACTLY WHY</span>
               <span className="text-accent block">WE BUILT SKILL SAMURAI</span>
             </h3>
-            <p className="text-lg md:text-2xl lg:text-3xl text-white/90 max-w-4xl mx-auto font-medium leading-snug">
+            <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-white/90 max-w-4xl mx-auto font-medium leading-snug">
               <span className="block">Your child already loves being on screens.</span>
               <span className="block">We turn that into something you can actually feel good about.</span>
             </p>

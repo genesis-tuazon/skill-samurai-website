@@ -23,7 +23,7 @@ export default function StatsStrip() {
           {stats.map((stat) => (
             <div
               key={stat.value}
-              className="rounded-[2rem] border-[3px] border-white/10 bg-white/10 backdrop-blur-md p-7 md:p-9 shadow-2xl shadow-black/20"
+              className="rounded-[2rem] border-[3px] border-white/10 bg-white/10 backdrop-blur-md p-5 sm:p-7 md:p-9 shadow-2xl shadow-black/20"
             >
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
                 {stat.eyebrow}
