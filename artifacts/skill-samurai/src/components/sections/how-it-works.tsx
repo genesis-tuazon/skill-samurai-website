@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Calendar, Laptop, Sparkles, ThumbsUp } from "lucide-react";
-import instructorPhoto from "@assets/Skill_Samurai_Instructor_1780643130655.png";
 
 export default function HowItWorks() {
   const steps = [
@@ -61,29 +59,7 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        <FadeIn delay={0.35} className="mt-14 md:mt-20 max-w-5xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-secondary/20 aspect-[16/7]">
-            <Image
-              src={instructorPhoto}
-              alt="Skill Samurai instructor working one-on-one with a student at a computer"
-              fill
-              className="object-cover object-[center_30%]"
-              sizes="(max-width: 768px) 100vw, 80vw"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 via-secondary/10 to-transparent" />
-            <div className="absolute bottom-5 left-6 right-6 flex items-end justify-between">
-              <p className="text-white font-black text-lg md:text-2xl font-heading uppercase tracking-wide leading-tight">
-                Real instructors.<br className="sm:hidden" /> Real one-on-one attention.
-              </p>
-              <span className="hidden sm:inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-white text-xs font-bold uppercase tracking-wider flex-shrink-0 ml-4">
-                <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-                Winnipeg locations
-              </span>
-            </div>
-          </div>
-        </FadeIn>
-
-        <FadeIn delay={0.5} className="text-center mt-10 md:mt-12">
+        <FadeIn delay={0.4} className="text-center mt-12 md:mt-16">
           <a
             href="#locations"
             className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-4 text-sm font-black uppercase tracking-wide text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:scale-105 active:scale-95"
