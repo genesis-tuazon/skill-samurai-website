@@ -47,10 +47,10 @@ export default function Navbar() {
     { label: "Free Coding Resources", href: "https://www.youtube.com/@SkillSamuraiWinnipeg/playlists", type: "external" as const },
     { label: "FAQ", href: "/faq", type: "internal" as const },
     { label: "Contact", href: "/contact", type: "internal" as const },
+    { label: "Careers", href: "/careers", type: "internal" as const },
     { label: "Student Log In", href: "https://hub.skillsamuraiwinnipeg.com", type: "external" as const },
     { label: "Parent Log In", href: "https://winnipeg.jumbula.com/", type: "external" as const },
     { label: "Staff Log In", href: "https://app.skillsamurai.com/", type: "external" as const },
-    { label: "Careers", href: "/careers", type: "internal" as const },
   ];
 
   const dropdownItemClass = "block px-5 py-3.5 text-sm font-semibold text-secondary hover:bg-primary hover:text-white transition-colors border-b border-border last:border-b-0";
@@ -303,10 +303,10 @@ export default function Navbar() {
                 <button type="button" onClick={() => { openCalendarModal(); setOpen(false); }} className="text-sm font-medium text-white/70 hover:text-primary text-left cursor-pointer">Live Parent Calendar 2026</button>
                 <Link href="/shop" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Shop / Merch</Link>
                 <a href="https://www.youtube.com/@SkillSamuraiWinnipeg/playlists" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Free Coding Resources</a>
+                <Link href="/careers" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Careers</Link>
                 <a href="https://hub.skillsamuraiwinnipeg.com" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Student Log In</a>
                 <a href="https://winnipeg.jumbula.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Parent Log In</a>
                 <a href="https://app.skillsamurai.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Staff Log In</a>
-                <Link href="/careers" className="text-sm font-medium text-white/70 hover:text-primary" onClick={() => setOpen(false)}>Careers</Link>
               </div>
             </div>
 
