@@ -181,6 +181,12 @@ export default function RootLayout({
         <Script id="domain-redirect" strategy="beforeInteractive">
           {`if(window.location.hostname.endsWith('.replit.app')){window.location.replace('https://www.skillsamuraiwinnipeg.com'+window.location.pathname+window.location.search);}`}
         </Script>
+        <Script
+          src="https://beta.leadconnectorhq.com/loader.js"
+          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="66f52e60ca0aeadabd7ea74a"
+          strategy="afterInteractive"
+        />
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
