@@ -229,7 +229,7 @@ export default function Footer() {
           <p>
             Built by{" "}
             <a
-              href="https://firstcallai.ca"
+              href="https://www.firstcallai.io"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary/80 hover:text-primary transition-colors font-semibold"
