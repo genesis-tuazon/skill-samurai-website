@@ -93,7 +93,7 @@ export default function AboutPage() {
               },
               {
                 label: "Proven curriculum — not improvised lessons",
-                detail: "As a Skill Samurai franchise, our curriculum is internationally developed and structured. Your child gets the same proven progression that's worked for thousands of students worldwide — not a freelancer's lesson plan.",
+                detail: "Our curriculum is internationally developed and structured. Your child gets the same proven progression that's worked for thousands of students worldwide — not a freelancer's lesson plan.",
               },
             ].map((item, i) => (
               <FadeIn key={i} delay={i * 0.07}>
