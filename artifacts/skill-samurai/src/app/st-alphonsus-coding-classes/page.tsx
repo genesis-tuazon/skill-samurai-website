@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 };
 
 const slots: Slot[] = [
-  { day: "Friday", time: "3:15 PM", program: "Weekly Coding Classes", grades: "Grades 1–8", note: "Choose a Friday start date", url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Friday315pmWeeklyCodingClasses" },
-  { day: "Friday", time: "4:30 PM", program: "Weekly Coding Classes", grades: "Grades 1–8", note: "Choose a Friday start date", url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Friday430pmWeeklyCodingClasses" },
-  { day: "Friday", time: "5:30 PM", program: "Weekly Coding Classes", grades: "Grades 1–8", note: "Choose a Friday start date", url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Friday530pmWeeklyCodingClasses" },
+  { day: "Friday", time: "3:15 PM", program: "Weekly Coding Classes", grades: "Grades 1–8", note: "Choose a Friday start date", url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Friday315pmWeeklyCodingClasses", spotsLeft: 20 },
+  { day: "Friday", time: "4:30 PM", program: "Weekly Coding Classes", grades: "Grades 1–8", note: "Choose a Friday start date", url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Friday430pmWeeklyCodingClasses", spotsLeft: 20 },
+  { day: "Friday", time: "5:30 PM", program: "Weekly Coding Classes", grades: "Grades 1–8", note: "Choose a Friday start date", url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Friday530pmWeeklyCodingClasses", spotsLeft: 20 },
 ];
 
 const terms = [
