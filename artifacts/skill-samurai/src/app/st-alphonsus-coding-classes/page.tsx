@@ -21,8 +21,8 @@ const slots: Slot[] = [
 ];
 
 const terms = [
-  { label: "Term 1", dates: "Oct 9, 2026 – Jan 29, 2027", sessionTimes: "3:15 PM, 4:30 PM & 5:45 PM" },
-  { label: "Term 2", dates: "Feb 5, 2027 – May 28, 2027", sessionTimes: "3:15 PM, 4:30 PM & 5:45 PM" },
+  { label: "Term 1", dates: "Oct 16, 2026 – Feb 5, 2027", classCount: "12 classes", sessionTimes: "3:15 PM, 4:30 PM & 5:45 PM" },
+  { label: "Term 2", dates: "Feb 19, 2027 – May 28, 2027", classCount: "", sessionTimes: "3:15 PM, 4:30 PM & 5:45 PM" },
 ];
 
 const term1Slots: Slot[] = slots.map((slot) =>
@@ -54,7 +54,7 @@ const stAlphonsusFAQs: FAQItem[] = [
   },
   {
     q: "When are classes?",
-    a: "Classes are held on Fridays in two four-month terms: Term 1 starts October 9, 2026 and ends January 29, 2027, while Term 2 starts February 5, 2027 and ends May 28, 2027. There are no classes on school closures, holidays, or scheduled non-instruction days. Families receive a full class calendar for each term. The one-time $99 registration fee is waived when you enroll by the Early Bird deadline: October 2, 2026 for Term 1 or January 29, 2027 for Term 2. No promo code is required.",
+    a: "Classes are held on Fridays in two terms. Term 1 includes 12 classes, starting October 16, 2026 and ending February 5, 2027. Term 2 starts February 19, 2027 and ends May 28, 2027. There are no classes on school closures, holidays, or scheduled non-instruction days. Families receive a full class calendar for each term. The one-time $99 registration fee is waived when you enroll by the Early Bird deadline: October 9, 2026 for Term 1 or February 12, 2027 for Term 2. No promo code is required.",
   },
   {
     q: "How do you support different learning needs?",
@@ -87,7 +87,7 @@ const stAlphonsusFAQs: FAQItem[] = [
 ];
 
 const termSchedules: TermSchedule[] = terms.map((term, index) => ({
-  label: `${term.label} · ${term.dates}`,
+  label: `${term.label} · ${term.dates}${term.classCount ? ` · ${term.classCount}` : ""}`,
   slots: index === 0 ? term1Slots : term2Slots,
 }));
 
@@ -138,7 +138,7 @@ export default function StAlphonsusCodingClasses() {
           freeTrialUrl={freeTrialUrl}
           faqs={stAlphonsusFAQs}
           registrationFeeNote=""
-          registrationFeePromotion="Waived by Early Bird deadlines: Oct. 2 / Jan. 29"
+          registrationFeePromotion="Waived by Early Bird deadlines: Oct. 9 / Feb. 12"
           subscriptionLabel="4-Month Term"
           subscriptionNote="4 monthly payments · Taxes, software & resources included"
           pricingFooter="Registration is for the full 4-month term. Make-up classes are available at either Winnipeg location."
