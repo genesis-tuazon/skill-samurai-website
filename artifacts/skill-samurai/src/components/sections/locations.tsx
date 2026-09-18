@@ -30,6 +30,17 @@ const locations = [
     makeupHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/fAz7Vr2KMa3wAWSUDICP",
     accent: "primary",
   },
+  {
+    name: "St. Alphonsus",
+    tag: "After-school coding classes for ages 6–14 · Grades 1–8",
+    address: "343 Munroe Avenue, Winnipeg, MB",
+    mapsHref: "https://www.google.com/maps/search/?api=1&query=343+Munroe+Avenue+Winnipeg+MB",
+    days: "Fridays",
+    times: "3:15pm, 4:30pm & 5:45pm",
+    timesDetail: "Three after-school start times",
+    bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy",
+    accent: "secondary",
+  },
 ];
 
 const programTags = ["Coding", "STEM", "Game Development", "App Development", "Artificial Intelligence"];
@@ -54,7 +65,7 @@ export default function Locations() {
       <div className="container mx-auto px-4 relative z-10">
         <FadeIn className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
           <h2 className="text-accent font-bold tracking-wider uppercase text-sm mb-3">
-            Two Winnipeg Locations
+            Three Winnipeg Locations
           </h2>
           <h3 className="text-3xl sm:text-4xl md:text-5xl font-black font-heading text-white leading-tight tracking-tight mb-4">
             Choose Your Location &amp; Book a Free Coding Class
@@ -68,7 +79,7 @@ export default function Locations() {
           </p>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
           {locations.map((loc, i) => {
             const isPrimary = loc.accent === "primary";
             const accentBg = isPrimary ? "bg-primary" : "bg-secondary";
