@@ -79,7 +79,7 @@ export default function Locations() {
           </p>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-5 md:gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-7xl mx-auto">
           {locations.map((loc, i) => {
             const isPrimary = loc.accent === "primary";
             const accentBg = isPrimary ? "bg-primary" : "bg-secondary";
@@ -89,12 +89,7 @@ export default function Locations() {
             const buttonShadow = isPrimary ? "shadow-primary/25" : "shadow-secondary/25";
 
             return (
-              <FadeIn
-                key={loc.name}
-                delay={i * 0.1}
-                direction="up"
-                className={i === 2 ? "md:col-span-2 md:w-1/2 md:justify-self-center" : undefined}
-              >
+              <FadeIn key={loc.name} delay={i * 0.1} direction="up">
                 <button
                   type="button"
                   onClick={() => openPopup(loc.bookHref)}
