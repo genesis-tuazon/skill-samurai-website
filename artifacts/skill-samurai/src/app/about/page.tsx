@@ -7,7 +7,7 @@ import AboutHeroCta from "@/components/sections/about-hero-cta";
 export const metadata: Metadata = {
   title: "About Skill Samurai Winnipeg | Kids Coding & STEM Academy",
   description:
-    "Skill Samurai Winnipeg is an after-school coding & STEM academy built by parents, for parents. Two locations serving kids ages 6–18 across Winnipeg since 2023.",
+    "Skill Samurai Winnipeg is an after-school coding & STEM academy built by parents, for parents. Three locations serving kids ages 6–18 across Winnipeg since 2023.",
   alternates: {
     canonical: "https://www.skillsamuraiwinnipeg.com/about",
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const stats = [
   { value: "155+", label: "Five-Star Google Reviews" },
-  { value: "2", label: "Winnipeg Locations" },
+  { value: "3", label: "Winnipeg Locations" },
   { value: "Ages 6–18", label: "Students Served" },
   { value: "Since 2023", label: "Serving Winnipeg Families" },
 ];
@@ -84,8 +84,8 @@ export default function AboutPage() {
                 detail: "We started this because we were searching for exactly this ourselves and couldn't find it. We built it — and we run it the way we'd want it run for our own kids.",
               },
               {
-                label: "Two locations, right in your neighbourhood",
-                detail: "North East and Seven Oaks. No long drives across the city. Real, local access for Winnipeg families — before school, after school, and weekends.",
+                label: "Three locations, right in your neighbourhood",
+                detail: "North East, Seven Oaks, and St. Alphonsus. No long drives across the city. Real, local access for Winnipeg families — before school, after school, and weekends.",
               },
               {
                 label: "Safe, screened & certified — every instructor, no exceptions",

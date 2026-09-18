@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.skillsamuraiwinnipeg.com"),
   title: "Skill Samurai Winnipeg | Coding & STEM Classes for Kids Ages 6–18",
   description:
-    "Skill Samurai Winnipeg offers weekly coding, robotics, and STEM classes for kids ages 6–18. Two locations: North East & Seven Oaks. Flexible month-to-month membership. Book a free trial class today!",
+    "Skill Samurai Winnipeg offers weekly coding, robotics, and STEM classes for kids ages 6–18 at three Winnipeg locations: North East, Seven Oaks, and St. Alphonsus. Book a free trial class today!",
   keywords: [
     "coding classes kids Winnipeg",
     "STEM classes Winnipeg",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Skill Samurai Winnipeg",
     title: "Skill Samurai Winnipeg | Coding & STEM Classes for Kids Ages 6–18",
     description:
-      "Weekly coding, robotics, and STEM classes for kids ages 6–18 in Winnipeg. Two locations. Flexible month-to-month. Book a free trial!",
+      "Weekly coding, robotics, and STEM classes for kids ages 6–18 at three Winnipeg locations. Book a free trial!",
     images: [
       {
         url: "https://www.skillsamuraiwinnipeg.com/opengraph.jpg",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Skill Samurai Winnipeg | Coding & STEM Classes for Kids Ages 6–18",
     description:
-      "Weekly coding, robotics, and STEM classes for kids ages 6–18 in Winnipeg. Two locations. Book a free trial!",
+      "Weekly coding, robotics, and STEM classes for kids ages 6–18 at three Winnipeg locations. Book a free trial!",
     images: ["https://www.skillsamuraiwinnipeg.com/opengraph.jpg"],
   },
   other: {
@@ -99,7 +99,7 @@ export default function RootLayout({
     "@id": "https://www.skillsamuraiwinnipeg.com",
     name: "Skill Samurai Winnipeg",
     description:
-      "After-school coding, robotics, and STEM classes for kids ages 6–18 in Winnipeg, Manitoba. Two locations: North East and Seven Oaks.",
+      "After-school coding, robotics, and STEM classes for kids ages 6–18 in Winnipeg, Manitoba. Three locations: North East, Seven Oaks, and St. Alphonsus.",
     url: "https://www.skillsamuraiwinnipeg.com",
     telephone: "+1-204-818-2155",
     email: "Genesis@SkillSamurai.com",
@@ -124,6 +124,14 @@ export default function RootLayout({
         addressRegion: "MB",
         addressCountry: "CA",
         name: "Skill Samurai Seven Oaks",
+      },
+      {
+        "@type": "PostalAddress",
+        streetAddress: "343 Munroe Avenue",
+        addressLocality: "Winnipeg",
+        addressRegion: "MB",
+        addressCountry: "CA",
+        name: "Skill Samurai St. Alphonsus",
       },
     ],
     geo: {

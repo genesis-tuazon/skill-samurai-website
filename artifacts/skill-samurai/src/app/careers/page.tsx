@@ -30,7 +30,7 @@ const openings = [
   {
     title: "STEM Program Assistant",
     type: "Part-Time / Casual",
-    location: "Both Locations",
+    location: "All Three Locations",
     description:
       "Support our lead instructors in delivering hands-on STEM sessions. Perfect for university students in Computer Science, Education, or related fields looking to gain real teaching experience.",
     skills: ["Interest in STEM education", "University student welcome", "Organized & dependable", "Bilingual a plus"],
@@ -131,7 +131,7 @@ export default function CareersPage() {
                   "Gain hands-on experience in STEM education",
                   "Counts toward community involvement requirements",
                   "Letter of reference provided upon completion",
-                  "Open to students at both locations",
+      "Open to students at all three locations",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3 text-sm font-medium text-secondary/80">
                     <CheckCircle2 className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />

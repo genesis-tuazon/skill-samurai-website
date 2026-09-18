@@ -71,7 +71,7 @@ export default function Locations() {
             Choose Your Location &amp; Book a Free Coding Class
           </h3>
           <p className="text-base sm:text-lg text-white/75 font-medium mb-3">
-            Same hands-on programs at both locations — no experience needed.
+            Same hands-on programs at all three locations — no experience needed.
           </p>
           <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent">
             <span className="inline-block h-2 w-2 rounded-full bg-accent animate-pulse" />
