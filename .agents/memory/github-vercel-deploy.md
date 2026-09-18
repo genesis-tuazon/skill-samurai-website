@@ -22,3 +22,11 @@ Uses `POST https://api.vercel.com/v13/deployments` with:
 **Required:** `VERCEL_TOKEN` (Replit secret), `VERCEL_ORG_ID` + `VERCEL_PROJECT_ID` (Replit shared env vars, already set).
 
 **How to apply:** Run `bash scripts/post-merge.sh` to push + deploy. Runs automatically after every task merge.
+
+## Custom-domain promotion
+
+A Vercel deployment created with `target: production` can reach `READY` while the public custom-domain aliases remain pinned to the previous deployment.
+
+**Why:** This happened after a successful production build: the project’s default Vercel aliases moved to the new deployment, but `www.skillsamuraiwinnipeg.com` and `www.codingforkidswinnipeg.com` still referenced the older deployment.
+
+**How to apply:** After a deployment reaches `READY`, verify both public aliases reference its deployment ID. If not, assign both aliases to that deployment before reporting the change as live. The apex domains redirect to these `www` aliases.
