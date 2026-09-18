@@ -104,9 +104,16 @@ export default function Locations() {
                         <MapPin className="h-6 w-6 sm:h-7 sm:w-7 text-white" strokeWidth={2.4} />
                       </div>
                       <div>
-                        <p className={`text-[11px] font-bold uppercase tracking-[0.2em] ${accentText}`}>
-                          Skill Samurai
-                        </p>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <p className={`text-[11px] font-bold uppercase tracking-[0.2em] ${accentText}`}>
+                            Skill Samurai
+                          </p>
+                          {loc.name === "St. Alphonsus" && (
+                            <span className="rounded-full bg-accent/15 px-2 py-0.5 text-[10px] font-black uppercase tracking-wider text-accent">
+                              New Fridays
+                            </span>
+                          )}
+                        </div>
                         <h4 className="text-2xl sm:text-3xl font-black font-heading text-secondary leading-tight">
                           {loc.name}
                         </h4>

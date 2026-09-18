@@ -20,6 +20,9 @@ export type Slot = {
 export type TermSchedule = {
   label: string;
   slots: Slot[];
+  enrollmentOpensAt?: string;
+  enrollmentOpensLabel?: string;
+  waitlistUrl?: string;
 };
 
 export type FreeTrialTerm = {
@@ -67,6 +70,7 @@ export default function ScheduleTable({
   studentRangeLabel,
 }: Props) {
   const [liveSlots, setLiveSlots] = useState<LiveSlot[]>([]);
+  const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
     if (!locationId) return;
@@ -76,7 +80,14 @@ export default function ScheduleTable({
       .catch(() => {});
   }, [locationId]);
 
-  const scheduleGroups = termSchedules ?? Array.from(new Set(slots.map((slot) => slot.day))).map((day) => ({
+  useEffect(() => {
+    const updateCurrentTime = () => setCurrentTime(Date.now());
+    updateCurrentTime();
+    const timer = window.setInterval(updateCurrentTime, 60_000);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const scheduleGroups: TermSchedule[] = termSchedules ?? Array.from(new Set(slots.map((slot) => slot.day))).map((day) => ({
     label: day,
     slots: slots.filter((slot) => slot.day === day),
   }));
@@ -124,33 +135,44 @@ export default function ScheduleTable({
       <div className={`grid gap-4 mb-12 ${scheduleGroups.length === 1 ? "max-w-2xl mx-auto" : scheduleGroups.length === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
         {scheduleGroups.map((group) => {
           const groupSlots = group.slots.map(displaySlot);
+          const enrollmentIsOpen = !group.enrollmentOpensAt
+            || currentTime >= new Date(group.enrollmentOpensAt).getTime();
           return (
             <div key={group.label} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
               <div className="bg-secondary px-5 py-3 flex items-center justify-between">
                 <p className="text-white font-black text-base tracking-wide">{group.label}</p>
-                <span className="text-xs font-bold text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">Limited spots</span>
+                <span className="text-xs font-bold text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">
+                  {enrollmentIsOpen ? "Limited spots" : (group.enrollmentOpensLabel ?? "Coming soon")}
+                </span>
               </div>
               <div className="divide-y divide-gray-100">
-                {groupSlots.map((slot, i) => (
-                  <div key={i} className="flex items-center justify-between px-5 py-4 hover:bg-primary/5 transition-colors">
+                {groupSlots.map((slot, i) => {
+                  const isWaitlist = !enrollmentIsOpen || slot.spotsLeft === 0;
+                  return (
+                    <div key={i} className="flex items-center justify-between px-5 py-4 hover:bg-primary/5 transition-colors">
                     <div>
                       <span className="text-secondary font-bold text-lg">{slot.time}</span>
-                      {slot.spotsLeft !== undefined && (
+                      {!enrollmentIsOpen ? (
+                        <p className="text-xs font-semibold mt-0.5 text-secondary/50">
+                          Term 2 enrollment opens in December
+                        </p>
+                      ) : slot.spotsLeft !== undefined && (
                         <p className={`text-xs font-semibold mt-0.5 ${slot.spotsLeft <= 3 ? "text-red-500" : "text-secondary/50"}`}>
                           {slot.spotsLeft === 0 ? "Full — join waitlist" : `${slot.spotsLeft} spot${slot.spotsLeft === 1 ? "" : "s"} left`}
                         </p>
                       )}
                     </div>
                     <a
-                      href={slot.spotsLeft === 0 ? (slot.waitlistUrl ?? defaultWaitlistUrl ?? "tel:+14319982155") : slot.url}
+                      href={isWaitlist ? (group.waitlistUrl ?? slot.waitlistUrl ?? defaultWaitlistUrl ?? "tel:+14319982155") : slot.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`inline-flex items-center gap-1.5 font-bold px-4 py-2 rounded-lg text-xs uppercase tracking-wide transition-all hover:scale-105 shadow-sm whitespace-nowrap ${slot.spotsLeft === 0 ? "bg-secondary/80 hover:bg-secondary text-white shadow-secondary/20" : "bg-primary hover:bg-primary/90 text-white shadow-primary/30"}`}
+                      className={`inline-flex items-center gap-1.5 font-bold px-4 py-2 rounded-lg text-xs uppercase tracking-wide transition-all hover:scale-105 shadow-sm whitespace-nowrap ${isWaitlist ? "bg-secondary/80 hover:bg-secondary text-white shadow-secondary/20" : "bg-primary hover:bg-primary/90 text-white shadow-primary/30"}`}
                     >
-                      {slot.spotsLeft === 0 ? "Join Waitlist" : "Enroll Now"}
+                      {isWaitlist ? "Join Waitlist" : "Enroll Now"}
                     </a>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           );

@@ -89,6 +89,12 @@ const stAlphonsusFAQs: FAQItem[] = [
 const termSchedules: TermSchedule[] = terms.map((term, index) => ({
   label: `${term.label} · ${term.dates}${term.classCount ? ` · ${term.classCount}` : ""}`,
   slots: index === 0 ? term1Slots : term2Slots,
+  ...(index === 1
+    ? {
+        enrollmentOpensAt: "2026-12-01T00:00:00-06:00",
+        enrollmentOpensLabel: "Opens Dec. 1",
+      }
+    : {}),
 }));
 
 export default function StAlphonsusCodingClasses() {
@@ -102,6 +108,11 @@ export default function StAlphonsusCodingClasses() {
             <ArrowRight className="h-3.5 w-3.5 rotate-180" />
             Home
           </Link>
+          <div className="mb-3">
+            <span className="inline-flex rounded-full bg-primary px-3 py-1 text-[11px] font-black uppercase tracking-widest text-white shadow-lg shadow-primary/20">
+              New Friday Classes
+            </span>
+          </div>
           <p className="text-primary font-bold uppercase tracking-widest text-xs mb-3">After-School Program · St. Alphonsus Winnipeg</p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading text-white leading-tight tracking-tight mb-1">
             Friday Coding Classes — St. Alphonsus
