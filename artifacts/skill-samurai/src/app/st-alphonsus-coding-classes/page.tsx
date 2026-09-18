@@ -4,6 +4,7 @@ import { MapPin, ArrowRight, Star } from "lucide-react";
 import ScheduleTable from "@/components/schedule-table";
 import type { Slot, TermSchedule } from "@/components/schedule-table";
 import type { FAQItem } from "@/components/enrollment-faq";
+import type { EnrollmentTestimonial } from "@/components/enrollment-testimonials";
 
 export const metadata: Metadata = {
   title: "Enroll in St. Alphonsus Coding Classes | Skill Samurai Winnipeg",
@@ -46,6 +47,24 @@ const term2Slots: Slot[] = slots.map((slot) =>
 );
 
 const freeTrialUrl = "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy";
+
+const parentReviews: EnrollmentTestimonial[] = [
+  {
+    name: "Maxcine Symons",
+    label: "Google Review · Jul 2026",
+    text: "It is awesome they offer a free trial class to see if your child enjoys the class. My son was able to make two mini games within the free hour time slot as well as build his own sprite 🙌",
+  },
+  {
+    name: "Ryan Cansino",
+    label: "Google Review · Jul 2026",
+    text: "Amazing staff. Team do an excellent job of keeping my daughter engaged and motivated. Daughter feels more comfortable in asking questions and making mistakes.",
+  },
+  {
+    name: "Tracy E",
+    label: "Google Review · Jul 2026",
+    text: "My son really enjoyed the class. The instructors are very kind and enthusiastic. My son was engaged for the entire hour and received encouragement and support when needed.",
+  },
+];
 
 const stAlphonsusFAQs: FAQItem[] = [
   {
@@ -125,7 +144,7 @@ export default function StAlphonsusCodingClasses() {
             <span className="flex items-center gap-1.5 text-white/60">·</span>
             <span className="flex items-center gap-1.5">Grades 1–8</span>
             <span className="flex items-center gap-1.5 text-white/60">·</span>
-            <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />155+ five-star reviews</span>
+            <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />156 five-star reviews</span>
           </div>
           <a
             href={freeTrialUrl}
@@ -154,6 +173,9 @@ export default function StAlphonsusCodingClasses() {
           subscriptionNote="4 monthly payments · Taxes, software & resources included"
           pricingFooter="Registration is for the full 4-month term. Make-up classes are available at either Winnipeg location."
           studentRangeLabel="Grades 1–8"
+          testimonials={parentReviews}
+          testimonialAudienceLabel="Recent five-star Google reviews from parents · Grades 1–8"
+          reviewCountLabel="156 five-star reviews"
         />
       </div>
     </div>

@@ -1,4 +1,10 @@
-const REVIEWS = [
+export type EnrollmentTestimonial = {
+  name: string;
+  label: string;
+  text: string;
+};
+
+const REVIEWS: EnrollmentTestimonial[] = [
   {
     name: "Louise Hargave",
     label: "Google Review",
@@ -16,13 +22,21 @@ const REVIEWS = [
   },
 ];
 
-export default function EnrollmentTestimonials() {
+type Props = {
+  reviews?: EnrollmentTestimonial[];
+  audienceLabel?: string;
+};
+
+export default function EnrollmentTestimonials({
+  reviews = REVIEWS,
+  audienceLabel = "155+ five-star reviews on Google",
+}: Props) {
   return (
     <div className="mb-8">
       <h2 className="text-xl font-black text-secondary text-center mb-1">What Parents Are Saying</h2>
-      <p className="text-secondary/50 text-sm text-center mb-5">155+ five-star reviews on Google</p>
+      <p className="text-secondary/50 text-sm text-center mb-5">{audienceLabel}</p>
       <div className="grid sm:grid-cols-3 gap-4">
-        {REVIEWS.map((r, i) => (
+        {reviews.map((r, i) => (
           <div key={i} className="bg-white rounded-2xl border border-gray-200 shadow-sm px-5 py-5 flex flex-col gap-3">
             <div className="flex gap-0.5">
               {Array.from({ length: 5 }).map((_, j) => (

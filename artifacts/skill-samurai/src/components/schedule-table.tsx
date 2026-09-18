@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Phone, Mail, Star, CalendarDays, LockOpen, Clock, Sparkles } from "lucide-react";
 import Link from "next/link";
-import EnrollmentTestimonials from "./enrollment-testimonials";
+import EnrollmentTestimonials, { type EnrollmentTestimonial } from "./enrollment-testimonials";
 import EnrollmentFAQ, { type FAQItem } from "./enrollment-faq";
 
 export type Slot = {
@@ -49,6 +49,9 @@ type Props = {
   subscriptionNote?: string;
   pricingFooter?: string;
   studentRangeLabel?: string;
+  testimonials?: EnrollmentTestimonial[];
+  testimonialAudienceLabel?: string;
+  reviewCountLabel?: string;
 };
 
 
@@ -68,6 +71,9 @@ export default function ScheduleTable({
   subscriptionNote,
   pricingFooter,
   studentRangeLabel,
+  testimonials,
+  testimonialAudienceLabel,
+  reviewCountLabel = "155+ five-star reviews",
 }: Props) {
   const [liveSlots, setLiveSlots] = useState<LiveSlot[]>([]);
   const [currentTime, setCurrentTime] = useState(0);
@@ -244,13 +250,16 @@ export default function ScheduleTable({
       )}
 
       {/* Testimonials */}
-      <EnrollmentTestimonials />
+      <EnrollmentTestimonials
+        reviews={testimonials}
+        audienceLabel={testimonialAudienceLabel}
+      />
 
       {/* Trust strip */}
       <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-secondary/60 mb-8 py-4 border-y border-gray-200">
         <span className="flex items-center gap-1.5 font-semibold text-secondary">{locationName} &nbsp;·&nbsp; {locationAddress}</span>
         <span className="hidden sm:block text-gray-300">|</span>
-        <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />155+ five-star reviews</span>
+        <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />{reviewCountLabel}</span>
         <span className="hidden sm:block text-gray-300">|</span>
         <span className="flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5 text-primary" />Start any week</span>
         <span className="hidden sm:block text-gray-300">|</span>
