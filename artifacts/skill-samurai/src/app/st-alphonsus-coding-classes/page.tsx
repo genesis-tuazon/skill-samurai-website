@@ -4,7 +4,6 @@ import { MapPin, ArrowRight, Star } from "lucide-react";
 import ScheduleTable from "@/components/schedule-table";
 import type { Slot, TermSchedule } from "@/components/schedule-table";
 import type { FAQItem } from "@/components/enrollment-faq";
-import type { FreeTrialTerm } from "@/components/schedule-table";
 
 export const metadata: Metadata = {
   title: "Enroll in St. Alphonsus Coding Classes | Skill Samurai Winnipeg",
@@ -47,7 +46,6 @@ const term2Slots: Slot[] = slots.map((slot) =>
 );
 
 const freeTrialUrl = "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy";
-const freeTrialTerms: FreeTrialTerm[] = terms;
 
 const stAlphonsusFAQs: FAQItem[] = [
   {
@@ -138,7 +136,7 @@ export default function StAlphonsusCodingClasses() {
           locationAddress="343 Munroe Avenue, Winnipeg, MB R2K 1H2"
           locationId="st-alphonsus"
           freeTrialUrl={freeTrialUrl}
-          freeTrialTerms={freeTrialTerms}
+          hideFreeTrialSection
           faqs={stAlphonsusFAQs}
           registrationFeeNote=""
           registrationFeePromotion="Waived by Early Bird deadlines: Oct. 2 / Jan. 29"
