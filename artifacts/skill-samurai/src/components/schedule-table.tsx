@@ -39,7 +39,6 @@ type Props = {
   defaultWaitlistUrl?: string;
   freeTrialUrl?: string;
   freeTrialTerms?: FreeTrialTerm[];
-  hideFreeTrialSection?: boolean;
   faqs?: FAQItem[];
   registrationFeeNote?: string;
   registrationFeePromotion?: string;
@@ -59,7 +58,6 @@ export default function ScheduleTable({
   defaultWaitlistUrl,
   freeTrialUrl,
   freeTrialTerms,
-  hideFreeTrialSection = false,
   faqs,
   registrationFeeNote,
   registrationFeePromotion,
@@ -160,7 +158,7 @@ export default function ScheduleTable({
       </div>
 
       {/* Free trial CTA */}
-      {!hideFreeTrialSection && (freeTrialUrl && freeTrialTerms?.length ? (
+      {freeTrialUrl && freeTrialTerms?.length ? (
         <section className="bg-secondary rounded-2xl p-5 sm:p-7 mb-8">
           <h2 className="text-white font-black text-xl text-center mb-1">Book a Free Friday Trial</h2>
           <p className="text-white/60 text-sm text-center mb-6">Try a Friday class before choosing your term.</p>
@@ -221,7 +219,7 @@ export default function ScheduleTable({
             Book a Free Class →
           </Link>
         </div>
-      ))}
+      )}
 
       {/* Testimonials */}
       <EnrollmentTestimonials />

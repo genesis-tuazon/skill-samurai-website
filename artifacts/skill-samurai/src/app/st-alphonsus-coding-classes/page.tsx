@@ -136,7 +136,6 @@ export default function StAlphonsusCodingClasses() {
           locationAddress="343 Munroe Avenue, Winnipeg, MB R2K 1H2"
           locationId="st-alphonsus"
           freeTrialUrl={freeTrialUrl}
-          hideFreeTrialSection
           faqs={stAlphonsusFAQs}
           registrationFeeNote=""
           registrationFeePromotion="Waived by Early Bird deadlines: Oct. 2 / Jan. 29"
