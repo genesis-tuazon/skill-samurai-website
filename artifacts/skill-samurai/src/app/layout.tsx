@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.skillsamuraiwinnipeg.com"),
   title: "Skill Samurai Winnipeg | Coding & STEM Classes for Kids Ages 6–18",
   description:
-    "Skill Samurai Winnipeg offers weekly coding, robotics, and STEM classes for kids ages 6–18 at three Winnipeg locations: North East, Seven Oaks, and St. Alphonsus. Book a free trial class today!",
+    "Skill Samurai Winnipeg offers weekly coding, robotics, and STEM classes for kids ages 6–18 at three locations: North East, Seven Oaks, and St. Alphonsus. Flexible month-to-month membership. Book a free trial class today!",
   keywords: [
     "coding classes kids Winnipeg",
     "STEM classes Winnipeg",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Skill Samurai Winnipeg",
     title: "Skill Samurai Winnipeg | Coding & STEM Classes for Kids Ages 6–18",
     description:
-      "Weekly coding, robotics, and STEM classes for kids ages 6–18 at three Winnipeg locations. Book a free trial!",
+      "Weekly coding, robotics, and STEM classes for kids ages 6–18 in Winnipeg at three locations. Flexible month-to-month. Book a free trial!",
     images: [
       {
         url: "https://www.skillsamuraiwinnipeg.com/opengraph.jpg",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Skill Samurai Winnipeg | Coding & STEM Classes for Kids Ages 6–18",
     description:
-      "Weekly coding, robotics, and STEM classes for kids ages 6–18 at three Winnipeg locations. Book a free trial!",
+      "Weekly coding, robotics, and STEM classes for kids ages 6–18 in Winnipeg at three locations. Book a free trial!",
     images: ["https://www.skillsamuraiwinnipeg.com/opengraph.jpg"],
   },
   other: {

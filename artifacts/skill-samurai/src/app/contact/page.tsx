@@ -7,7 +7,7 @@ import { OpenContactFormButton } from "@/components/ui/open-contact-form-button"
 export const metadata: Metadata = {
   title: "Contact Us | Skill Samurai Winnipeg",
   description:
-    "Get in touch with Skill Samurai Winnipeg. Call, email, or visit our three locations — North East, Seven Oaks, and St. Alphonsus. We'd love to answer your questions.",
+    "Get in touch with Skill Samurai Winnipeg. Call, email, or visit our three Winnipeg locations — North East, Seven Oaks, and St. Alphonsus. We'd love to answer your questions.",
   alternates: {
     canonical: "https://www.skillsamuraiwinnipeg.com/contact",
   },
@@ -34,7 +34,7 @@ const locations = [
     name: "St. Alphonsus",
     address: "343 Munroe Avenue",
     city: "Winnipeg, MB",
-    days: "Friday",
+    days: "Fridays",
     times: "3:15, 4:30 & 5:45 PM",
     mapsHref: "https://maps.google.com/?q=343+Munroe+Avenue+Winnipeg+MB",
   },
@@ -111,7 +111,7 @@ export default function ContactPage() {
           </div>
 
           {/* Location cards */}
-          <div className="grid gap-4 sm:grid-cols-3 mb-6">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mb-6">
             {locations.map((loc) => (
               <div
                 key={loc.name}

@@ -59,7 +59,7 @@ export default function FinalCta() {
               </a>
 
               <p className="mt-6 text-white/60 text-sm font-medium">
-                Takes 1 hour · Both Winnipeg locations · Ages 6–18
+                Takes 1 hour · All three Winnipeg locations · Ages 6–18
               </p>
             </div>
           </div>

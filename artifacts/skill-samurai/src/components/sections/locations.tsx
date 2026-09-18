@@ -5,9 +5,6 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { MapPin, Clock, ArrowRight, CalendarClock, Sparkles, CalendarCheck } from "lucide-react";
 import { openCalendarModal } from "@/components/ui/modal-events";
 
-const northEastMakeupHref = "https://book.skillsamuraiwinnipeg.com/widget/booking/yJGhJxF00WXEIK4PMqwR";
-const sevenOaksMakeupHref = "https://book.skillsamuraiwinnipeg.com/widget/booking/fAz7Vr2KMa3wAWSUDICP";
-
 const locations = [
   {
     name: "North East",
@@ -18,6 +15,7 @@ const locations = [
     times: "5:30pm & 6:30pm",
     timesDetail: "Two flexible after-school start times",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/TnDl1OMZ4UVFMhbBfc8g",
+    makeupHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/yJGhJxF00WXEIK4PMqwR",
     accent: "secondary",
   },
   {
@@ -29,6 +27,7 @@ const locations = [
     times: "4:30pm, 5:30pm & 6:30pm",
     timesDetail: "Three flexible after-school start times",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/tjfCJpZCGAyeMV3MucK5",
+    makeupHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/fAz7Vr2KMa3wAWSUDICP",
     accent: "primary",
   },
   {
@@ -40,7 +39,7 @@ const locations = [
     times: "3:15pm, 4:30pm & 5:45pm",
     timesDetail: "Three after-school start times",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy",
-    accent: "accent",
+    accent: "secondary",
   },
 ];
 
@@ -217,14 +216,14 @@ export default function Locations() {
             </button>
             <button
               type="button"
-              onClick={() => openPopup(northEastMakeupHref)}
+              onClick={() => openPopup(locations[0].makeupHref!)}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 sm:py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap"
             >
               Makeup · North East
             </button>
             <button
               type="button"
-              onClick={() => openPopup(sevenOaksMakeupHref)}
+              onClick={() => openPopup(locations[1].makeupHref!)}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 sm:py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap"
             >
               Makeup · Seven Oaks

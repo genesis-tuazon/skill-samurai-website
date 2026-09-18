@@ -38,7 +38,7 @@ const features = [
   "Project-based and self-paced",
   "Same day & time each week",
   "Easy makeup class options",
-  "Local classes at three Winnipeg locations",
+  "Year-round at three Winnipeg locations",
 ];
 
 export default function WeeklyClasses() {

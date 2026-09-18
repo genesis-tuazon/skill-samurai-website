@@ -32,7 +32,7 @@ const locations = [
     name: "St. Alphonsus",
     address: "343 Munroe Avenue",
     city: "Winnipeg, MB",
-    mapsHref: "https://maps.google.com/?q=343+Munroe+Avenue+Winnipeg+MB",
+    mapsHref: "https://www.google.com/maps/search/?api=1&query=343+Munroe+Avenue+Winnipeg+MB",
   },
 ];
 
