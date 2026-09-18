@@ -39,7 +39,7 @@ const locations = [
     times: "3:15pm, 4:30pm & 5:45pm",
     timesDetail: "Three after-school start times",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy",
-    accent: "secondary",
+    accent: "accent",
   },
 ];
 
@@ -82,11 +82,12 @@ export default function Locations() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-7xl mx-auto">
           {locations.map((loc, i) => {
             const isPrimary = loc.accent === "primary";
-            const accentBg = isPrimary ? "bg-primary" : "bg-secondary";
-            const accentText = isPrimary ? "text-primary" : "text-secondary";
-            const accentSoft = isPrimary ? "bg-primary/10" : "bg-secondary/10";
-            const ring = isPrimary ? "hover:border-primary/40" : "hover:border-secondary/40";
-            const buttonShadow = isPrimary ? "shadow-primary/25" : "shadow-secondary/25";
+            const isAccent = loc.accent === "accent";
+            const accentBg = isPrimary ? "bg-primary" : isAccent ? "bg-accent" : "bg-secondary";
+            const accentText = isPrimary ? "text-primary" : isAccent ? "text-accent" : "text-secondary";
+            const accentSoft = isPrimary ? "bg-primary/10" : isAccent ? "bg-accent/10" : "bg-secondary/10";
+            const ring = isPrimary ? "hover:border-primary/40" : isAccent ? "hover:border-accent/40" : "hover:border-secondary/40";
+            const buttonShadow = isPrimary ? "shadow-primary/25" : isAccent ? "shadow-accent/25" : "shadow-secondary/25";
 
             return (
               <FadeIn key={loc.name} delay={i * 0.1} direction="up">
