@@ -6,6 +6,10 @@ import { ChevronDown } from "lucide-react";
 export type FAQItem = {
   q: string;
   a: string;
+  link?: {
+    href: string;
+    label: string;
+  };
 };
 
 const DEFAULT_FAQS: FAQItem[] = [
@@ -56,6 +60,16 @@ export default function EnrollmentFAQ({ faqs = DEFAULT_FAQS }: Props) {
             {open === i && (
               <div className="px-5 pb-4">
                 <p className="text-secondary/70 text-sm leading-relaxed">{faq.a}</p>
+                {faq.link && (
+                  <a
+                    href={faq.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex mt-3 text-primary font-bold text-sm underline underline-offset-2 hover:text-primary/80"
+                  >
+                    {faq.link.label}
+                  </a>
+                )}
               </div>
             )}
           </div>

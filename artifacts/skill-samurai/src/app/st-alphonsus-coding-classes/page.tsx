@@ -106,6 +106,10 @@ const stAlphonsusFAQs: FAQItem[] = [
   {
     q: "What happens on school in-service days?",
     a: "When a Friday class is affected by a school in-service day, you’ll receive a class credit that can be used to book a make-up class at either of our two Winnipeg locations. Click the “Book Makeup Class” button at the top right of the website to choose an available class.",
+    link: {
+      href: "https://www.canva.com/design/DAGcsP92848/sxBR1gprktasTlngE9VZww/view?utm_content=DAGcsP92848&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0cfe7f44c1#2",
+      label: "View the live parent calendar",
+    },
   },
   {
     q: "What is the cancellation policy?",
