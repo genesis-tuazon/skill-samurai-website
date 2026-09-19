@@ -28,11 +28,11 @@ const terms = [
 
 const term1Slots: Slot[] = slots.map((slot) =>
   slot.time === "3:15 PM"
-    ? { ...slot, url: "https://winnipeg.jumbula.com/StAlphonsusCodingClubTerm1Oct2026Jan2027Final/StAlphonsusCodingClubTerm1Oct2026Jan2027315pm415pm" }
+    ? { ...slot, url: "https://winnipeg.jumbula.com/StAlphonsusCodingClubTerm1Oct2026Jan2027Final/StAlphonsusCodingClubTerm1Oct16th2026Feb5th2027315pm415pm" }
     : slot.time === "4:30 PM"
-      ? { ...slot, url: "https://winnipeg.jumbula.com/StAlphonsusCodingClubTerm1Oct2026Jan2027Final/StAlphonsusCodingClubTerm1Oct2026Jan2027430pm530pm" }
+      ? { ...slot, url: "https://winnipeg.jumbula.com/StAlphonsusCodingClubTerm1Oct2026Jan2027Final/StAlphonsusCodingClubTerm1Oct16th2026Feb5th2027430pm530pm" }
       : slot.time === "5:30 PM"
-        ? { ...slot, time: "5:45 PM", url: "https://winnipeg.jumbula.com/StAlphonsusCodingClubTerm1Oct2026Jan2027Final/StAlphonsusCodingClubTerm1Oct2026Jan2027545pm645pm" }
+        ? { ...slot, time: "5:45 PM", url: "https://winnipeg.jumbula.com/StAlphonsusCodingClubTerm1Oct2026Jan2027Final/StAlphonsusCodingClubTerm1Oct16th2026Feb5th2027545pm645pm" }
         : slot
 );
 
