@@ -14,6 +14,7 @@ const locations = [
     days: "Mon – Tue",
     times: "5:30pm & 6:30pm",
     timesDetail: "Two flexible after-school start times",
+    audience: "Ages 6–18",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/TnDl1OMZ4UVFMhbBfc8g",
     makeupHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/yJGhJxF00WXEIK4PMqwR",
     accent: "secondary",
@@ -26,6 +27,7 @@ const locations = [
     days: "Wed – Thu",
     times: "4:30pm, 5:30pm & 6:30pm",
     timesDetail: "Three flexible after-school start times",
+    audience: "Ages 6–18",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/tjfCJpZCGAyeMV3MucK5",
     makeupHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/fAz7Vr2KMa3wAWSUDICP",
     accent: "primary",
@@ -38,6 +40,7 @@ const locations = [
     days: "Fridays",
     times: "3:15pm, 4:30pm & 5:45pm",
     timesDetail: "Three after-school start times",
+    audience: "Ages 6–14 · Grades 1–8",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy",
     accent: "secondary",
   },
@@ -191,7 +194,7 @@ export default function Locations() {
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </span>
                       <p className="mt-2 text-center text-[11px] font-semibold text-secondary/60">
-                        Takes 1 hour · Free · Ages 6–18
+                        Takes 1 hour · Free · {loc.audience}
                       </p>
                     </div>
                   </div>
