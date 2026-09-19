@@ -170,7 +170,7 @@ export default function StAlphonsusCodingClasses() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-black px-6 py-3 rounded-xl shadow-lg shadow-primary/30 transition-all hover:scale-105"
             >
-              Book a Free Friday Trial <ArrowRight className="h-4 w-4" />
+              Book a Free Class <ArrowRight className="h-4 w-4" />
             </a>
             <a
               href={parentCalendarUrl}

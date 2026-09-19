@@ -22,6 +22,9 @@ const slots: Slot[] = [
   { day: "Thursday",  time: "6:30 PM", program: "Weekly Coding Classes", grades: "Grades 1–12", note: "Choose a Thursday start date",  url: "https://winnipeg.jumbula.com/JanuaryDec2028Subscription/Thursday630pmWeeklyCodingClasses", spotsLeft: 0 },
 ];
 
+const freeClassUrl = "https://book.skillsamuraiwinnipeg.com/widget/booking/tjfCJpZCGAyeMV3MucK5";
+const parentCalendarUrl = "https://www.canva.com/design/DAGcsP92848/sxBR1gprktasTlngE9VZww/view?utm_content=DAGcsP92848&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0cfe7f44c1#2";
+
 export default function SevenOaksCodingClasses() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -46,6 +49,24 @@ export default function SevenOaksCodingClasses() {
             <span className="flex items-center gap-1.5">Ages 6–18</span>
             <span className="flex items-center gap-1.5 text-white/60">·</span>
             <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />155+ five-star reviews</span>
+          </div>
+          <div className="flex flex-wrap items-center gap-3 mt-7">
+            <a
+              href={freeClassUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-black px-6 py-3 rounded-xl shadow-lg shadow-primary/30 transition-all hover:scale-105"
+            >
+              Book a Free Class <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href={parentCalendarUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-white/30 bg-white/10 hover:bg-white/20 text-white font-black px-6 py-3 rounded-xl transition-all hover:scale-105"
+            >
+              View Parent Calendar
+            </a>
           </div>
         </div>
       </div>
