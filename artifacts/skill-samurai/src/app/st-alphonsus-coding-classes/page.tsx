@@ -97,8 +97,12 @@ const stAlphonsusFAQs: FAQItem[] = [
     a: "Absolutely. No coding experience is required. Students learn at their own pace with support from Skill Samurai instructors.",
   },
   {
-    q: "My child attended Coding Club last year or was enrolled in Term 1. Where will they start?",
-    a: "Returning students continue from where they left off. Whether your child attended Coding Club last year or is moving from Term 1 into Term 2, our instructors will review their progress and place them at the appropriate point in the curriculum so they can keep building their skills.",
+    q: "My child attended Coding Club last year. Where will they start?",
+    a: "Returning students continue from where they left off. Our instructors will review your child’s progress and place them at the appropriate point in the curriculum so they can keep building their skills.",
+  },
+  {
+    q: "My child is enrolled in Term 1. Can we enroll in Term 2?",
+    a: "Yes. Term 1 students can enroll in Term 2 and will continue from where they left off. Term 2 enrollment opens on December 1, 2026. Until then, use the “Join Waitlist” button for your preferred class time.",
   },
   {
     q: "What if my child misses a class?",
