@@ -96,6 +96,10 @@ const stAlphonsusFAQs: FAQItem[] = [
     a: "Absolutely. No coding experience is required. Students learn at their own pace with support from Skill Samurai instructors.",
   },
   {
+    q: "My child attended Coding Club last year or was enrolled in Term 1. Where will they start?",
+    a: "Returning students continue from where they left off. Whether your child attended Coding Club last year or is moving from Term 1 into Term 2, our instructors will review their progress and place them at the appropriate point in the curriculum so they can keep building their skills.",
+  },
+  {
     q: "What if my child misses a class?",
     a: "Make-up classes are available at either of our two Winnipeg Skill Samurai locations, subject to availability. Make-up classes can be booked through our website or by calling 431-998-2155.",
   },
