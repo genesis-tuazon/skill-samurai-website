@@ -47,6 +47,7 @@ const term2Slots: Slot[] = slots.map((slot) =>
 );
 
 const freeTrialUrl = "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy";
+const parentCalendarUrl = "https://www.canva.com/design/DAGcsP92848/sxBR1gprktasTlngE9VZww/view?utm_content=DAGcsP92848&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0cfe7f44c1#2";
 
 const parentReviews: EnrollmentTestimonial[] = [
   {
@@ -107,7 +108,7 @@ const stAlphonsusFAQs: FAQItem[] = [
     q: "What happens on school in-service days?",
     a: "When a Friday class is affected by a school in-service day, you’ll receive a class credit that can be used to book a make-up class at either of our two Winnipeg locations. Click the “Book Makeup Class” button at the top right of the website to choose an available class.",
     link: {
-      href: "https://www.canva.com/design/DAGcsP92848/sxBR1gprktasTlngE9VZww/view?utm_content=DAGcsP92848&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0cfe7f44c1#2",
+      href: parentCalendarUrl,
       label: "View the live parent calendar",
     },
   },
@@ -158,14 +159,24 @@ export default function StAlphonsusCodingClasses() {
             <span className="flex items-center gap-1.5 text-white/60">·</span>
             <span className="flex items-center gap-1.5"><Star className="h-3.5 w-3.5 text-yellow-400 fill-yellow-400" />156 five-star reviews</span>
           </div>
-          <a
-            href={freeTrialUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-7 bg-primary hover:bg-primary/90 text-white font-black px-6 py-3 rounded-xl shadow-lg shadow-primary/30 transition-all hover:scale-105"
-          >
-            Book a Free Friday Trial <ArrowRight className="h-4 w-4" />
-          </a>
+          <div className="flex flex-wrap items-center gap-3 mt-7">
+            <a
+              href={freeTrialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-black px-6 py-3 rounded-xl shadow-lg shadow-primary/30 transition-all hover:scale-105"
+            >
+              Book a Free Friday Trial <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href={parentCalendarUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-white/30 bg-white/10 hover:bg-white/20 text-white font-black px-6 py-3 rounded-xl transition-all hover:scale-105"
+            >
+              View Parent Calendar
+            </a>
+          </div>
         </div>
       </div>
 
