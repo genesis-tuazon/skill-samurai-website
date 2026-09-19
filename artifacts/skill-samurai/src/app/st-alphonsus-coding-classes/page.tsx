@@ -100,8 +100,12 @@ const stAlphonsusFAQs: FAQItem[] = [
     a: "Make-up classes are available at either of our two Winnipeg Skill Samurai locations, subject to availability. Make-up classes can be booked through our website or by calling 431-998-2155.",
   },
   {
+    q: "What happens on school in-service days?",
+    a: "When a Friday class is affected by a school in-service day, you’ll receive a class credit that can be used to book a make-up class at either of our two Winnipeg locations. Click the “Book Makeup Class” button at the top right of the website to choose an available class.",
+  },
+  {
     q: "What is the cancellation policy?",
-    a: "Registration is for the full four-month term, and your child’s spot is reserved for the entire term. Once registered, instructors, curriculum, software, and program resources are planned and allocated based on enrollment for the full term. For this reason, cancellations, pauses, and early withdrawals are not available once the term begins.",
+    a: "Registration is for the full four-month term, and your child’s spot is reserved for the entire term. Once registered, instructors, curriculum, software, and program resources are planned and allocated based on enrollment for the full term. There are no refunds. Cancellations, pauses, and early withdrawals are not available once the term begins.",
   },
 ];
 
