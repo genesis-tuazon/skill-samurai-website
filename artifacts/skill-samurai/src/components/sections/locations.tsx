@@ -103,9 +103,9 @@ export default function Locations() {
                 >
                   <div className="h-full flex flex-col">
                     {isStAlphonsus && (
-                      <div className="mb-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2.5 text-center text-xs font-black uppercase tracking-[0.15em] text-white shadow-lg shadow-primary/30">
-                        <Sparkles className="h-4 w-4" />
-                        New · Friday Coding Classes
+                      <div className="mb-4 inline-flex self-start items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-primary">
+                        <Sparkles className="h-3.5 w-3.5" />
+                        New Friday Classes
                       </div>
                     )}
                     <div className="flex items-center gap-3 mb-5">
