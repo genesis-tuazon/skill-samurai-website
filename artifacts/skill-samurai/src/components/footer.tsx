@@ -13,7 +13,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import logoUrl from "@assets/SkillSamurai_Logo_Full_(1)_(1)_(1)_1776400767722.png";
-import { openBookingModal, openMakeupModal } from "@/components/ui/modal-events";
+import { openMakeupModal } from "@/components/ui/modal-events";
 
 const locations = [
   {
@@ -187,13 +187,12 @@ export default function Footer() {
               </h4>
               <ul className="space-y-4 text-white/75 font-medium text-sm">
                 <li>
-                  <button
-                    type="button"
-                    onClick={openBookingModal}
+                  <Link
+                    href="/#locations"
                     className="hover:text-primary transition-colors cursor-pointer"
                   >
                     Book a Free Trial
-                  </button>
+                  </Link>
                 </li>
                 <li>
                   <button
