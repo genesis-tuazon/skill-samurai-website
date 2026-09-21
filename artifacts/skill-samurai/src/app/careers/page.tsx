@@ -7,26 +7,10 @@ import { MapPin, Clock, Briefcase, Heart, Zap, Users, GraduationCap, CheckCircle
 export const metadata: Metadata = {
   title: "Careers | Skill Samurai Winnipeg",
   description:
-    "Join the Skill Samurai Winnipeg team. We're looking for passionate coding instructors and STEM educators to inspire the next generation of tech innovators.",
+    "Explore current opportunities with Skill Samurai Winnipeg, including STEM program assistant roles and high school co-op placements.",
 };
 
 const openings = [
-  {
-    title: "Coding Instructor – After School Programs",
-    type: "Part-Time",
-    location: "North East Winnipeg",
-    description:
-      "Lead engaging after-school coding classes for kids aged 6–18. You'll guide students through Scratch, game design, Python, and more using our proven curriculum. No teaching degree required — just passion, patience, and a love of tech.",
-    skills: ["Python or JavaScript", "Patience with kids", "Reliable & punctual", "Team player"],
-  },
-  {
-    title: "Coding Instructor – After School Programs",
-    type: "Part-Time",
-    location: "Seven Oaks Winnipeg",
-    description:
-      "Same great role at our Seven Oaks location. Help young coders build real projects, develop confidence, and discover their love for technology. Training provided — we set you up for success.",
-    skills: ["Coding fundamentals", "Enthusiasm for STEM", "Communication skills", "Background check required"],
-  },
   {
     title: "STEM Program Assistant",
     type: "Part-Time / Casual",
@@ -188,6 +172,19 @@ export default function CareersPage() {
             </h2>
           </FadeIn>
           <div className="flex flex-col gap-8 max-w-3xl mx-auto">
+            <FadeIn>
+              <div className="flex items-start gap-4 rounded-3xl border border-secondary/15 bg-secondary/5 p-6 sm:p-8">
+                <div className="rounded-full bg-secondary/10 p-2.5">
+                  <CheckCircle2 className="h-6 w-6 text-secondary" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-secondary">Coding Instructor Positions Are Filled</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    Thank you to everyone who applied. Our coding instructor positions at North East and Seven Oaks are currently filled.
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
             {openings.map((job, i) => (
               <FadeIn key={job.title + job.location} delay={i * 0.1}>
                 <div className="rounded-3xl border border-border bg-white shadow-sm p-8">
