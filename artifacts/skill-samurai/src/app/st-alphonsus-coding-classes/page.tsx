@@ -106,11 +106,15 @@ const stAlphonsusFAQs: FAQItem[] = [
   },
   {
     q: "What if my child misses a class?",
-    a: "Make-up classes are available at either of our two Winnipeg Skill Samurai locations, subject to availability. Make-up classes can be booked through our website or by calling 431-998-2155.",
+    a: "Make-up classes can be booked at any of our three Winnipeg Skill Samurai locations, subject to availability.",
+    link: {
+      action: "makeup",
+      label: "Book a Makeup Class at Any Location",
+    },
   },
   {
     q: "What happens on school in-service days?",
-    a: "When a Friday class is affected by a school in-service day, you’ll receive a class credit that can be used to book a make-up class at either of our two Winnipeg locations. Click the “Book Makeup Class” button at the top right of the website to choose an available class.",
+    a: "When a Friday class is affected by a school in-service day, you’ll receive a class credit that can be used to book a make-up class at any of our three Winnipeg locations. Click the “Book Makeup Class” button at the top right of the website to choose an available class.",
     link: {
       href: parentCalendarUrl,
       label: "View the live parent calendar",

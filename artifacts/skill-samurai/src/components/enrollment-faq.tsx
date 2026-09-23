@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { openMakeupModal } from "@/components/ui/modal-events";
 
 export type FAQItem = {
   q: string;
   a: string;
   link?: {
-    href: string;
+    href?: string;
+    action?: "makeup";
     label: string;
   };
 };
@@ -60,7 +62,15 @@ export default function EnrollmentFAQ({ faqs = DEFAULT_FAQS }: Props) {
             {open === i && (
               <div className="px-5 pb-4">
                 <p className="text-secondary/70 text-sm leading-relaxed">{faq.a}</p>
-                {faq.link && (
+                {faq.link?.action === "makeup" ? (
+                  <button
+                    type="button"
+                    onClick={openMakeupModal}
+                    className="inline-flex mt-3 text-primary font-bold text-sm underline underline-offset-2 hover:text-primary/80 cursor-pointer"
+                  >
+                    {faq.link.label}
+                  </button>
+                ) : faq.link?.href ? (
                   <a
                     href={faq.link.href}
                     target="_blank"
@@ -69,7 +79,7 @@ export default function EnrollmentFAQ({ faqs = DEFAULT_FAQS }: Props) {
                   >
                     {faq.link.label}
                   </a>
-                )}
+                ) : null}
               </div>
             )}
           </div>
