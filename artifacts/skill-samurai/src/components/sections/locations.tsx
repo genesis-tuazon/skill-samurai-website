@@ -42,6 +42,7 @@ const locations = [
     timesDetail: "Three after-school start times",
     audience: "Ages 6–14 · Grades 1–8",
     bookHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/agzgaYAJGGRT4YEiGkJy",
+    makeupHref: "https://book.skillsamuraiwinnipeg.com/widget/booking/w1CEpOQnQCpLHXaOUr6W",
     accent: "secondary",
   },
 ];
@@ -232,6 +233,13 @@ export default function Locations() {
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 sm:py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap"
             >
               Makeup · Seven Oaks
+            </button>
+            <button
+              type="button"
+              onClick={() => openPopup(locations[2].makeupHref!)}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 sm:py-2.5 text-xs font-bold uppercase tracking-wide text-white border border-white/25 hover:bg-white/10 transition-all cursor-pointer whitespace-nowrap"
+            >
+              Makeup · St. Alphonsus
             </button>
           </div>
         </FadeIn>
