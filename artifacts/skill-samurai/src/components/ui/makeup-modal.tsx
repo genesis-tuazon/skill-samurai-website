@@ -18,6 +18,12 @@ const locations = [
     days: "Wed – Thu",
     href: "https://book.skillsamuraiwinnipeg.com/widget/booking/fAz7Vr2KMa3wAWSUDICP",
   },
+  {
+    name: "St. Alphonsus",
+    address: "343 Munroe Avenue",
+    days: "Fridays",
+    href: "https://book.skillsamuraiwinnipeg.com/widget/booking/w1CEpOQnQCpLHXaOUr6W",
+  },
 ];
 
 function openPopup(url: string) {
