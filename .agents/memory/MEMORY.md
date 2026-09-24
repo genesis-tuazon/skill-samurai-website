@@ -1,3 +1,2 @@
 - [GitHub-Vercel deploy workflow](github-vercel-deploy.md) — a READY build is not live until both public custom-domain aliases point to it
-- [GitHub push setup](github-push-setup.md) — token is from skillsamurai-hub account; use force push after Replit checkpoints cause divergence
 - [Slot availability updates](slot-updates.md) — Vercel can't reach Replit DB; spot counts must be changed in the static page file, not the database
