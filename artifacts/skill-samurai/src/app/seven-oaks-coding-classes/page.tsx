@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MapPin, ArrowRight, Star } from "lucide-react";
 import ScheduleTable from "@/components/schedule-table";
 import type { Slot } from "@/components/schedule-table";
+import { sevenOaksReviews } from "@/lib/program-reviews";
 
 export const metadata: Metadata = {
   title: "Enroll in Seven Oaks Coding Classes | Skill Samurai Winnipeg",
@@ -79,6 +80,7 @@ export default function SevenOaksCodingClasses() {
           locationAddress="745 Kingsbury Ave., Winnipeg, MB R2V 3N5"
           locationId="seven-oaks"
           defaultWaitlistUrl="https://book.skillsamuraiwinnipeg.com/widget/form/7XZ4NFi0bH4aYHux9FRh"
+          testimonials={sevenOaksReviews}
         />
       </div>
 

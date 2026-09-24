@@ -49,7 +49,7 @@ type Props = {
   subscriptionNote?: string;
   pricingFooter?: string;
   studentRangeLabel?: string;
-  testimonials?: EnrollmentTestimonial[];
+  testimonials: EnrollmentTestimonial[];
   testimonialAudienceLabel?: string;
   reviewCountLabel?: string;
 };

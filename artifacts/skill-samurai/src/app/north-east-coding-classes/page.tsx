@@ -3,6 +3,7 @@ import Link from "next/link";
 import { MapPin, ArrowRight, Star } from "lucide-react";
 import ScheduleTable from "@/components/schedule-table";
 import type { Slot } from "@/components/schedule-table";
+import { northEastReviews } from "@/lib/program-reviews";
 
 export const metadata: Metadata = {
   title: "Enroll in North East Coding Classes | Skill Samurai Winnipeg",
@@ -77,6 +78,7 @@ export default function NorthEastCodingClasses() {
           locationAddress="1199 Rothesay St., Winnipeg, MB R2G 0J7"
           locationId="north-east"
           defaultWaitlistUrl="https://book.skillsamuraiwinnipeg.com/widget/form/JKoCjgAhRxcyySexZMhq"
+          testimonials={northEastReviews}
         />
       </div>
 

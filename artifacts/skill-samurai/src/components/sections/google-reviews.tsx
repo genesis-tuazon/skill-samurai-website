@@ -351,14 +351,26 @@ const FILTERS: FilterGroup[] = [
   { label: "2+ Kids in Family", emoji: "👨‍👩‍👧‍👦", tags: ["Siblings", "Multiple Kids", "Two Kids", "Ages 7 & 10", "Ages 6 & 8"] },
 ];
 
+const featuredRank: Record<string, number> = {
+  "Bria Lylyk": 0,
+  "Olga Talmatska": 1,
+  "Cheryl D": 2,
+};
+
+const homepageReviews = [...reviews].sort(
+  (a, b) =>
+    (featuredRank[a.name] ?? Number.MAX_SAFE_INTEGER) -
+    (featuredRank[b.name] ?? Number.MAX_SAFE_INTEGER)
+);
+
 export default function GoogleReviews() {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [activeFilter, setActiveFilter] = useState<string>("All");
 
   const filtered = useMemo(() => {
-    if (activeFilter === "All") return reviews;
+    if (activeFilter === "All") return homepageReviews;
     const group = FILTERS.find((f) => f.label === activeFilter);
-    if (!group) return reviews;
+    if (!group) return homepageReviews;
     return reviews.filter((r) => r.tags.some((t) => group.tags.includes(t)));
   }, [activeFilter]);
 

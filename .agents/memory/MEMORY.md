@@ -1,2 +1,3 @@
 - [GitHub-Vercel deploy workflow](github-vercel-deploy.md) — a READY build is not live until both public custom-domain aliases point to it
 - [Slot availability updates](slot-updates.md) — Vercel can't reach Replit DB; spot counts must be changed in the static page file, not the database
+- [Program-page review attribution](program-review-attribution.md) — select relevant parent reviews without implying attendance at a specific location
