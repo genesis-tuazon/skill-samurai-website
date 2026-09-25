@@ -73,7 +73,7 @@ export default function ScheduleTable({
   studentRangeLabel,
   testimonials,
   testimonialAudienceLabel,
-  reviewCountLabel = "155+ five-star reviews",
+  reviewCountLabel = "159 five-star reviews",
 }: Props) {
   const [liveSlots, setLiveSlots] = useState<LiveSlot[]>([]);
   const [currentTime, setCurrentTime] = useState(0);
