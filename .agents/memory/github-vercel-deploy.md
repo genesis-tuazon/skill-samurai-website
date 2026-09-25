@@ -29,4 +29,4 @@ A Vercel deployment created with `target: production` can reach `READY` while th
 
 **Why:** This happened after a successful production build: the project’s default Vercel aliases moved to the new deployment, but `www.skillsamuraiwinnipeg.com` and `www.codingforkidswinnipeg.com` still referenced the older deployment.
 
-**How to apply:** After a deployment reaches `READY`, verify both public aliases reference its deployment ID. If not, assign both aliases to that deployment before reporting the change as live. The apex domains redirect to these `www` aliases.
+**How to apply:** After a deployment reaches `READY`, verify both public aliases reference its deployment ID. If not, assign both aliases to that deployment before reporting the change as live. Also check DNS configuration and fetch each public URL: an alias can point at the right deployment while its hostname resolves to a registrar instead of Vercel. The apex domains redirect to these `www` aliases.
