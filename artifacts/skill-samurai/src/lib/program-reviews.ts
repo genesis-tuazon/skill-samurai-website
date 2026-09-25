@@ -1,4 +1,5 @@
 import type { EnrollmentTestimonial } from "@/components/enrollment-testimonials";
+import { homepageFeaturedReviews } from "@/lib/homepage-featured-reviews";
 
 // These are attributed Google reviews already featured in the site's review collection.
 // Most do not identify a specific classroom, so do not present them as location-specific.
@@ -38,20 +39,6 @@ export const sevenOaksReviews: EnrollmentTestimonial[] = [
   },
 ];
 
-export const stAlphonsusReviews: EnrollmentTestimonial[] = [
-  {
-    name: "Aysha Nadeem",
-    label: "Google Review",
-    text: "My kids got a free class at Skill Samurai — they are 7 and 10 years old and they really liked it and wanted to join. My son doesn't like to join other classes but he likes to use screens to create something good.",
-  },
-  {
-    name: "Maxcine Symons",
-    label: "Google Review",
-    text: "It is awesome they offer a free trial class to see if your child enjoys the class. My son was able to make two mini games within the free hour time slot as well as build his own sprite 🙌",
-  },
-  {
-    name: "Ryan Cansino",
-    label: "Google Review",
-    text: "Amazing staff. Team do an excellent job of keeping my daughter engaged and motivated. Daughter feels more comfortable in asking questions and making mistakes.",
-  },
-];
+export const stAlphonsusReviews: EnrollmentTestimonial[] = homepageFeaturedReviews.map(
+  ({ name, text }) => ({ name, label: "Google Review", text })
+);
